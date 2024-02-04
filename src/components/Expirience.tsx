@@ -1,11 +1,7 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 const Expirience: FC = () => {
-    return (
-        <>
-        
-        </>
-    )
-}
+    return <></>;
+};
 
 export default Expirience;

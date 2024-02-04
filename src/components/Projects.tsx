@@ -1,11 +1,7 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 const Projects: FC = () => {
-    return (
-        <>
-        
-        </>
-    )
-}
+    return <></>;
+};
 
 export default Projects;
