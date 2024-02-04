@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 const FavoriteStack: FC = () => {
-    return <></>;
+    return <>Favorite Stack</>;
 };
 
 export default FavoriteStack;

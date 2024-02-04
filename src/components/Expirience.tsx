@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 const Expirience: FC = () => {
-    return <></>;
+    return <>Expirencie</>;
 };
 
 export default Expirience;
