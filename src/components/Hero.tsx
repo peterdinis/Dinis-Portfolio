@@ -32,7 +32,7 @@ const Hero = () => {
               size="2xl"
               showBorder={true}
               borderColor={color}
-              src={'https://avatars2.githubusercontent.com/u/37842853?v=4'}
+              src={'https://media.licdn.com/dms/image/C4E03AQE9payLpbABCg/profile-displayphoto-shrink_800_800/0/1622796244091?e=2147483647&v=beta&t=BA-4vv7rc_XfzSz9YcKOXxrX7VlIJw_pNwJzkb1A38o'}
             />
           </MotionBox>
         </MotionBox>
@@ -60,30 +60,25 @@ const Hero = () => {
           <Box position="relative">
             <MotionBox whileHover={{ translateY: -5 }} width="max-content">
               <Header underlineColor={color} mt={0} cursor="pointer" width="max-content">
-                Hey!
+                Ahoj👋
               </Header>
             </MotionBox>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-            My name is{' '}
+            Moje meno je {' '}
             <Box as="strong" fontWeight="600">
-              Ahmad
+              Peter Dinis
             </Box>{' '}
-            and I&apos;m a{' '}
+            a som {' '}
             <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer and
+              Full Stack Developer
             </Box>{' '}
             <Box as="span" whiteSpace="nowrap">
-              an open source lover&nbsp;
-            </Box>
-            from{' '}
-            <Box as="span" whiteSpace="nowrap">
-              Pakistan 🇵🇰
+              z Bardejova&nbsp;
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my digital garden, where I write about the things I&apos;m working on and share
-            what I&apos;ve learned. 😊
+            Vitaj na mojom portfóliu🤗
           </Box>
         </MotionFlex>
       </Flex>
