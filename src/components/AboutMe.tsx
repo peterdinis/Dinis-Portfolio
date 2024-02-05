@@ -26,7 +26,7 @@ const AboutMe = () => {
                                 Ahoj. Volám sa Peter Dinis. Mám 22 rokov.
                                 Pochádzam z Bardejova. Naštevoval som Strednú
                                 priemyselnú školu technickú(SPŠT) v Bardejove.
-                                Medzi moje záujmy patrí futbal, volejbal.',
+                                Medzi moje záujmy patrí futbal, volejbal.
                             </Text>
                             <Text mb='3' fontSize='2xl'>
                                 Najväčšie skúsenosti mám z technológiami: React
