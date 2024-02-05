@@ -13,7 +13,7 @@ const Footer: FC = () => {
             direction={{ base: 'column', md: 'row' }}
         >
             <Container flex={"flex"} justifyContent={"center"} alignItems={"center"}>
-                <Text fontSize={40}>&copy; Peter Dinis 2024</Text>
+                <Text fontSize={30}>&copy; Peter Dinis 2024</Text>
             </Container>
         </Stack>
     );

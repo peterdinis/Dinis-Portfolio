@@ -1,7 +1,11 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-const FavoriteStack: FC = () => {
-    return <>Favorite Stack</>;
-};
+const FavoriteStack: FC = () =>{
+    return (
+        <>
+        
+        </>
+    )
+}
 
 export default FavoriteStack;

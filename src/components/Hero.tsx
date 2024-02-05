@@ -5,7 +5,6 @@ import { MotionBox, MotionFlex } from './utils/motion';
 const ANIMATION_DURATION = 0.5;
 
 const Hero = () => {
-    const color = 'blue.400';
 
     return (
         <Container maxW='5xl' p={{ base: 5, md: 12 }} id='me'>
@@ -13,7 +12,7 @@ const Hero = () => {
                 <MotionBox
                     opacity='0'
                     initial={{
-                        translateX: -150,
+                        translateX: -250,
                         opacity: 0,
                     }}
                     animate={{
@@ -34,7 +33,6 @@ const Hero = () => {
                         <Avatar
                             size='2xl'
                             showBorder={true}
-                            borderColor={color}
                             src={
                                 'https://media.licdn.com/dms/image/C4E03AQE9payLpbABCg/profile-displayphoto-shrink_800_800/0/1622796244091?e=2147483647&v=beta&t=BA-4vv7rc_XfzSz9YcKOXxrX7VlIJw_pNwJzkb1A38o'
                             }
@@ -68,7 +66,7 @@ const Hero = () => {
                             width='max-content'
                         >
                             <Header
-                                underlineColor={color}
+                                underlineColor={"blue.400"}
                                 mt={0}
                                 cursor='pointer'
                                 width='max-content'
