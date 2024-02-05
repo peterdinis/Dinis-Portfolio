@@ -1,14 +1,14 @@
 import { FC } from 'react';
-import SecondaryHeader from './shared/SecondaryHeader';
+import SecondaryHeader from '../shared/SecondaryHeader';
 import {
     Container,
     Flex,
     useBreakpointValue,
     chakra,
 } from '@chakra-ui/react';
-import EmptyCard from './expirience/EmptyCard';
-import LineDot from './expirience/LineDot';
-import ExpirienceCard from './expirience/ExpirienceCard';
+import EmptyCard from './EmptyCard';
+import LineDot from './LineDot';
+import ExpirienceCard from './ExpirienceCard';
 
 const milestones = [
     {

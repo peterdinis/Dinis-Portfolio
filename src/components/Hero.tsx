@@ -1,6 +1,6 @@
 import { Flex, Avatar, Box, Container } from '@chakra-ui/react';
 import Header from './shared/Header';
-import { MotionBox, MotionFlex } from './utils/motion';
+import { MotionBox, MotionFlex } from './shared/motion';
 
 const ANIMATION_DURATION = 0.5;
 

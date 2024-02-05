@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
-import Expirience from './components/Expirience';
+import Expirience from './components/expirience/Expirience';
 import Projects from './components/Projects';
 
 const App: FC = () => {
