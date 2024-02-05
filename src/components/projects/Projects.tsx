@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import SecondaryHeader from './shared/SecondaryHeader';
+import SecondaryHeader from '../shared/SecondaryHeader';
 
 const Projects: FC = () => {
     return (
