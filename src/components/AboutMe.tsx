@@ -1,6 +1,5 @@
 import { Box, Container, Flex, chakra, Text } from '@chakra-ui/react';
 import SecondaryHeader from './shared/SecondaryHeader';
-import FavoriteStack from './FavoriteStack';
 
 const AboutMe = () => {
     return (
@@ -23,7 +22,7 @@ const AboutMe = () => {
                             pl={{ lg: '10' }}
                         >
                             <Text mb='3' fontSize='2xl'>
-                                Ahoj. Volám sa Peter Dinis. Mám 22 rokov.
+                                Ahoj. Volám sa Peter Dinis. Mám 23 rokov.
                                 Pochádzam z Bardejova. Naštevoval som Strednú
                                 priemyselnú školu technickú(SPŠT) v Bardejove.
                                 Medzi moje záujmy patrí futbal, volejbal.
@@ -31,10 +30,6 @@ const AboutMe = () => {
                             <Text mb='3' fontSize='2xl'>
                                 Najväčšie skúsenosti mám z technológiami: React
                                 Nestjs a Typescript Node.
-                            </Text>
-                            <Text mt='6' fontSize='3xl'>
-                                Môj obľubený stack
-                                <FavoriteStack />
                             </Text>
                         </Box>
                     </Flex>

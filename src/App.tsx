@@ -1,10 +1,8 @@
 import { FC } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
-import Expirience from './components/expirience/Expirience';
-import Projects from './components/projects/Projects';
+import FavoriteStack from './components/shared/FavoriteStack';
 
 const App: FC = () => {
     return (
@@ -12,9 +10,7 @@ const App: FC = () => {
             <Navbar />
             <Hero />
             <AboutMe />
-            <Expirience />
-            <Projects />
-            <Footer />
+            <FavoriteStack />
         </>
     );
 };
