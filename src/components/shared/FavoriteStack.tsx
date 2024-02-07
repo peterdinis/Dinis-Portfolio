@@ -1,8 +1,27 @@
 import { FC } from 'react';
+import { motion } from 'framer-motion';
 import SecondaryHeader from './SecondaryHeader';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Image } from '@chakra-ui/react';
+import css from '../../images/css.png';
+import express from '../../images/express.png';
+import firebase from '../../images/firebase.png';
+import html from '../../images/html.png';
+import javascript from '../../images/javascript.png';
+import jest from '../../images/jest.png';
+import mysql from '../../images/mysql.png';
+import nestjs from '../../images/nestjs.svg';
+import net from '../../images/net.png';
+import nextjs from '../../images/next-js.svg';
+import pg from '../../images/pg.png';
+import query from '../../images/query.svg';
+import react from '../../images/react.png';
+import typescript from '../../images/typescript.png';
 
 const FavoriteStack: FC = () => {
+    const imageVariants = {
+        hover: { scale: 1.1 },
+    };
+
     return (
         <>
             <SecondaryHeader text='Môj oblubený tech stack' />
@@ -12,6 +31,7 @@ const FavoriteStack: FC = () => {
                 my='10'
                 bgColor='white'
                 id='skills-wrapper'
+                
             >
                 <Flex
                     gap={{ base: 16, lg: 16, md: 16, sm: 14, xs: 10 }}
@@ -23,7 +43,48 @@ const FavoriteStack: FC = () => {
                     alignItems='center'
                     justify='center'
                 >
-                    iiii
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={css} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={express} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={firebase} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={html} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={javascript} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={jest} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={mysql} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={nestjs} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={net} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={nextjs} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={pg} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={query} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={react} w={20} boxShadow={12} h={20} />
+                    </motion.div>
+                    <motion.div variants={imageVariants} whileHover="hover">
+                        <Image m={10} src={typescript} w={20} boxShadow={12} h={20} />
+                    </motion.div>
                 </Flex>
             </Box>
         </>

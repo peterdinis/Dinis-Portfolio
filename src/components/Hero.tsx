@@ -6,6 +6,7 @@ import {
     Stack,
     VStack,
     Text,
+    Avatar,
 } from '@chakra-ui/react';
 import { FC } from 'react';
 
@@ -77,37 +78,38 @@ const Hero: FC = () => {
                         </Stack>
                     </Heading>
                     <Text py='5' colorScheme='black' fontWeight='400'>
-                        I design and create{' '}
+                        Vytváram a navrhnuem {' '}
                         <span
                             style={{
                                 color: 'var(--chakra-colors-teal-800)',
                                 fontWeight: 800,
                             }}
                         >
-                            functional and beautiful applications
+                            webstránky
                         </span>{' '}
-                        with passion and a focus on{' '}
+                       z dôrazom na kvalitu a {' '}
                         <span
                             style={{
                                 color: 'var(--chakra-colors-teal-800)',
                                 fontWeight: 800,
                             }}
                         >
-                            user experience
-                        </span>{' '}
-                        and{' '}
-                        <span
-                            style={{
-                                color: 'var(--chakra-colors-teal-500)',
-                                fontWeight: 500,
-                            }}
-                        >
-                            high quality.
+                            používateľskú skúsenosť
                         </span>{' '}
                     </Text>
                 </Stack>
                 <Stack>
-                    <Text color="white">abaaa</Text>
+                    <Text color="white">
+                        <Avatar 
+                         alignSelf="center"
+                         borderRadius="full"
+                         backgroundColor="transparent"
+                         boxShadow="lg"
+                         boxSize="300px"
+                         src="https://media.licdn.com/dms/image/C4E03AQE9payLpbABCg/profile-displayphoto-shrink_400_400/0/1622796244091?e=1712793600&v=beta&t=_EAWtBqNl0yMVUVcbh8Ebg3soMBQhjkBs7xR6myZBAU"
+                         zIndex={1}
+                        />
+                    </Text>
                 </Stack>
             </Flex>
         </>

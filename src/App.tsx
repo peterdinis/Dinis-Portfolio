@@ -1,12 +1,11 @@
 import { FC } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Layout from './components/shared/Layout';
 import AboutMe from './components/AboutMe';
+import { Box } from '@chakra-ui/react';
 import FavoriteStack from './components/shared/FavoriteStack';
 import Projects from './components/projects/Projects';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Layout from './components/shared/Layout';
 
 const App: FC = () => {
     return (
@@ -15,10 +14,12 @@ const App: FC = () => {
             <Layout>
                 <Hero />
                 <AboutMe />
-                <FavoriteStack />
-                <Projects />
-                <Contact />
-                <Footer />
+                <Box mt={5}>
+                    <FavoriteStack />
+                </Box>
+                <Box mt={5}>
+                    <Projects />
+                </Box>
             </Layout>
         </>
     );
