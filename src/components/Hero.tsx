@@ -37,8 +37,7 @@ const Hero: FC = () => {
                         h='30px'
                         borderWidth='2px'
                     >
-                        Hi 👋&apos;My name is Peter and i am Full Stack
-                        Developer from Slovakia
+                        Hi 👋 Welcome to my portfolio
                     </Button>
                 </Link>
             </VStack>
