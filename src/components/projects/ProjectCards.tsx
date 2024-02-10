@@ -11,59 +11,9 @@ const ProjectsCards: FC = () => {
             templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
         >
             <ProjectCard
-                projectName={'aaaa'}
-                projectDescription={'aaaa'}
-                projectTech={'rrrr'}
-                deployLink='aaaa'
-                githubLink={'rrrrr'}
-            />
-            <ProjectCard
-                projectName={'aaaa'}
-                projectDescription={'aaaa'}
-                projectTech={'rrrr'}
-                deployLink='aaaa'
-                githubLink={'rrrrr'}
-            />
-            <ProjectCard
-                projectName={'aaaa'}
-                projectDescription={'aaaa'}
-                projectTech={'rrrr'}
-                deployLink='aaaa'
-                githubLink={'rrrrr'}
-            />
-            <ProjectCard
-                projectName={'aaaa'}
-                projectDescription={'aaaa'}
-                projectTech={'rrrr'}
-                deployLink='aaaa'
-                githubLink={'rrrrr'}
-            />
-            <ProjectCard
-                projectName={'aaaa'}
-                projectDescription={'aaaa'}
-                projectTech={'rrrr'}
-                deployLink='aaaa'
-                githubLink={'rrrrr'}
-            />
-            <ProjectCard
-                projectName={'aaaa'}
-                projectDescription={'aaaa'}
-                projectTech={'rrrr'}
-                deployLink='aaaa'
-                githubLink={'rrrrr'}
-            />
-            <ProjectCard
-                projectName={'aaaa'}
-                projectDescription={'aaaa'}
-                projectTech={'rrrr'}
-                deployLink='aaaa'
-                githubLink={'rrrrr'}
-            />
-            <ProjectCard
-                projectName={'aaaa'}
-                projectDescription={'aaaa'}
-                projectTech={'rrrr'}
-                deployLink='aaaa'
+                projectName={'MedPortal'}
+                projectDescription={'Stránka o zdravotníckom stredisku. Možnosť si vytvoriť účet. Vytvoriť si termín online u lekára. Lekár vidí svojích pacientov, vidí svoj kalendár.'}
+                projectTech={'Asp.Net Mvc, Bootstrap 5.3 Jquery'}
                 githubLink={'rrrrr'}
             />
         </SimpleGrid>

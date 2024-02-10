@@ -17,6 +17,7 @@ interface IProjectCardProps {
     projectTech: string;
     deployLink?: string;
     githubLink: string;
+    status?: string;
 }
 
 const ProjectCard: FC<IProjectCardProps> = ({
@@ -25,10 +26,11 @@ const ProjectCard: FC<IProjectCardProps> = ({
     projectTech,
     deployLink,
     githubLink,
+    status
 }) => {
     return (
         <motion.div whileHover={{ rotate: 360 }} transition={{ duration: 0.5 }}>
-            <Card>
+            <Card borderRadius={20}>
                 <CardHeader>
                     <Heading textAlign={'center'} size='md' fontWeight={'bold'}>
                         {projectName}
@@ -36,10 +38,12 @@ const ProjectCard: FC<IProjectCardProps> = ({
                 </CardHeader>
                 <CardBody>
                     <Text>{projectDescription}</Text>
+                    <Text mt={2}>{status}</Text>
                     <Badge
                         mt={4}
                         variant='solid'
-                        borderRadius={'20'}
+                        borderRadius='20'
+                        style={{ whiteSpace: 'normal' }}
                         p={1}
                         colorScheme='green'
                     >
@@ -50,9 +54,11 @@ const ProjectCard: FC<IProjectCardProps> = ({
                     <Button bg={'teal.700'} variant='solid'>
                         {githubLink}
                     </Button>
-                    <Button ml={5} bg={'red.700'} variant='solid'>
-                        {deployLink}
-                    </Button>
+                    {deployLink && (
+                        <Button ml={5} bg={'red.700'} variant='solid'>
+                            {deployLink}
+                        </Button>
+                    )}
                 </CardFooter>
             </Card>
         </motion.div>
