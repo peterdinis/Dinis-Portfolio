@@ -7,13 +7,14 @@ import {
     VStack,
     Text,
     Avatar,
+    chakra
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import me from '../images/me.jpg';
 
 const Hero: FC = () => {
     return (
-        <>
+        <chakra.div id="me">
             <VStack
                 m='auto'
                 my='10'
@@ -113,7 +114,7 @@ const Hero: FC = () => {
                     </Text>
                 </Stack>
             </Flex>
-        </>
+        </chakra.div>
     );
 };
 

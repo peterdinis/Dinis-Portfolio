@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { FC } from 'react';
 
-const Contact: FC = () => {
+export const ContactMe: FC = () => {
     return (
         <Container maxW='5xl' p='6'>
             <Banner />
@@ -65,5 +65,3 @@ const Banner: FC = () => {
         </Stack>
     );
 };
-
-export default Contact;
