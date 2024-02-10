@@ -26,7 +26,7 @@ const App: FC = () => {
                 <Box mt={4}>
                     <ContactMe />
                 </Box>
-                
+
                 <Box mt={3}>
                     <Footer />
                 </Box>
