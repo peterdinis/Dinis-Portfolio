@@ -4,7 +4,7 @@ import SecondaryHeader from './SecondaryHeader';
 import { Box, Flex, Image } from '@chakra-ui/react';
 import css from '../../images/css.png';
 import express from '../../images/express.png';
-import firebase from '../../images/firebase.png';
+import firebase from '../../images/firebase-new.png';
 import html from '../../images/html.png';
 import javascript from '../../images/javascript.png';
 import jest from '../../images/jest.png';
