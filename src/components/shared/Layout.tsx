@@ -16,9 +16,7 @@ const Layout: FC<ILayoutProps> = ({ children }: ILayoutProps) => {
                 maxW='1536'
                 pt={{ base: '8', sm: '16', md: '20' }}
             >
-                <AnimationWrapper>
-                    {children}
-                </AnimationWrapper>
+                <AnimationWrapper>{children}</AnimationWrapper>
             </Box>
         </chakra.div>
     );
