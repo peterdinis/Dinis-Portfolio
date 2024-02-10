@@ -51,6 +51,25 @@ const ProjectsCards: FC = () => {
                 deployLink='react-code-editor-flame.vercel.app'
                 deployText='Online'
             />
+            <ProjectCard
+                projectName={'Hadík hra'}
+                projectDescription={'Hadík hra online'}
+                projectTech={'Html, Css, Javascript, Bootstrap'}
+                githubLink={'https://github.com/peterdinis/Javascript-Snake-Game'}
+                githubLinkText='Github'
+                deployLink='https://modest-elion-018f87.netlify.app/'
+                deployText='Online'
+            />
+
+            <ProjectCard
+                projectName={'Reddit Clone'}
+                projectDescription={'Klon stránky Reddit'}
+                projectTech={'Nextjs Typescript Firebase Chakra UI'}
+                githubLink={'reddit-next-js.vercel.app'}
+                githubLinkText='Github'
+                deployLink='https://reddit-next-js.vercel.app/'
+                deployText='Online'
+            />
         </SimpleGrid>
     );
 };
