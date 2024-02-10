@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import { Box } from '@chakra-ui/react';
 import FavoriteStack from './components/shared/FavoriteStack';
 import Projects from './components/projects/Projects';
+import Footer from './components/Footer';
 
 const App: FC = () => {
     return (
@@ -19,6 +20,9 @@ const App: FC = () => {
                 </Box>
                 <Box mt={5}>
                     <Projects />
+                </Box>
+                <Box mt={3}>
+                    <Footer />
                 </Box>
             </Layout>
         </>

@@ -9,6 +9,7 @@ import {
     Avatar,
 } from '@chakra-ui/react';
 import { FC } from 'react';
+import me from "../images/me.jpg"
 
 const Hero: FC = () => {
     return (
@@ -31,7 +32,7 @@ const Hero: FC = () => {
                         h='30px'
                         borderWidth='2px'
                     >
-                        Hi 👋 Welcome to my portfolio
+                        Ahoj 👋 Vitaj na mojom portfóliu
                     </Button>
                 </Link>
             </VStack>
@@ -56,9 +57,6 @@ const Hero: FC = () => {
                         fontWeight='extrabold'
                     >
                         <Stack display='flex' direction='row'>
-                            <Text fontSize={63} colorScheme='black'>
-                                I&apos;m
-                            </Text>
                             <Text
                                 bgGradient='linear(to-tr, teal.500, teal.800)'
                                 bgClip='text'
@@ -109,7 +107,7 @@ const Hero: FC = () => {
                             backgroundColor='transparent'
                             boxShadow='lg'
                             boxSize='300px'
-                            src='https://media.licdn.com/dms/image/C4E03AQE9payLpbABCg/profile-displayphoto-shrink_400_400/0/1622796244091?e=1712793600&v=beta&t=_EAWtBqNl0yMVUVcbh8Ebg3soMBQhjkBs7xR6myZBAU'
+                            src={me}
                             zIndex={1}
                         />
                     </Text>
