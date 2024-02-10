@@ -8,6 +8,7 @@ import Projects from './components/projects/Projects';
 import Footer from './components/Footer';
 import { ContactMe } from './components/contact/Contact';
 import { Box } from '@chakra-ui/react';
+import { TimeLine } from './components/TimeLine';
 
 const App: FC = () => {
     return (
@@ -18,6 +19,9 @@ const App: FC = () => {
                 <AboutMe />
                 <FavoriteStack />
                 <Projects />
+                <Box mt={4}>
+                    <TimeLine />
+                </Box>
                 <Box mt={4}>
                     <ContactMe />
                 </Box>

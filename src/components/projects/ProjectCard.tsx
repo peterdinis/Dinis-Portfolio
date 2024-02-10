@@ -40,7 +40,7 @@ const ProjectCard: FC<IProjectCardProps> = ({
                     </Heading>
                 </CardHeader>
                 <CardBody>
-                    <Text>{projectDescription}</Text>
+                    <Text p={2} fontWeight={"bold"}>{projectDescription}</Text>
                     <Badge
                         mt={4}
                         variant='solid'
