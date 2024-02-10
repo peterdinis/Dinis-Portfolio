@@ -41,7 +41,7 @@ const Banner: FC = () => {
                     bgGradient='linear(to-l, #0ea5e9,#2563eb)'
                     bgClip='text'
                 >
-                    Tak mi napíš.
+                    Tak mi napíš 🖊️.
                 </chakra.h2>
             </Box>
 

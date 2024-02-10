@@ -33,7 +33,7 @@ const Hero: FC = () => {
                         h='30px'
                         borderWidth='2px'
                     >
-                        Ahoj 👋 Vitaj na mojom portfóliu
+                        Ahoj 👋 Vitaj na mojom portfóliu.
                     </Button>
                 </Link>
             </VStack>
