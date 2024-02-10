@@ -9,7 +9,7 @@ import {
     Avatar,
 } from '@chakra-ui/react';
 import { FC } from 'react';
-import me from "../images/me.jpg"
+import me from '../images/me.jpg';
 
 const Hero: FC = () => {
     return (
