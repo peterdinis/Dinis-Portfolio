@@ -23,19 +23,19 @@ const ProjectCard: FC<IProjectCardProps> = ({
         >
             <Card>
                 <CardHeader>
-                    <Heading size='md'>{projectName}</Heading>
+                    <Heading textAlign={"center"} size='md' fontWeight={"bold"}>{projectName}</Heading>
                 </CardHeader>
                 <CardBody>
                     <Text>
                        {projectDescription}
                     </Text>
-                    <Badge>
+                    <Badge mt={4} variant="solid" borderRadius={"20"} p={1} colorScheme='green'>
                         {projectTech}
                     </Badge>
                 </CardBody>
                 <CardFooter>
-                    <Button>{githubLink}</Button> 
-                    <Button>{deployLink}</Button>
+                    <Button bg={"teal.700"} variant="solid">{githubLink}</Button> 
+                    <Button ml={5} bg={"red.700"} variant="solid">{deployLink}</Button>
                 </CardFooter>
             </Card>
         </SimpleGrid>
