@@ -6,6 +6,7 @@ import {
     CardBody,
     CardFooter,
     Button,
+    Link,
     Badge,
 } from '@chakra-ui/react';
 import { FC } from 'react';
@@ -16,8 +17,9 @@ interface IProjectCardProps {
     projectDescription: string;
     projectTech: string;
     deployLink?: string;
+    deployText?: string;
     githubLink: string;
-    status?: string;
+    githubLinkText: string;
 }
 
 const ProjectCard: FC<IProjectCardProps> = ({
@@ -26,10 +28,11 @@ const ProjectCard: FC<IProjectCardProps> = ({
     projectTech,
     deployLink,
     githubLink,
-    status
+    deployText,
+    githubLinkText,
 }) => {
     return (
-        <motion.div whileHover={{ rotate: 360 }} transition={{ duration: 0.5 }}>
+        <motion.div>
             <Card borderRadius={20}>
                 <CardHeader>
                     <Heading textAlign={'center'} size='md' fontWeight={'bold'}>
@@ -38,7 +41,6 @@ const ProjectCard: FC<IProjectCardProps> = ({
                 </CardHeader>
                 <CardBody>
                     <Text>{projectDescription}</Text>
-                    <Text mt={2}>{status}</Text>
                     <Badge
                         mt={4}
                         variant='solid'
@@ -52,11 +54,11 @@ const ProjectCard: FC<IProjectCardProps> = ({
                 </CardBody>
                 <CardFooter>
                     <Button bg={'teal.700'} variant='solid'>
-                        {githubLink}
+                        <Link href={githubLink}>{githubLinkText}</Link>
                     </Button>
                     {deployLink && (
                         <Button ml={5} bg={'red.700'} variant='solid'>
-                            {deployLink}
+                            <Link href={deployLink}>{deployText}</Link>
                         </Button>
                     )}
                 </CardFooter>

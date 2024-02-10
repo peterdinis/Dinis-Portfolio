@@ -14,7 +14,42 @@ const ProjectsCards: FC = () => {
                 projectName={'MedPortal'}
                 projectDescription={'Stránka o zdravotníckom stredisku. Možnosť si vytvoriť účet. Vytvoriť si termín online u lekára. Lekár vidí svojích pacientov, vidí svoj kalendár.'}
                 projectTech={'Asp.Net Mvc, Bootstrap 5.3 Jquery'}
-                githubLink={'rrrrr'}
+                githubLink={'https://github.com/peterdinis/MedPortal'}
+                githubLinkText='Github'
+            />
+            <ProjectCard
+                projectName={'Spšt knižnica API'}
+                projectDescription={'API ku projektu SPŠT Knižnica. API má Crud operácie pre Knihy, Kategórie, Autorov, Vydavateľstvá. Dokáže sa zaregistrovať žiak učiteľ, admin a vedia si požičať knihu, vrátiť knihu. Učiteľ a admin majú práva aby mohli spracovať s crud operáciami'}
+                projectTech={'Asp.Net Postgresql'}
+                githubLink={'https://github.com/peterdinis/Spst-Kniznica-Backend'}
+                githubLinkText='Github'
+            />
+            <ProjectCard
+                projectName={'NextPortfolio'}
+                projectDescription={'Moje druhé portfólio ktoré som vytvoril'}
+                projectTech={'Nextjs Typescript TailwindCss'}
+                githubLink={'https://github.com/peterdinis/Next-Portfolio'}
+                githubLinkText='Github'
+                deployLink='next-portfolio-rose-omega.vercel.app'
+                deployText='Online'
+            />
+            <ProjectCard
+                projectName={'Moje prvé portfólio'}
+                projectDescription={'Moje prvé portfólio ktoré som vytvoril'}
+                projectTech={'React Javascript Material UI'}
+                githubLink={'https://github.com/peterdinis/Portfolio-Dinis'}
+                githubLinkText='Github'
+                deployLink='https://portfolio-dinis.vercel.app/'
+                deployText='Online'
+            />
+            <ProjectCard
+                projectName={'React-Code-Editor'}
+                projectDescription={'Jednoduchý html / css / javascript editor spravený v Reacte'}
+                projectTech={'React Typescript Recoil Material UI'}
+                githubLink={'https://github.com/peterdinis/React-Code-Editor'}
+                githubLinkText='Github'
+                deployLink='react-code-editor-flame.vercel.app'
+                deployText='Online'
             />
         </SimpleGrid>
     );
