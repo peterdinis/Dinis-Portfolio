@@ -3,11 +3,11 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Layout from './components/shared/Layout';
 import AboutMe from './components/AboutMe';
-import { Box } from '@chakra-ui/react';
 import FavoriteStack from './components/shared/FavoriteStack';
 import Projects from './components/projects/Projects';
 import Footer from './components/Footer';
 import { ContactMe } from './components/contact/Contact';
+import { Box } from '@chakra-ui/react';
 
 const App: FC = () => {
     return (
@@ -16,20 +16,12 @@ const App: FC = () => {
             <Layout>
                 <Hero />
                 <AboutMe />
-                <Box mt={5}>
-                    <FavoriteStack />
-                </Box>
-                <Box mt={5}>
-                    <Projects />
-                </Box>
-
+                <FavoriteStack />
+                <Projects />
                 <Box mt={4}>
                     <ContactMe />
                 </Box>
-
-                <Box mt={3}>
-                    <Footer />
-                </Box>
+                <Footer />
             </Layout>
         </>
     );
