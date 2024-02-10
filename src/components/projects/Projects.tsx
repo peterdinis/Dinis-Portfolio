@@ -6,7 +6,7 @@ const Projects: FC = () => {
         <>
             <SecondaryHeader text='Moje projekty' />
         </>
-    )
+    );
 };
 
 export default Projects;

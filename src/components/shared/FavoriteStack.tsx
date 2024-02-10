@@ -31,7 +31,6 @@ const FavoriteStack: FC = () => {
                 my='10'
                 bgColor='white'
                 id='skills-wrapper'
-                
             >
                 <Flex
                     gap={{ base: 16, lg: 16, md: 16, sm: 14, xs: 10 }}
@@ -43,47 +42,101 @@ const FavoriteStack: FC = () => {
                     alignItems='center'
                     justify='center'
                 >
-                    <motion.div variants={imageVariants} whileHover="hover">
+                    <motion.div variants={imageVariants} whileHover='hover'>
                         <Image m={10} src={css} w={20} boxShadow={12} h={20} />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={express} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={express}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={firebase} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={firebase}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
+                    <motion.div variants={imageVariants} whileHover='hover'>
                         <Image m={10} src={html} w={20} boxShadow={12} h={20} />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={javascript} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={javascript}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
+                    <motion.div variants={imageVariants} whileHover='hover'>
                         <Image m={10} src={jest} w={20} boxShadow={12} h={20} />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={mysql} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={mysql}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={nestjs} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={nestjs}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
+                    <motion.div variants={imageVariants} whileHover='hover'>
                         <Image m={10} src={net} w={20} boxShadow={12} h={20} />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={nextjs} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={nextjs}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
+                    <motion.div variants={imageVariants} whileHover='hover'>
                         <Image m={10} src={pg} w={20} boxShadow={12} h={20} />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={query} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={query}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={react} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={react}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
-                    <motion.div variants={imageVariants} whileHover="hover">
-                        <Image m={10} src={typescript} w={20} boxShadow={12} h={20} />
+                    <motion.div variants={imageVariants} whileHover='hover'>
+                        <Image
+                            m={10}
+                            src={typescript}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                 </Flex>
             </Box>

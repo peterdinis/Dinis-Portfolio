@@ -1,5 +1,13 @@
-import { useBreakpointValue, HStack, Box, Text, useColorModeValue, VStack, chakra } from "@chakra-ui/react";
-import { FC } from "react";
+import {
+    useBreakpointValue,
+    HStack,
+    Box,
+    Text,
+    useColorModeValue,
+    VStack,
+    chakra,
+} from '@chakra-ui/react';
+import { FC } from 'react';
 
 interface CardProps {
     id: number;
@@ -8,7 +16,12 @@ interface CardProps {
     date: string;
 }
 
-const ExpirienceCard: FC<CardProps> = ({id, title, description, date}: CardProps) =>{
+const ExpirienceCard: FC<CardProps> = ({
+    id,
+    title,
+    description,
+    date,
+}: CardProps) => {
     const isEvenId = id % 2 == 0;
     let borderWidthValue = isEvenId ? '15px 15px 15px 0' : '15px 0 15px 15px';
     let leftValue = isEvenId ? '-15px' : 'unset';
@@ -62,6 +75,6 @@ const ExpirienceCard: FC<CardProps> = ({id, title, description, date}: CardProps
             </Box>
         </HStack>
     );
-}
+};
 
 export default ExpirienceCard;

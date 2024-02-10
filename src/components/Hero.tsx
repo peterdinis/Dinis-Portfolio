@@ -12,8 +12,7 @@ import { FC } from 'react';
 
 const Hero: FC = () => {
     return (
-        <
-        >
+        <>
             <VStack
                 m='auto'
                 my='10'
@@ -57,7 +56,9 @@ const Hero: FC = () => {
                         fontWeight='extrabold'
                     >
                         <Stack display='flex' direction='row'>
-                            <Text fontSize={63} colorScheme='black'>I&apos;m</Text>
+                            <Text fontSize={63} colorScheme='black'>
+                                I&apos;m
+                            </Text>
                             <Text
                                 bgGradient='linear(to-tr, teal.500, teal.800)'
                                 bgClip='text'
@@ -67,9 +68,11 @@ const Hero: FC = () => {
                             </Text>
                         </Stack>
                         <Stack display='flex' direction='row'>
-                            <Text fontSize={63} colorScheme='black'>fullstack</Text>
+                            <Text fontSize={63} colorScheme='black'>
+                                fullstack
+                            </Text>
                             <Text
-                            fontSize={63}
+                                fontSize={63}
                                 bgGradient='linear(to-tr, teal.500, teal.800)'
                                 bgClip='text'
                             >
@@ -78,7 +81,7 @@ const Hero: FC = () => {
                         </Stack>
                     </Heading>
                     <Text py='5' colorScheme='black' fontWeight='400'>
-                        Vytváram a navrhnuem {' '}
+                        Vytváram a navrhnuem{' '}
                         <span
                             style={{
                                 color: 'var(--chakra-colors-teal-800)',
@@ -87,7 +90,7 @@ const Hero: FC = () => {
                         >
                             webstránky
                         </span>{' '}
-                       z dôrazom na kvalitu a {' '}
+                        z dôrazom na kvalitu a{' '}
                         <span
                             style={{
                                 color: 'var(--chakra-colors-teal-800)',
@@ -99,15 +102,15 @@ const Hero: FC = () => {
                     </Text>
                 </Stack>
                 <Stack>
-                    <Text color="white">
-                        <Avatar 
-                         alignSelf="center"
-                         borderRadius="full"
-                         backgroundColor="transparent"
-                         boxShadow="lg"
-                         boxSize="300px"
-                         src="https://media.licdn.com/dms/image/C4E03AQE9payLpbABCg/profile-displayphoto-shrink_400_400/0/1622796244091?e=1712793600&v=beta&t=_EAWtBqNl0yMVUVcbh8Ebg3soMBQhjkBs7xR6myZBAU"
-                         zIndex={1}
+                    <Text color='white'>
+                        <Avatar
+                            alignSelf='center'
+                            borderRadius='full'
+                            backgroundColor='transparent'
+                            boxShadow='lg'
+                            boxSize='300px'
+                            src='https://media.licdn.com/dms/image/C4E03AQE9payLpbABCg/profile-displayphoto-shrink_400_400/0/1622796244091?e=1712793600&v=beta&t=_EAWtBqNl0yMVUVcbh8Ebg3soMBQhjkBs7xR6myZBAU'
+                            zIndex={1}
                         />
                     </Text>
                 </Stack>

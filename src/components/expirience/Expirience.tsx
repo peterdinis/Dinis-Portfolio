@@ -1,11 +1,6 @@
 import { FC } from 'react';
 import SecondaryHeader from '../shared/SecondaryHeader';
-import {
-    Container,
-    Flex,
-    useBreakpointValue,
-    chakra,
-} from '@chakra-ui/react';
+import { Container, Flex, useBreakpointValue, chakra } from '@chakra-ui/react';
 import EmptyCard from './EmptyCard';
 import LineDot from './LineDot';
 import ExpirienceCard from './ExpirienceCard';

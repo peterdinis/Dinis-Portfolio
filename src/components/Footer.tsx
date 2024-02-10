@@ -12,7 +12,11 @@ const Footer: FC = () => {
             alignItems='center'
             direction={{ base: 'column', md: 'row' }}
         >
-            <Container flex={"flex"} justifyContent={"center"} alignItems={"center"}>
+            <Container
+                flex={'flex'}
+                justifyContent={'center'}
+                alignItems={'center'}
+            >
                 <Text fontSize={30}>&copy; Peter Dinis 2024</Text>
             </Container>
         </Stack>

@@ -3,7 +3,7 @@ import SecondaryHeader from './shared/SecondaryHeader';
 
 const AboutMe = () => {
     return (
-        <chakra.div id="about">
+        <chakra.div id='about'>
             <SecondaryHeader text='Pár informácií o mne' />
             <Box className='body-font overflow-hidden bg-white text-gray-700'>
                 <Container maxW='7xl' mx='auto' px='5' py='24'>

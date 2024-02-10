@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box } from '@chakra-ui/react';
 
 const EmptyCard = () => {
     return (
@@ -10,4 +10,4 @@ const EmptyCard = () => {
     );
 };
 
-export default EmptyCard
+export default EmptyCard;
