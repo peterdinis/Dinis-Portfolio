@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react';
 import { chakra, Box } from '@chakra-ui/react';
+import AnimationWrapper from './AnimationWrapper';
 
 interface ILayoutProps {
     children?: ReactNode;
@@ -15,7 +16,9 @@ const Layout: FC<ILayoutProps> = ({ children }: ILayoutProps) => {
                 maxW='1536'
                 pt={{ base: '8', sm: '16', md: '20' }}
             >
-                {children}
+                <AnimationWrapper>
+                    {children}
+                </AnimationWrapper>
             </Box>
         </chakra.div>
     );
