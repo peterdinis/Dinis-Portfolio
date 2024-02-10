@@ -1,4 +1,4 @@
-import { SimpleGrid, Card, CardHeader, Heading, Text, CardBody, CardFooter, Button, Badge } from '@chakra-ui/react';
+import {  Card, CardHeader, Heading, Text, CardBody, CardFooter, Button, Badge } from '@chakra-ui/react';
 import { FC } from 'react';
 
 interface IProjectCardProps {
@@ -17,10 +17,6 @@ const ProjectCard: FC<IProjectCardProps> = ({
     githubLink,
 }) => {
     return (
-        <SimpleGrid
-            spacing={4}
-            templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
-        >
             <Card>
                 <CardHeader>
                     <Heading textAlign={"center"} size='md' fontWeight={"bold"}>{projectName}</Heading>
@@ -38,7 +34,6 @@ const ProjectCard: FC<IProjectCardProps> = ({
                     <Button ml={5} bg={"red.700"} variant="solid">{deployLink}</Button>
                 </CardFooter>
             </Card>
-        </SimpleGrid>
     );
 };
 
