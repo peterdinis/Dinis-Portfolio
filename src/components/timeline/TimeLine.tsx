@@ -1,8 +1,9 @@
 import { chakra, Container, Flex, useBreakpointValue } from '@chakra-ui/react';
-import { myExpirience } from './timeline/timeline';
-import TimelineCard from './timeline/TimelineCard';
-import EmptyTimelineCard from './timeline/EmptyTimelineCard';
-import TimelineDot from './timeline/TimelineDot';
+import { myExpirience } from './timeline';
+import TimelineCard from './TimelineCard';
+import EmptyTimelineCard from './EmptyTimelineCard';
+import TimelineDot from './TimelineDot';
+import React from 'react';
 
 export const TimeLine = () => {
     const isMobile = useBreakpointValue({ base: true, md: false });
