@@ -1,9 +1,4 @@
-import {
-    chakra,
-    Container,
-    Flex,
-    useBreakpointValue,
-} from '@chakra-ui/react';
+import { chakra, Container, Flex, useBreakpointValue } from '@chakra-ui/react';
 import { myExpirience } from './timeline/timeline';
 import TimelineCard from './timeline/TimelineCard';
 import EmptyTimelineCard from './timeline/EmptyTimelineCard';
