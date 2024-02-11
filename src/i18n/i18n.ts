@@ -17,6 +17,7 @@ i18n.use(LanguageDetector)
                         aboutMe: 'A few sentences about me',
                         favoriteStack: 'My favorite tech stack',
                         projectsHeader: "My projects",
+                        expirienceHeader: "My expirience",
                         secondSentence:
                             'I have the most experience with technologies: React Nestjs and Typescript Node.',
                         firstSentence:
@@ -30,7 +31,9 @@ i18n.use(LanguageDetector)
                     description: {
                         aboutMe: 'Pár viet o mne',
                         projectsHeader: "Moje projekty",
+                        expireinceHeader: "Moje skúsenosti",
                         favoriteStack: 'Môj obľubený tech stack',
+                        firstExpirienceHeader: "",
                         secondSentence:
                             'Najväčšie skúsenosti mám z technológiami: React Nestjs a Typescript Node.',
                         firstSentence:
