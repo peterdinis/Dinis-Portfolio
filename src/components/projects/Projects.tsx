@@ -2,11 +2,14 @@ import { FC } from 'react';
 import SecondaryHeader from '../shared/SecondaryHeader';
 import ProjectsCards from './ProjectCards';
 import { chakra } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 const Projects: FC = () => {
+    const {t} = useTranslation();
+
     return (
         <chakra.div id='projects'>
-            <SecondaryHeader text='Moje projekty' />
+            <SecondaryHeader text={t("description.projectsHeader")} />
             <ProjectsCards />
         </chakra.div>
     );
