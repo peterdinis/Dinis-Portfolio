@@ -22,6 +22,8 @@ const languages = {
 } as ILanguage;
 
 const Hero: FC = () => {
+    const { i18n } = useTranslation();
+
     return (
         <chakra.div id='me'>
             <VStack
@@ -90,8 +92,24 @@ const Hero: FC = () => {
                     </Heading>
                     <Box mt={6} pt={3}>
                         <ButtonGroup>
-                            <Button bg='orange.500'>Slovenská verzia</Button>
-                            <Button bg='teal.500'>Anglická verzia</Button>
+                            {Object.keys(languages).map((lng) => (
+                                <Button
+                                    bg={'teal.500'}
+                                    key={lng}
+                                    style={{
+                                        fontWeight:
+                                            i18n.resolvedLanguage === lng
+                                                ? 'bold'
+                                                : 'normal',
+                                    }}
+                                    type='submit'
+                                    onClick={() => {
+                                        i18n.changeLanguage(lng);
+                                    }}
+                                >
+                                    <p>{languages[lng].nativeName}</p>
+                                </Button>
+                            ))}
                         </ButtonGroup>
                     </Box>
                 </Stack>
