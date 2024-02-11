@@ -13,6 +13,13 @@ import {
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import me from '../images/me.jpg';
+import { useTranslation } from 'react-i18next';
+import { ILanguage } from '../interfaces/Language';
+
+const languages = {
+    en: { nativeName: 'Anglická verzia' },
+    sk: { nativeName: 'Slovenská verzia' },
+} as ILanguage;
 
 const Hero: FC = () => {
     return (
