@@ -14,6 +14,7 @@ i18n.use(LanguageDetector)
             en: {
                 translation: {
                     description: {
+                        welcome: "Hi 👋 Welcom to my portfolio.",
                         aboutMe: 'A few sentences about me',
                         favoriteStack: 'My favorite tech stack',
                         projectsHeader: "My projects",
@@ -29,6 +30,7 @@ i18n.use(LanguageDetector)
             sk: {
                 translation: {
                     description: {
+                        welcome: "Ahoj 👋 Vitaj na mojom portfóliu.",
                         aboutMe: 'Pár viet o mne',
                         projectsHeader: "Moje projekty",
                         expireinceHeader: "Moje skúsenosti",
