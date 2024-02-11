@@ -90,8 +90,8 @@ const Hero: FC = () => {
                     </Heading>
                     <Box mt={6} pt={3}>
                         <ButtonGroup>
-                            <Button>Slovenská verzia</Button>
-                            <Button>Anglická verzia</Button>
+                            <Button bg="orange.500">Slovenská verzia</Button>
+                            <Button bg="teal.500">Anglická verzia</Button>
                         </ButtonGroup>
                     </Box>
                 </Stack>
