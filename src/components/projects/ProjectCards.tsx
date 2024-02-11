@@ -12,16 +12,22 @@ const ProjectsCards: FC = () => {
         >
             <ProjectCard
                 projectName={'MedPortal'}
-                projectDescription={'Stránka o zdravotníckom stredisku. Možnosť si vytvoriť účet. Vytvoriť si termín online u lekára. Lekár vidí svojích pacientov, vidí svoj kalendár.'}
+                projectDescription={
+                    'Stránka o zdravotníckom stredisku. Možnosť si vytvoriť účet. Vytvoriť si termín online u lekára. Lekár vidí svojích pacientov, vidí svoj kalendár.'
+                }
                 projectTech={'Asp.Net Mvc, Bootstrap 5.3 Jquery'}
                 githubLink={'https://github.com/peterdinis/MedPortal'}
                 githubLinkText='Github'
             />
             <ProjectCard
                 projectName={'Spšt knižnica API'}
-                projectDescription={'API ku projektu SPŠT Knižnica. API má Crud operácie pre Knihy, Kategórie, Autorov, Vydavateľstvá. Dokáže sa zaregistrovať žiak učiteľ, admin a vedia si požičať knihu, vrátiť knihu. Učiteľ a admin majú práva aby mohli spracovať s crud operáciami'}
+                projectDescription={
+                    'API ku projektu SPŠT Knižnica. API má Crud operácie pre Knihy, Kategórie, Autorov, Vydavateľstvá. Dokáže sa zaregistrovať žiak učiteľ, admin a vedia si požičať knihu, vrátiť knihu. Učiteľ a admin majú práva aby mohli spracovať s crud operáciami'
+                }
                 projectTech={'Asp.Net Postgresql'}
-                githubLink={'https://github.com/peterdinis/Spst-Kniznica-Backend'}
+                githubLink={
+                    'https://github.com/peterdinis/Spst-Kniznica-Backend'
+                }
                 githubLinkText='Github'
             />
             <ProjectCard
@@ -44,7 +50,9 @@ const ProjectsCards: FC = () => {
             />
             <ProjectCard
                 projectName={'React-Code-Editor'}
-                projectDescription={'Jednoduchý html / css / javascript editor spravený v Reacte'}
+                projectDescription={
+                    'Jednoduchý html / css / javascript editor spravený v Reacte'
+                }
                 projectTech={'React Typescript Recoil Material UI'}
                 githubLink={'https://github.com/peterdinis/React-Code-Editor'}
                 githubLinkText='Github'
@@ -55,7 +63,9 @@ const ProjectsCards: FC = () => {
                 projectName={'Hadík hra'}
                 projectDescription={'Hadík hra online'}
                 projectTech={'Html, Css, Javascript, Bootstrap'}
-                githubLink={'https://github.com/peterdinis/Javascript-Snake-Game'}
+                githubLink={
+                    'https://github.com/peterdinis/Javascript-Snake-Game'
+                }
                 githubLinkText='Github'
                 deployLink='https://modest-elion-018f87.netlify.app/'
                 deployText='Online'

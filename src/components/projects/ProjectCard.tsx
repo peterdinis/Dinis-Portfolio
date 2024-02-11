@@ -7,6 +7,7 @@ import {
     CardFooter,
     Button,
     Link,
+    useColorMode,
     Badge,
 } from '@chakra-ui/react';
 import { FC } from 'react';
@@ -31,6 +32,7 @@ const ProjectCard: FC<IProjectCardProps> = ({
     deployText,
     githubLinkText,
 }) => {
+    const { colorMode } = useColorMode();
     return (
         <motion.div>
             <Card borderRadius={20}>
@@ -40,13 +42,15 @@ const ProjectCard: FC<IProjectCardProps> = ({
                     </Heading>
                 </CardHeader>
                 <CardBody>
-                    <Text p={2} fontWeight={"bold"}>{projectDescription}</Text>
+                    <Text p={2} fontWeight={'bold'}>
+                        {projectDescription}
+                    </Text>
                     <Badge
                         mt={4}
                         variant='solid'
                         borderRadius='20'
                         style={{ whiteSpace: 'normal' }}
-                        p={1}
+                        p={1.5}
                         colorScheme='green'
                     >
                         {projectTech}
@@ -54,11 +58,27 @@ const ProjectCard: FC<IProjectCardProps> = ({
                 </CardBody>
                 <CardFooter>
                     <Button bg={'teal.700'} variant='solid'>
-                        <Link href={githubLink}>{githubLinkText}</Link>
+                        {colorMode === 'light' ? (
+                            <Link color='white' href={githubLink}>
+                                {githubLinkText}
+                            </Link>
+                        ) : (
+                            <Link color={'white'} href={githubLink}>
+                                {githubLinkText}
+                            </Link>
+                        )}
                     </Button>
                     {deployLink && (
                         <Button ml={5} bg={'red.700'} variant='solid'>
-                            <Link href={deployLink}>{deployText}</Link>
+                            {colorMode === 'light' ? (
+                                <Link color='white' href={deployLink}>
+                                    {deployText}
+                                </Link>
+                            ) : (
+                                <Link color='white' href={deployLink}>
+                                    {deployText}
+                                </Link>
+                            )}
                         </Button>
                     )}
                 </CardFooter>

@@ -54,8 +54,14 @@ const Banner: FC = () => {
                     <Text lineHeight={1.2} fontSize={'2xl'} mt={10}>
                         Môj email: pdinis1@gmail.com
                     </Text>
-                    <Text color={"orange.500"} lineHeight={1.2} fontSize={'2xl'} mt={10}>
-                        Môj github: <Link href="https://github.com/peterdinis">Github</Link>
+                    <Text
+                        color={'orange.500'}
+                        lineHeight={1.2}
+                        fontSize={'2xl'}
+                        mt={10}
+                    >
+                        Môj github:{' '}
+                        <Link href='https://github.com/peterdinis'>Github</Link>
                     </Text>
                     <Text
                         lineHeight={1.2}
