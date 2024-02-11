@@ -38,6 +38,9 @@ i18n.use(LanguageDetector)
                         linkedIn: "Môj linkedIn: ",
                         github: "Môj github: ",
                         email: "Môj email: ",
+                        firstExpirienceHeader: "SPŠT Bardejov (1-rok) práca popri škole",
+                        firstExpirienceSubHeader: "Školská knižnica projekt Unicorn React-Node-MongoDB",
+                        firstExpirienceDescription: "Školská súťaž ktorú organizovala firma Unicorn ktorá má pobočku v Prešove. Zapojila sa do nej aj moja stredná škola ktorú som navštevoval. Fungovalo to na princípe toho, že škola si vybrala tému a pridelený pracovník z firmy unicorn zo žiakmi danú applikáciu vytváral.Frontend sa robil v Reacte, backend Node.js a MongoDB(databáza)(Firma Unicorn má používa upravenú verziu reactu a node a mongo). Výsledok takmer ročnej práce bol taký, že sa vytvorila školská knižnica, kde žiak si vie požičať knihu vrátiť ju. Učiteľ vie robiť CRUD operácie pre knihy a kategórie a admin(správca) vie dať permisie učiteľom(spravovať knižnicu). Applikáciu som vytvoril sám",
                         contactSecHeader: "Tak mi napíš 🖊️",
                         contactHeader: "Zaujala ťa moja tvorba ?",
                         welcome: "Ahoj 👋 Vitaj na mojom portfóliu.",
@@ -45,7 +48,6 @@ i18n.use(LanguageDetector)
                         projectsHeader: "Moje projekty",
                         expireinceHeader: "Moje skúsenosti",
                         favoriteStack: 'Môj obľubený tech stack',
-                        firstExpirienceHeader: "",
                         secondSentence:
                             'Najväčšie skúsenosti mám z technológiami: React Nestjs a Typescript Node.',
                         firstSentence:
