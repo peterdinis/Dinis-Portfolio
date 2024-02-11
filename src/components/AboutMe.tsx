@@ -1,10 +1,13 @@
 import { Box, Container, Flex, chakra, Text } from '@chakra-ui/react';
 import SecondaryHeader from './shared/SecondaryHeader';
+import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
+    const {t} = useTranslation();
+
     return (
         <chakra.div id='about'>
-            <SecondaryHeader text='Pár informácií o mne' />
+            <SecondaryHeader text={t("description.aboutMe")} />
             <Box className='body-font overflow-hidden bg-white text-gray-700'>
                 <Container maxW='7xl' mx='auto' px='5' py='24'>
                     <Flex flexWrap='wrap' justify='center'>

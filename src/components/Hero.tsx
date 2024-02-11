@@ -79,7 +79,7 @@ const Hero: FC = () => {
                         </Stack>
                         <Stack display='flex' direction='row'>
                             <Text fontSize={63} colorScheme='black'>
-                                fullstack
+                                junior fullstack
                             </Text>
                             <Text
                                 fontSize={63}
