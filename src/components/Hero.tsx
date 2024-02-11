@@ -8,6 +8,8 @@ import {
     Text,
     Avatar,
     chakra,
+    Box,
+    ButtonGroup,
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import me from '../images/me.jpg';
@@ -79,26 +81,12 @@ const Hero: FC = () => {
                             </Text>
                         </Stack>
                     </Heading>
-                    <Text py='5' colorScheme='black' fontWeight='400'>
-                        Vytváram a navrhnuem{' '}
-                        <span
-                            style={{
-                                color: 'var(--chakra-colors-teal-800)',
-                                fontWeight: 800,
-                            }}
-                        >
-                            webstránky
-                        </span>{' '}
-                        z dôrazom na kvalitu a{' '}
-                        <span
-                            style={{
-                                color: 'var(--chakra-colors-teal-800)',
-                                fontWeight: 800,
-                            }}
-                        >
-                            používateľskú skúsenosť
-                        </span>{' '}
-                    </Text>
+                    <Box mt={6} pt={3}>
+                        <ButtonGroup>
+                            <Button>Slovenská verzia</Button>
+                            <Button>Anglická verzia</Button>
+                        </ButtonGroup>
+                    </Box>
                 </Stack>
                 <Stack>
                     <Text color='white'>
