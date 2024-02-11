@@ -8,7 +8,7 @@ import Projects from './components/projects/Projects';
 import Footer from './components/Footer';
 import { ContactMe } from './components/contact/Contact';
 import { Box } from '@chakra-ui/react';
-import { TimeLine } from './components/timeline/TimeLine';
+import ExpirienceTimeline from './components/timeline/ExpirencieTimeline';
 
 const App: FC = () => {
     return (
@@ -20,7 +20,7 @@ const App: FC = () => {
                 <FavoriteStack />
                 <Projects />
                 <Box mt={4}>
-                    <TimeLine />
+                    <ExpirienceTimeline />
                 </Box>
                 <Box mt={4}>
                     <ContactMe />

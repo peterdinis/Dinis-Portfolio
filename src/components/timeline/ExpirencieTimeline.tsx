@@ -3,9 +3,9 @@ import { myExpirience } from './timeline';
 import TimelineCard from './TimelineCard';
 import EmptyTimelineCard from './EmptyTimelineCard';
 import TimelineDot from './TimelineDot';
-import React from 'react';
+import { FC } from 'react';
 
-export const TimeLine = () => {
+const ExpirienceTimeline: FC = () => {
     const isMobile = useBreakpointValue({ base: true, md: false });
     const isDesktop = useBreakpointValue({ base: false, md: true });
 
@@ -48,3 +48,5 @@ export const TimeLine = () => {
         </Container>
     );
 };
+
+export default ExpirienceTimeline;
