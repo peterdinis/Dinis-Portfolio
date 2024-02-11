@@ -64,7 +64,7 @@ const Banner: FC = () => {
                         fontSize={'2xl'}
                         mt={10}
                     >
-                        {t("description.github")}:{' '}
+                        {t("description.github")}
                         <Link href='https://github.com/peterdinis'>Github</Link>
                     </Text>
                     <Text
@@ -73,7 +73,7 @@ const Banner: FC = () => {
                         fontSize={'2xl'}
                         mt={10}
                     >
-                        {t("description.linkedIn")}:{' '}
+                        {t("description.linkedIn")}
                         <Link href='https://www.linkedin.com/in/peter-dinis-58520b214/'>
                             LinkedIn
                         </Link>
