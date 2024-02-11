@@ -19,6 +19,11 @@ i18n.use(LanguageDetector)
                         favoriteStack: 'My favorite tech stack',
                         projectsHeader: "My projects",
                         expirienceHeader: "My expirience",
+                        contactHeader: "Are you interested in my work?",
+                        contactSecHeader: "So, write me. 🖊️",
+                        email: "My email: ",
+                        github: "My github: ",
+                        linkedIn: "My linkedIn: ",
                         secondSentence:
                             'I have the most experience with technologies: React Nestjs and Typescript Node.',
                         firstSentence:
@@ -30,6 +35,11 @@ i18n.use(LanguageDetector)
             sk: {
                 translation: {
                     description: {
+                        linkedIn: "Môj linkedIn: ",
+                        github: "Môj github: ",
+                        email: "Môj email: ",
+                        contactSecHeader: "Tak mi napíš 🖊️",
+                        contactHeader: "Zaujala ťa moja tvorba ?",
                         welcome: "Ahoj 👋 Vitaj na mojom portfóliu.",
                         aboutMe: 'Pár viet o mne',
                         projectsHeader: "Moje projekty",
