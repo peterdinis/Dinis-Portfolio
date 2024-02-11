@@ -1,7 +1,7 @@
-import { ReactNode, MouseEvent, FC } from 'react';
+import { MouseEvent, FC } from 'react';
 
 interface MailtoProps {
-  children?: ReactNode;
+  emailText: string;
   email: string;
   headers?: Record<string, string>;
   obfuscate?: boolean;
@@ -21,7 +21,7 @@ const createMailtoLink = (email: string, headers?: Record<string, string>): stri
   return link;
 };
 
-const Mailto: FC<MailtoProps> = ({ email, obfuscate, headers, children, ...others }) => {
+const Mailto: FC<MailtoProps> = ({ email, obfuscate, emailText, headers, ...others }) => {
   const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     window.location.href = createMailtoLink(email, headers);
@@ -29,13 +29,13 @@ const Mailto: FC<MailtoProps> = ({ email, obfuscate, headers, children, ...other
 
   const renderLink = () => (
     <a href={createMailtoLink(email, headers)} {...others}>
-      {children}
+      {emailText}
     </a>
   );
 
   const renderObfuscatedLink = () => (
     <a onClick={handleClick} href="mailto:obfuscated" {...others}>
-      {children}
+      {emailText}
     </a>
   );
 

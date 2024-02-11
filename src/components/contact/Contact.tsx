@@ -20,7 +20,7 @@ export const ContactMe: FC = () => {
 };
 
 const Banner: FC = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <chakra.div id='contact'>
@@ -56,7 +56,7 @@ const Banner: FC = () => {
 
                 <Box>
                     <Text lineHeight={1.2} fontSize={'2xl'} mt={10}>
-                       {t("description.email")} <Mailto email={'pdinis1@gmail.com'} />
+                        {t("description.email")} <Mailto emailText='pdinis1@gmail.com' email={'pdinis1@gmail.com'} />
                     </Text>
                     <Text
                         color={'orange.500'}
