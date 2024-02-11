@@ -32,9 +32,9 @@ const Navbar: FC = () => {
         heroSection.scrollIntoView({ behavior: 'smooth' });
     };
 
-    const aboutScoll = () => {
+    const expirienceScoll = () => {
         const heroSection = document.querySelector(
-            '#about'
+            '#expirience'
         ) as unknown as HTMLElement;
         heroSection.scrollIntoView({ behavior: 'smooth' });
     };
@@ -79,7 +79,7 @@ const Navbar: FC = () => {
                             <Button onClick={scrollMe} variant='ghost'>
                                 O mne
                             </Button>
-                            <Button onClick={aboutScoll} variant='ghost'>
+                            <Button onClick={expirienceScoll} variant='ghost'>
                                 Skúsenosti
                             </Button>
                             <Button onClick={projectsScroll} variant='ghost'>
@@ -120,7 +120,7 @@ const Navbar: FC = () => {
                                             O mne
                                         </Button>
                                         <Button
-                                            onClick={aboutScoll}
+                                            onClick={expirienceScoll}
                                             variant='ghost'
                                         >
                                             Skúsenosti

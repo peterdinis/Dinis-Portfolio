@@ -37,7 +37,7 @@ export const TimeLine = () => {
     const isDesktop = useBreakpointValue({ base: false, md: true });
 
     return (
-        <Container maxWidth='7xl' p={{ base: 2, sm: 10 }}>
+        <Container id="expirience" maxWidth='7xl' p={{ base: 2, sm: 10 }}>
             <chakra.h3
                 fontSize='4xl'
                 fontWeight='bold'
