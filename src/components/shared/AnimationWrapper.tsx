@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode, HTMLAttributes } from 'react';
 
 interface IAnimationWrapperProps {
     children?: ReactNode;
     className?: string;
-    props?: React.HTMLAttributes<HTMLDivElement>;
+    props?: HTMLAttributes<HTMLDivElement>;
 }
 
 const AnimationWrapper: FC<IAnimationWrapperProps> = ({

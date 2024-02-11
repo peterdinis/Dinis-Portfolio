@@ -8,11 +8,22 @@ import {
     Text,
     Avatar,
     chakra,
+    Box,
+    ButtonGroup,
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import me from '../images/me.jpg';
+import { useTranslation } from 'react-i18next';
+import { ILanguage } from '../interfaces/Language';
+
+const languages = {
+    en: { nativeName: 'Anglická verzia' },
+    sk: { nativeName: 'Slovenská verzia' },
+} as ILanguage;
 
 const Hero: FC = () => {
+    const { i18n } = useTranslation();
+
     return (
         <chakra.div id='me'>
             <VStack
@@ -68,7 +79,7 @@ const Hero: FC = () => {
                         </Stack>
                         <Stack display='flex' direction='row'>
                             <Text fontSize={63} colorScheme='black'>
-                                fullstack
+                                junior fullstack
                             </Text>
                             <Text
                                 fontSize={63}
@@ -79,26 +90,28 @@ const Hero: FC = () => {
                             </Text>
                         </Stack>
                     </Heading>
-                    <Text py='5' colorScheme='black' fontWeight='400'>
-                        Vytváram a navrhnuem{' '}
-                        <span
-                            style={{
-                                color: 'var(--chakra-colors-teal-800)',
-                                fontWeight: 800,
-                            }}
-                        >
-                            webstránky
-                        </span>{' '}
-                        z dôrazom na kvalitu a{' '}
-                        <span
-                            style={{
-                                color: 'var(--chakra-colors-teal-800)',
-                                fontWeight: 800,
-                            }}
-                        >
-                            používateľskú skúsenosť
-                        </span>{' '}
-                    </Text>
+                    <Box mt={6} pt={3}>
+                        <ButtonGroup>
+                            {Object.keys(languages).map((lng) => (
+                                <Button
+                                    bg={'teal.500'}
+                                    key={lng}
+                                    style={{
+                                        fontWeight:
+                                            i18n.resolvedLanguage === lng
+                                                ? 'bold'
+                                                : 'normal',
+                                    }}
+                                    type='submit'
+                                    onClick={() => {
+                                        i18n.changeLanguage(lng);
+                                    }}
+                                >
+                                    <p>{languages[lng].nativeName}</p>
+                                </Button>
+                            ))}
+                        </ButtonGroup>
+                    </Box>
                 </Stack>
                 <Stack>
                     <Text color='white'>

@@ -51,7 +51,11 @@ const TimelineCard = ({ id, title, description, date }: CardProps) => {
             }}
         >
             <Box>
-                <Text p={2} fontSize='lg' color={isEvenId ? 'teal.400' : 'blue.400'}>
+                <Text
+                    p={2}
+                    fontSize='lg'
+                    color={isEvenId ? 'teal.400' : 'blue.400'}
+                >
                     {date}
                 </Text>
 
@@ -64,7 +68,9 @@ const TimelineCard = ({ id, title, description, date }: CardProps) => {
                     >
                         {title}
                     </chakra.h1>
-                    <Text p={2} fontSize='md' fontWeight={"bold"}>{description}</Text>
+                    <Text p={2} fontSize='md' fontWeight={'bold'}>
+                        {description}
+                    </Text>
                 </VStack>
             </Box>
         </HStack>
