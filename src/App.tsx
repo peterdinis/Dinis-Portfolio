@@ -18,12 +18,14 @@ const App: FC = () => {
                 <Hero />
                 <AboutMe />
                 <FavoriteStack />
-                <Projects />
-                <Box mt={4}>
-                    <ExpirienceTimeline />
+                <Box mt={3}>
+                    <Projects />
                 </Box>
-                <Box mt={4}>
+                <Box mt={3}>
                     <ContactMe />
+                </Box>
+                <Box mt={3}>
+                    <ExpirienceTimeline />
                 </Box>
                 <Footer />
             </Layout>

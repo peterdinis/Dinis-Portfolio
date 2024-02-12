@@ -35,17 +35,13 @@ const ProjectCard: FC<IProjectCardProps> = ({
     deployText,
     githubLinkText,
     projectImage,
-    projectAlt
+    projectAlt,
 }) => {
     const { colorMode } = useColorMode();
     return (
         <motion.div>
             <Card borderRadius={20}>
-                <Image
-                    objectFit='cover'
-                    src={projectImage}
-                    alt={projectAlt}
-                />
+                <Image objectFit='cover' src={projectImage} alt={projectAlt} />
                 <CardHeader>
                     <Heading textAlign={'center'} size='md' fontWeight={'bold'}>
                         {projectName}
