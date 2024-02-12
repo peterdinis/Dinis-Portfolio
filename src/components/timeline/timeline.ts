@@ -13,7 +13,7 @@ export const myExpirience = [
     },
     {
         id: 3,
-        date: 'Navisys',
+        date: 'Navisys 11 Mesiacov',
         title: 'Nestjs Postgresql Nx Jest',
         description:
             'Firma vytvárala eshop na ktorom sa dajú predávať licencie na softverové produkty. Vedel som byť predajca alebo výrobca. V applikácií som si vedel vytvárať rôzne vzťahy(predajca - výrobca). Techonológie ktoré boli použité: Nx(Monorepo) Vuejs, Nestjs, Docker, Postgresql, Jest. Bol som v malom 7-členom týme ktorý vytváral tú applikáciu.',
