@@ -29,6 +29,11 @@ i18n.use(LanguageDetector)
                         projekty: "Projects",
                         kontakt: "Contact",
                         secondProjectH: "Spšt API Library",
+                        sixProjectH: "Snake game",
+                        sixProjectD: "Online game snake",
+                        sevenProjectH: "Reddit Clone",
+                        sevenProjectD: "Simple clone of reddit website",
+                        fifthProjectD: "A simple html / css / javascript editor made in React",
                         thirdProjectD: "My second portfolio that I created",
                         fourProjectD: "My first portfolio that I created",
                         secondProjectD: "API to the SPŠT Library project. API has Crud operations for Books, Categories, Authors, Publishers. A student, teacher, admin can register and can borrow a book, return a book. Teacher and admin have rights to handle crud operations",
@@ -45,6 +50,11 @@ i18n.use(LanguageDetector)
                 translation: {
                     description: {
                         secondProjectH: "Spšt knižnica API",
+                        sevenProjectD: "Reddit klon",
+                        sevenProjectH: "Klon webstránky reddit",
+                        sixProjectH: "Hadík hra",
+                        sixProjectD: "Hadík hra online",
+                        fifthProjectD: "Jednoduchý html / css / javascript editor spravený v Reacte",
                         fourProjectD: "Moje prvé portfólio ktoré som vytvoril",
                         thirdProjectD: "Moje druhé portfólio ktoré som vytvoril",
                         secondProjectD: "API ku projektu SPŠT Knižnica. API má Crud operácie pre Knihy, Kategórie, Autorov, Vydavateľstvá. Dokáže sa zaregistrovať žiak učiteľ, admin a vedia si požičať knihu, vrátiť knihu. Učiteľ a admin majú práva aby mohli spracovať s crud operáciami",

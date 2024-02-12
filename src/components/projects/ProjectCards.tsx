@@ -54,7 +54,7 @@ const ProjectsCards: FC = () => {
             <ProjectCard
                 projectName={'React-Code-Editor'}
                 projectDescription={
-                    'Jednoduchý html / css / javascript editor spravený v Reacte'
+                    t("description.fifthProjectD")
                 }
                 projectTech={'React Typescript Recoil Material UI'}
                 githubLink={'https://github.com/peterdinis/React-Code-Editor'}
@@ -63,8 +63,8 @@ const ProjectsCards: FC = () => {
                 deployText='Online'
             />
             <ProjectCard
-                projectName={'Hadík hra'}
-                projectDescription={'Hadík hra online'}
+                projectName={t("description.sixProjectH")}
+                projectDescription={t("description.sixProjectD")}
                 projectTech={'Html, Css, Javascript, Bootstrap'}
                 githubLink={
                     'https://github.com/peterdinis/Javascript-Snake-Game'
@@ -75,8 +75,8 @@ const ProjectsCards: FC = () => {
             />
 
             <ProjectCard
-                projectName={'Reddit Clone'}
-                projectDescription={'Klon stránky Reddit'}
+                projectName={t("description.sevenProjectH")}
+                projectDescription={t("description.sevenProjectD")}
                 projectTech={'Nextjs Typescript Firebase Chakra UI'}
                 githubLink={'reddit-next-js.vercel.app'}
                 githubLinkText='Github'
