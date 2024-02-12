@@ -24,6 +24,10 @@ i18n.use(LanguageDetector)
                         email: "My email: ",
                         github: "My github: ",
                         linkedIn: "My linkedIn: ",
+                        oMne: "About me",
+                        skusenosti: "Expirience",
+                        projekty: "Projects",
+                        kontakt: "Contact",
                         secondSentence:
                             'I have the most experience with technologies: React Nestjs and Typescript Node.',
                         firstSentence:
@@ -35,6 +39,10 @@ i18n.use(LanguageDetector)
             sk: {
                 translation: {
                     description: {
+                        oMne: "O mne",
+                        kontakt: "Kontakt",
+                        skusenosti: "Skúsenosti",
+                        projekty: "Projekty",
                         linkedIn: "Môj linkedIn: ",
                         github: "Môj github: ",
                         email: "Môj email: ",
