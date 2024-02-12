@@ -16,6 +16,9 @@ const App: FC = () => {
             <Navbar />
             <Layout>
                 <Hero />
+                <Box mt={2}>
+                    <AboutMe />
+                </Box>
             </Layout>
         </>
     );
