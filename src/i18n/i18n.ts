@@ -28,6 +28,11 @@ i18n.use(LanguageDetector)
                         skusenosti: "Expirience",
                         projekty: "Projects",
                         kontakt: "Contact",
+                        secondProjectH: "Spšt API Library",
+                        thirdProjectD: "My second portfolio that I created",
+                        fourProjectD: "My first portfolio that I created",
+                        secondProjectD: "API to the SPŠT Library project. API has Crud operations for Books, Categories, Authors, Publishers. A student, teacher, admin can register and can borrow a book, return a book. Teacher and admin have rights to handle crud operations",
+                        firstProjectD: "Page about the health center. Possibility to create an account. Create an appointment online with a doctor. The doctor sees his patients, sees his calendar.",
                         secondSentence:
                             'I have the most experience with technologies: React Nestjs and Typescript Node.',
                         firstSentence:
@@ -39,6 +44,11 @@ i18n.use(LanguageDetector)
             sk: {
                 translation: {
                     description: {
+                        secondProjectH: "Spšt knižnica API",
+                        fourProjectD: "Moje prvé portfólio ktoré som vytvoril",
+                        thirdProjectD: "Moje druhé portfólio ktoré som vytvoril",
+                        secondProjectD: "API ku projektu SPŠT Knižnica. API má Crud operácie pre Knihy, Kategórie, Autorov, Vydavateľstvá. Dokáže sa zaregistrovať žiak učiteľ, admin a vedia si požičať knihu, vrátiť knihu. Učiteľ a admin majú práva aby mohli spracovať s crud operáciami",
+                        firstProjectD: "Stránka o zdravotníckom stredisku. Možnosť si vytvoriť účet. Vytvoriť si termín online u lekára. Lekár vidí svojích pacientov, vidí svoj kalendár.",
                         oMne: "O mne",
                         kontakt: "Kontakt",
                         skusenosti: "Skúsenosti",

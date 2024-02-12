@@ -1,8 +1,11 @@
 import { FC } from 'react';
 import ProjectCard from './ProjectCard';
 import { SimpleGrid } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 const ProjectsCards: FC = () => {
+    const {t} = useTranslation();
+
     return (
         <SimpleGrid
             mt={6}
@@ -13,16 +16,16 @@ const ProjectsCards: FC = () => {
             <ProjectCard
                 projectName={'MedPortal'}
                 projectDescription={
-                    'Stránka o zdravotníckom stredisku. Možnosť si vytvoriť účet. Vytvoriť si termín online u lekára. Lekár vidí svojích pacientov, vidí svoj kalendár.'
+                    t("description.firstProjectD")
                 }
                 projectTech={'Asp.Net Mvc, Bootstrap 5.3 Jquery'}
                 githubLink={'https://github.com/peterdinis/MedPortal'}
                 githubLinkText='Github'
             />
             <ProjectCard
-                projectName={'Spšt knižnica API'}
+                projectName={t("description.secondProjectH")}
                 projectDescription={
-                    'API ku projektu SPŠT Knižnica. API má Crud operácie pre Knihy, Kategórie, Autorov, Vydavateľstvá. Dokáže sa zaregistrovať žiak učiteľ, admin a vedia si požičať knihu, vrátiť knihu. Učiteľ a admin majú práva aby mohli spracovať s crud operáciami'
+                   t("description.secondProjectD")
                 }
                 projectTech={'Asp.Net Postgresql'}
                 githubLink={
@@ -32,7 +35,7 @@ const ProjectsCards: FC = () => {
             />
             <ProjectCard
                 projectName={'NextPortfolio'}
-                projectDescription={'Moje druhé portfólio ktoré som vytvoril'}
+                projectDescription={t("description.thirdProjectD")}
                 projectTech={'Nextjs Typescript TailwindCss'}
                 githubLink={'https://github.com/peterdinis/Next-Portfolio'}
                 githubLinkText='Github'
@@ -41,7 +44,7 @@ const ProjectsCards: FC = () => {
             />
             <ProjectCard
                 projectName={'Moje prvé portfólio'}
-                projectDescription={'Moje prvé portfólio ktoré som vytvoril'}
+                projectDescription={t("description.fourProjectD")}
                 projectTech={'React Javascript Material UI'}
                 githubLink={'https://github.com/peterdinis/Portfolio-Dinis'}
                 githubLinkText='Github'
