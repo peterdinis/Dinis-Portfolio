@@ -49,6 +49,7 @@ i18n.use(LanguageDetector)
             sk: {
                 translation: {
                     description: {
+                        expirienceHeader: "Moje skúsenosti",
                         secondProjectH: "Spšt knižnica API",
                         sevenProjectD: "Reddit klon",
                         sevenProjectH: "Klon webstránky reddit",
