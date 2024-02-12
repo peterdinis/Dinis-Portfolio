@@ -25,14 +25,10 @@ const AboutMe = () => {
                             pl={{ lg: '10' }}
                         >
                             <Text mb='3' fontSize='2xl'>
-                                Ahoj. Volám sa Peter Dinis. Mám 23 rokov.
-                                Pochádzam z Bardejova. Naštevoval som Strednú
-                                priemyselnú školu technickú(SPŠT) v Bardejove.
-                                Medzi moje záujmy patrí futbal, volejbal.
+                                {t("description.firstSentence")}
                             </Text>
                             <Text mb='3' fontSize='2xl'>
-                                Najväčšie skúsenosti mám z technológiami: React
-                                Nestjs a Typescript Node.
+                                {t("description.secondSentence")}
                             </Text>
                         </Box>
                     </Flex>

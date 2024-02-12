@@ -22,7 +22,7 @@ const languages = {
 } as ILanguage;
 
 const Hero: FC = () => {
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
 
     return (
         <chakra.div id='me'>
@@ -44,7 +44,7 @@ const Hero: FC = () => {
                         h='30px'
                         borderWidth='2px'
                     >
-                        Ahoj 👋 Vitaj na mojom portfóliu.
+                       {t("description.welcome")}
                     </Button>
                 </Link>
             </VStack>

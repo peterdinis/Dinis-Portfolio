@@ -17,12 +17,13 @@ import {
     Link,
 } from '@chakra-ui/react';
 import { Menu, Moon, Sun } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Navbar: FC = () => {
     const [scroll] = useState(false);
     const { colorMode, toggleColorMode } = useColorMode();
     const { isOpen, onOpen, onClose } = useDisclosure();
-
+    const {t} = useTranslation();
     const [isLargerThanMD] = useMediaQuery('(min-width: 48em)');
 
     const scrollMe = () => {
@@ -77,16 +78,16 @@ const Navbar: FC = () => {
                     {isLargerThanMD ? (
                         <>
                             <Button onClick={scrollMe} variant='ghost'>
-                                O mne
+                                {t("description.oMne")}
                             </Button>
                             <Button onClick={expirienceScoll} variant='ghost'>
-                                Skúsenosti
+                               {t("description.skusenosti")}
                             </Button>
                             <Button onClick={projectsScroll} variant='ghost'>
-                                Projekty
+                                {t("description.projekty")}
                             </Button>
                             <Button onClick={contactsScroll} variant='ghost'>
-                                Kontakt
+                                {t("description.kontakt")}
                             </Button>
                         </>
                     ) : (
