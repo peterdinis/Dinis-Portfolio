@@ -23,7 +23,7 @@ const Navbar: FC = () => {
     const [scroll] = useState(false);
     const { colorMode, toggleColorMode } = useColorMode();
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const [isLargerThanMD] = useMediaQuery('(min-width: 48em)');
 
     const scrollMe = () => {
@@ -78,16 +78,16 @@ const Navbar: FC = () => {
                     {isLargerThanMD ? (
                         <>
                             <Button onClick={scrollMe} variant='ghost'>
-                                {t("description.oMne")}
+                                {t('description.oMne')}
                             </Button>
                             <Button onClick={expirienceScoll} variant='ghost'>
-                               {t("description.skusenosti")}
+                                {t('description.skusenosti')}
                             </Button>
                             <Button onClick={projectsScroll} variant='ghost'>
-                                {t("description.projekty")}
+                                {t('description.projekty')}
                             </Button>
                             <Button onClick={contactsScroll} variant='ghost'>
-                                {t("description.kontakt")}
+                                {t('description.kontakt')}
                             </Button>
                         </>
                     ) : (
