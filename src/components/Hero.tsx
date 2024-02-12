@@ -31,7 +31,6 @@ const Hero: FC = () => {
                 my={{ base: 4, md: 10 }}
                 mt={{ base: 4, md: 10 }}
                 zIndex='100'
-                align='center' // Center-align the content
             >
                 <Link
                     href='https://github.com/peterdinis'
