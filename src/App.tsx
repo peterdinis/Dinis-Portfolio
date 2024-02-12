@@ -18,6 +18,9 @@ const App: FC = () => {
                 <Hero />
                 <AboutMe />
                 <FavoriteStack />
+                <Box mt={3}>
+                    <Projects />
+                </Box>
             </Layout>
         </>
     );
