@@ -10,6 +10,7 @@ import {
     chakra,
     Box,
     ButtonGroup,
+    useBreakpointValue,
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import me from '../images/me.jpg';
@@ -24,31 +25,35 @@ const languages = {
 const Hero: FC = () => {
     const { i18n, t } = useTranslation();
 
+    const isMobile = useBreakpointValue({ base: true, md: false });
+
     return (
         <chakra.div id='me'>
-            <VStack
-                m='auto'
-                my={{ base: 4, md: 10 }}
-                mt={{ base: 4, md: 10 }}
-                zIndex='100'
-            >
-                <Link
-                    href='https://github.com/peterdinis'
-                    textDecoration='none'
-                    isExternal={true}
-                    style={{ textDecoration: 'none' }}
+            {!isMobile && (
+                <VStack
+                    m='auto'
+                    my={{ base: 4, md: 10 }}
+                    mt={{ base: 4, md: 10 }}
+                    zIndex='100'
                 >
-                    <Button
-                        borderRadius='full'
-                        borderColor='blue.600'
-                        borderWidth='2px'
-                        px={{ base: 4, md: 8 }} // Add padding for better responsiveness
-                        py={{ base: 2, md: 4 }} // Add padding for better responsiveness
+                    <Link
+                        href='https://github.com/peterdinis'
+                        textDecoration='none'
+                        isExternal={true}
+                        style={{ textDecoration: 'none' }}
                     >
-                        {t('description.welcome')}
-                    </Button>
-                </Link>
-            </VStack>
+                        <Button
+                            borderRadius='full'
+                            borderColor='blue.600'
+                            borderWidth='2px'
+                            px={{ base: 4, md: 8 }}
+                            py={{ base: 2, md: 4 }}
+                        >
+                            {t('description.welcome')}
+                        </Button>
+                    </Link>
+                </VStack>
+            )}
             <Flex
                 flex={{ base: 1, md: 1, sm: 0, xs: 0 }}
                 justify='space-between'
@@ -59,7 +64,9 @@ const Hero: FC = () => {
                     xs: 'column-reverse',
                 }}
             >
-                <Stack>
+                <Stack
+                    mt={isMobile ? { base: 36, md: 4 } : { base: 0, md: 0 }}
+                >
                     <Heading
                         fontSize={{
                             base: '4xl',
@@ -124,12 +131,13 @@ const Hero: FC = () => {
                             backgroundColor='transparent'
                             boxShadow='lg'
                             boxSize={{
-                                base: '150px',
+                                base: '110px',
                                 md: '200px',
                                 lg: '250px',
                             }}
                             src={me}
                             zIndex={1}
+                            mt={isMobile ? { base: 36, md: 4 } : { base: 0, md: 0 }}
                         />
                     </Text>
                 </Stack>
