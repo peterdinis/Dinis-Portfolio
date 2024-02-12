@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 const ExpirienceTimeline: FC = () => {
     const isMobile = useBreakpointValue({ base: true, md: false });
     const isDesktop = useBreakpointValue({ base: false, md: true });
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <Container id='expirience' maxWidth='7xl' p={{ base: 2, sm: 10 }}>
@@ -19,7 +19,7 @@ const ExpirienceTimeline: FC = () => {
                 mb={18}
                 textAlign='center'
             >
-                {t("description.expireinceHeader")}
+                {t('description.expireinceHeader')}
             </chakra.h3>
             {myExpirience.map((expirience) => (
                 <Flex key={expirience.id} mb='10px'>

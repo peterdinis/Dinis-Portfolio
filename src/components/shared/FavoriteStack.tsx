@@ -23,11 +23,11 @@ const FavoriteStack: FC = () => {
         hover: { scale: 1.1 },
     };
 
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <>
-            <SecondaryHeader text={t("description.favoriteStack")} />
+            <SecondaryHeader text={t('description.favoriteStack')} />
             <Box
                 boxShadow='2xl'
                 borderRadius='3xl'

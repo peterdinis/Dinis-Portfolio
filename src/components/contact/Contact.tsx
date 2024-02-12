@@ -40,7 +40,7 @@ const Banner: FC = () => {
                         lineHeight={1.2}
                         fontWeight='bold'
                     >
-                        {t("description.contactHeader")}
+                        {t('description.contactHeader')}
                     </chakra.h1>
                     <chakra.h2
                         fontSize='2xl'
@@ -50,13 +50,17 @@ const Banner: FC = () => {
                         bgGradient='linear(to-l, #0ea5e9,#2563eb)'
                         bgClip='text'
                     >
-                        {t("description.contactSecHeader")}
+                        {t('description.contactSecHeader')}
                     </chakra.h2>
                 </Box>
 
                 <Box>
                     <Text lineHeight={1.2} fontSize={'2xl'} mt={10}>
-                        {t("description.email")} <Mailto emailText='pdinis1@gmail.com' email={'pdinis1@gmail.com'} />
+                        {t('description.email')}{' '}
+                        <Mailto
+                            emailText='pdinis1@gmail.com'
+                            email={'pdinis1@gmail.com'}
+                        />
                     </Text>
                     <Text
                         color={'orange.500'}
@@ -64,7 +68,7 @@ const Banner: FC = () => {
                         fontSize={'2xl'}
                         mt={10}
                     >
-                        {t("description.github")}
+                        {t('description.github')}
                         <Link href='https://github.com/peterdinis'>Github</Link>
                     </Text>
                     <Text
@@ -73,7 +77,7 @@ const Banner: FC = () => {
                         fontSize={'2xl'}
                         mt={10}
                     >
-                        {t("description.linkedIn")}
+                        {t('description.linkedIn')}
                         <Link href='https://www.linkedin.com/in/peter-dinis-58520b214/'>
                             LinkedIn
                         </Link>

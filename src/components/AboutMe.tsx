@@ -3,11 +3,11 @@ import SecondaryHeader from './shared/SecondaryHeader';
 import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <chakra.div id='about'>
-            <SecondaryHeader text={t("description.aboutMe")} />
+            <SecondaryHeader text={t('description.aboutMe')} />
             <Box className='body-font overflow-hidden bg-white text-gray-700'>
                 <Container maxW='7xl' mx='auto' px='5' py='24'>
                     <Flex flexWrap='wrap' justify='center'>
@@ -25,10 +25,10 @@ const AboutMe = () => {
                             pl={{ lg: '10' }}
                         >
                             <Text mb='3' fontSize='2xl'>
-                                {t("description.firstSentence")}
+                                {t('description.firstSentence')}
                             </Text>
                             <Text mb='3' fontSize='2xl'>
-                                {t("description.secondSentence")}
+                                {t('description.secondSentence')}
                             </Text>
                         </Box>
                     </Flex>

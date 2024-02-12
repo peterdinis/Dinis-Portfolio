@@ -5,11 +5,11 @@ import { chakra } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 
 const Projects: FC = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <chakra.div id='projects'>
-            <SecondaryHeader text={t("description.projectsHeader")} />
+            <SecondaryHeader text={t('description.projectsHeader')} />
             <ProjectsCards />
         </chakra.div>
     );
