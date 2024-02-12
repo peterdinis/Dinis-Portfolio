@@ -16,15 +16,18 @@ import pg from '../../images/pg.png';
 import query from '../../images/query.svg';
 import react from '../../images/react.png';
 import typescript from '../../images/typescript.png';
+import { useTranslation } from 'react-i18next';
 
 const FavoriteStack: FC = () => {
     const imageVariants = {
         hover: { scale: 1.1 },
     };
 
+    const {t} = useTranslation();
+
     return (
         <>
-            <SecondaryHeader text='Môj oblubený tech stack' />
+            <SecondaryHeader text={t("description.favoriteStack")} />
             <Box
                 boxShadow='2xl'
                 borderRadius='3xl'
