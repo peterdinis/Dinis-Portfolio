@@ -23,7 +23,8 @@
         "react-dom": "^18.2.0",
         "react-i18next": "^14.0.5",
         "react-scroll-to-top": "^3.0.0",
-        "react-simple-typewriter": "^5.0.1"
+        "react-simple-typewriter": "^5.0.1",
+        "react-timelinev2": "^2.0.0"
     },
     "devDependencies": {
         "@types/react": "^18.2.43",
