@@ -42,8 +42,8 @@ const Hero: FC = () => {
                         borderRadius='full'
                         borderColor='blue.600'
                         borderWidth='2px'
-                        px={{ base: 4, md: 8 }} // Add padding for better responsiveness
-                        py={{ base: 2, md: 4 }} // Add padding for better responsiveness
+                        px={{ base: 4, md: 8 }}
+                        py={{ base: 2, md: 4 }}
                     >
                         {t('description.welcome')}
                     </Button>
