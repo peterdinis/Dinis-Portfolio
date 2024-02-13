@@ -31,7 +31,7 @@ const ExperienceTimeline: FC = () => {
             icon: <CheckCircleIcon color='blue.500' boxSize={6} />,
         },
         {
-            text: t('description.fourExpirienceH'),
+            text: t('description.fourExperienceH'),
             subDescription: t('description.fourExperienceD'),
             icon: <CheckCircleIcon color='blue.500' boxSize={6} />,
         },
@@ -39,7 +39,7 @@ const ExperienceTimeline: FC = () => {
 
     return (
         <Container
-            id='experience'
+            id='expirience'
             maxWidth='7xl'
             p={{ base: 2, sm: 10 }}
             color={colorMode === 'dark' ? 'white' : 'inherit'}
