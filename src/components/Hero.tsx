@@ -15,7 +15,7 @@ import { FC } from 'react';
 import me from '../images/me.jpg';
 import { useTranslation } from 'react-i18next';
 import { ILanguage } from '../interfaces/Language';
-import { Typewriter } from "react-simple-typewriter";
+import { Typewriter } from 'react-simple-typewriter';
 
 const languages = {
     en: { nativeName: 'Anglická verzia' },
@@ -75,10 +75,12 @@ const Hero: FC = () => {
                                 bgClip='text'
                                 fontSize={{ base: 32, md: 63 }}
                             >
-                                <Typewriter 
+                                <Typewriter
                                     loop={false}
                                     typeSpeed={90}
-                                    words={["Peter Dinis Junior Fullstack Developer"]}
+                                    words={[
+                                        'Peter Dinis Junior Fullstack Developer',
+                                    ]}
                                 />
                             </Text>
                         </Stack>
