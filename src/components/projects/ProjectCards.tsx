@@ -1,8 +1,11 @@
 import { FC } from 'react';
 import ProjectCard from './ProjectCard';
 import { SimpleGrid } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
 const ProjectsCards: FC = () => {
+    const { t } = useTranslation();
+
     return (
         <SimpleGrid
             mt={6}
@@ -12,18 +15,14 @@ const ProjectsCards: FC = () => {
         >
             <ProjectCard
                 projectName={'MedPortal'}
-                projectDescription={
-                    'Stránka o zdravotníckom stredisku. Možnosť si vytvoriť účet. Vytvoriť si termín online u lekára. Lekár vidí svojích pacientov, vidí svoj kalendár.'
-                }
+                projectDescription={t('description.firstProjectD')}
                 projectTech={'Asp.Net Mvc, Bootstrap 5.3 Jquery'}
                 githubLink={'https://github.com/peterdinis/MedPortal'}
                 githubLinkText='Github'
             />
             <ProjectCard
-                projectName={'Spšt knižnica API'}
-                projectDescription={
-                    'API ku projektu SPŠT Knižnica. API má Crud operácie pre Knihy, Kategórie, Autorov, Vydavateľstvá. Dokáže sa zaregistrovať žiak učiteľ, admin a vedia si požičať knihu, vrátiť knihu. Učiteľ a admin majú práva aby mohli spracovať s crud operáciami'
-                }
+                projectName={t('description.secondProjectH')}
+                projectDescription={t('description.secondProjectD')}
                 projectTech={'Asp.Net Postgresql'}
                 githubLink={
                     'https://github.com/peterdinis/Spst-Kniznica-Backend'
@@ -32,7 +31,7 @@ const ProjectsCards: FC = () => {
             />
             <ProjectCard
                 projectName={'NextPortfolio'}
-                projectDescription={'Moje druhé portfólio ktoré som vytvoril'}
+                projectDescription={t('description.thirdProjectD')}
                 projectTech={'Nextjs Typescript TailwindCss'}
                 githubLink={'https://github.com/peterdinis/Next-Portfolio'}
                 githubLinkText='Github'
@@ -41,7 +40,7 @@ const ProjectsCards: FC = () => {
             />
             <ProjectCard
                 projectName={'Moje prvé portfólio'}
-                projectDescription={'Moje prvé portfólio ktoré som vytvoril'}
+                projectDescription={t('description.fourProjectD')}
                 projectTech={'React Javascript Material UI'}
                 githubLink={'https://github.com/peterdinis/Portfolio-Dinis'}
                 githubLinkText='Github'
@@ -50,9 +49,7 @@ const ProjectsCards: FC = () => {
             />
             <ProjectCard
                 projectName={'React-Code-Editor'}
-                projectDescription={
-                    'Jednoduchý html / css / javascript editor spravený v Reacte'
-                }
+                projectDescription={t('description.fifthProjectD')}
                 projectTech={'React Typescript Recoil Material UI'}
                 githubLink={'https://github.com/peterdinis/React-Code-Editor'}
                 githubLinkText='Github'
@@ -60,8 +57,8 @@ const ProjectsCards: FC = () => {
                 deployText='Online'
             />
             <ProjectCard
-                projectName={'Hadík hra'}
-                projectDescription={'Hadík hra online'}
+                projectName={t('description.sixProjectH')}
+                projectDescription={t('description.sixProjectD')}
                 projectTech={'Html, Css, Javascript, Bootstrap'}
                 githubLink={
                     'https://github.com/peterdinis/Javascript-Snake-Game'
@@ -72,8 +69,8 @@ const ProjectsCards: FC = () => {
             />
 
             <ProjectCard
-                projectName={'Reddit Clone'}
-                projectDescription={'Klon stránky Reddit'}
+                projectName={t('description.sevenProjectH')}
+                projectDescription={t('description.sevenProjectD')}
                 projectTech={'Nextjs Typescript Firebase Chakra UI'}
                 githubLink={'reddit-next-js.vercel.app'}
                 githubLinkText='Github'
