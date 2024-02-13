@@ -14,9 +14,8 @@ const ExperienceTimeline: FC = () => {
   const { colorMode } = useColorMode();
 
   const timelineElements = [
-    { text: 'Eat', icon: <CheckCircleIcon color='blue.500' boxSize={6} /> },
-    { text: 'Eat', icon: <CheckCircleIcon color='blue.500' boxSize={6} /> },
-    { text: 'Eat', icon: <CheckCircleIcon color='blue.500' boxSize={6} /> },
+    { text: t("description.firstExperienceH"), description: t("description.firstExperienceSubH"), subDescription: t("description.firstExperienceD"), icon: <CheckCircleIcon color='blue.500' boxSize={6} /> },
+    { text: t("description.secondExperienceH"), description: "", subDescription: t("description.secondExperienceD"), icon: <CheckCircleIcon color='blue.500' boxSize={6} /> },
     { text: 'Eat', icon: <CheckCircleIcon color='blue.500' boxSize={6} /> },
     { text: 'Eat', icon: <CheckCircleIcon color='blue.500' boxSize={6} /> },
   ];
@@ -47,6 +46,9 @@ const ExperienceTimeline: FC = () => {
                 padding: '16px',
                 marginTop: "2rem",
                 color: colorMode === 'dark' ? 'white' : 'inherit',
+                display: 'flex',
+                alignItems: 'center',
+                position: 'relative'
               }}
               contentArrowStyle={{
                 borderRight: `7px solid ${colorMode === 'dark' ? '#2D3748' : '#fff'}`,
@@ -55,6 +57,8 @@ const ExperienceTimeline: FC = () => {
             >
               <Box className='timelineContentContainer' p={4}>
                 <Text>{element.text}</Text>
+                <Text>{element.description}</Text>
+                <Text>{element.subDescription}</Text>
               </Box>
             </VerticalTimelineElement>
           </motion.div>
