@@ -5,6 +5,9 @@ settings:
     excludeLinksFromLockfile: false
 
 dependencies:
+    '@chakra-ui/icons':
+        specifier: ^2.1.1
+        version: 2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0)
     '@chakra-ui/react':
         specifier: ^2.8.2
         version: 2.8.2(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(@types/react@18.2.52)(framer-motion@11.0.3)(react-dom@18.2.0)(react@18.2.0)
@@ -41,6 +44,9 @@ dependencies:
     react-simple-typewriter:
         specifier: ^5.0.1
         version: 5.0.1(react-dom@18.2.0)(react@18.2.0)
+    react-vertical-timeline-component:
+        specifier: ^3.6.0
+        version: 3.6.0(react@18.2.0)
 
 devDependencies:
     '@types/react':
@@ -49,6 +55,9 @@ devDependencies:
     '@types/react-dom':
         specifier: ^18.2.17
         version: 18.2.18
+    '@types/react-vertical-timeline-component':
+        specifier: ^3.3.6
+        version: 3.3.6
     '@typescript-eslint/eslint-plugin':
         specifier: ^6.14.0
         version: 6.20.0(@typescript-eslint/parser@6.20.0)(eslint@8.56.0)(typescript@5.3.3)
@@ -486,6 +495,20 @@ packages:
             react: '>=18'
         dependencies:
             '@chakra-ui/shared-utils': 2.0.5
+            '@chakra-ui/system': 2.6.2(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(react@18.2.0)
+            react: 18.2.0
+        dev: false
+
+    /@chakra-ui/icons@2.1.1(@chakra-ui/system@2.6.2)(react@18.2.0):
+        resolution:
+            {
+                integrity: sha512-3p30hdo4LlRZTT5CwoAJq3G9fHI0wDc0pBaMHj4SUn0yomO+RcDRlzhdXqdr5cVnzax44sqXJVnf3oQG0eI+4g==,
+            }
+        peerDependencies:
+            '@chakra-ui/system': '>=2.0.0'
+            react: '>=18'
+        dependencies:
+            '@chakra-ui/icon': 3.2.0(@chakra-ui/system@2.6.2)(react@18.2.0)
             '@chakra-ui/system': 2.6.2(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(react@18.2.0)
             react: 18.2.0
         dev: false
@@ -2428,6 +2451,15 @@ packages:
             '@types/react': 18.2.52
         dev: true
 
+    /@types/react-vertical-timeline-component@3.3.6:
+        resolution:
+            {
+                integrity: sha512-OUvyPXRjXvUD/SNLO0CW0GbIxVF32Ios5qHecMSfw6kxnK1cPULD9NV80EuqZ3WmS/s6BgbcwmN8k4ISb3akhQ==,
+            }
+        dependencies:
+            '@types/react': 18.2.52
+        dev: true
+
     /@types/react@18.2.52:
         resolution:
             {
@@ -2813,6 +2845,13 @@ packages:
             ansi-styles: 4.3.0
             supports-color: 7.2.0
         dev: true
+
+    /classnames@2.5.1:
+        resolution:
+            {
+                integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==,
+            }
+        dev: false
 
     /color-convert@1.9.3:
         resolution:
@@ -4030,6 +4069,17 @@ packages:
             react-dom: 18.2.0(react@18.2.0)
         dev: false
 
+    /react-intersection-observer@8.34.0(react@18.2.0):
+        resolution:
+            {
+                integrity: sha512-TYKh52Zc0Uptp5/b4N91XydfSGKubEhgZRtcg1rhTKABXijc4Sdr1uTp5lJ8TN27jwUsdXxjHXtHa0kPj704sw==,
+            }
+        peerDependencies:
+            react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
+        dependencies:
+            react: 18.2.0
+        dev: false
+
     /react-is@16.13.1:
         resolution:
             {
@@ -4121,6 +4171,20 @@ packages:
             invariant: 2.2.4
             react: 18.2.0
             tslib: 2.6.2
+        dev: false
+
+    /react-vertical-timeline-component@3.6.0(react@18.2.0):
+        resolution:
+            {
+                integrity: sha512-l9zulqjIGlRuaQeplGzV4r/tG2RYBpYt84Il8w4IxnJze2cDIGI04MKo3F7f1sHT0Sih1ohEFts8UV23AJS15Q==,
+            }
+        requiresBuild: true
+        dependencies:
+            classnames: 2.5.1
+            prop-types: 15.8.1
+            react-intersection-observer: 8.34.0(react@18.2.0)
+        transitivePeerDependencies:
+            - react
         dev: false
 
     /react@18.2.0:
