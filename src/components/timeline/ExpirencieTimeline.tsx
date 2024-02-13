@@ -19,7 +19,7 @@ const ExpirienceTimeline: FC = () => {
                 mb={18}
                 textAlign='center'
             >
-                {t('description.expireinceHeader')}
+                {t('description.expirienceHeader')}
             </chakra.h3>
             {myExpirience.map((expirience) => (
                 <Flex key={expirience.id} mb='10px'>

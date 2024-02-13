@@ -15,6 +15,7 @@ import { FC } from 'react';
 import me from '../images/me.jpg';
 import { useTranslation } from 'react-i18next';
 import { ILanguage } from '../interfaces/Language';
+import { Typewriter } from 'react-simple-typewriter';
 
 const languages = {
     en: { nativeName: 'Anglická verzia' },
@@ -42,8 +43,8 @@ const Hero: FC = () => {
                         borderRadius='full'
                         borderColor='blue.600'
                         borderWidth='2px'
-                        px={{ base: 4, md: 8 }} // Add padding for better responsiveness
-                        py={{ base: 2, md: 4 }} // Add padding for better responsiveness
+                        px={{ base: 4, md: 8 }}
+                        py={{ base: 2, md: 4 }}
                     >
                         {t('description.welcome')}
                     </Button>
@@ -74,22 +75,13 @@ const Hero: FC = () => {
                                 bgClip='text'
                                 fontSize={{ base: 32, md: 63 }}
                             >
-                                Peter Dinis
-                            </Text>
-                        </Stack>
-                        <Stack display='flex' direction='row'>
-                            <Text
-                                fontSize={{ base: 32, md: 63 }}
-                                colorScheme='black'
-                            >
-                                fullstack
-                            </Text>
-                            <Text
-                                fontSize={{ base: 32, md: 63 }}
-                                bgGradient='linear(to-tr, teal.500, teal.800)'
-                                bgClip='text'
-                            >
-                                developer
+                                <Typewriter
+                                    loop={false}
+                                    typeSpeed={90}
+                                    words={[
+                                        'Peter Dinis Junior Fullstack Developer',
+                                    ]}
+                                />
                             </Text>
                         </Stack>
                     </Heading>
