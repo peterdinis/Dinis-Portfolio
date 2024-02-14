@@ -10,6 +10,7 @@ import {
     chakra,
     Box,
     ButtonGroup,
+    useBreakpointValue,
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import me from '../images/me.jpg';
@@ -24,6 +25,8 @@ const languages = {
 
 const Hero: FC = () => {
     const { i18n, t } = useTranslation();
+
+    const isMobile = useBreakpointValue({ base: true, md: false });
 
     return (
         <chakra.div id='me'>
@@ -43,8 +46,8 @@ const Hero: FC = () => {
                         borderRadius='full'
                         borderColor='blue.600'
                         borderWidth='2px'
-                        px={{ base: 4, md: 8 }}
-                        py={{ base: 2, md: 4 }}
+                        px={{ base: 4, md: 8 }} // Add padding for better responsiveness
+                        py={{ base: 2, md: 4 }} // Add padding for better responsiveness
                     >
                         {t('description.welcome')}
                     </Button>
@@ -60,7 +63,9 @@ const Hero: FC = () => {
                     xs: 'column-reverse',
                 }}
             >
-                <Stack>
+                <Stack
+                    mt={isMobile ? { base: 36, md: 4 } : { base: 0, md: 0 }}
+                >
                     <Heading
                         fontSize={{
                             base: '4xl',
@@ -116,12 +121,13 @@ const Hero: FC = () => {
                             backgroundColor='transparent'
                             boxShadow='lg'
                             boxSize={{
-                                base: '150px',
+                                base: '110px',
                                 md: '200px',
                                 lg: '250px',
                             }}
                             src={me}
                             zIndex={1}
+                            mt={isMobile ? { base: 36, md: 4 } : { base: 0, md: 0 }}
                         />
                     </Text>
                 </Stack>

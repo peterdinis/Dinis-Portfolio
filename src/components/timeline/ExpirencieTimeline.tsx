@@ -4,7 +4,6 @@ import {
     VerticalTimeline,
     VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 import { useTranslation } from 'react-i18next';
 import { FC } from 'react';
 import { motion } from 'framer-motion';
@@ -53,7 +52,7 @@ const ExperienceTimeline: FC = () => {
                 {t('description.expireinceHeader')}
             </chakra.h3>
 
-            <VerticalTimeline  layout='1-column'>
+            <VerticalTimeline>
                 {timelineElements.map((element, index) => (
                     <motion.div
                         key={index}
