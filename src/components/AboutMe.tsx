@@ -9,7 +9,12 @@ const AboutMe = () => {
         <chakra.div id='about'>
             <SecondaryHeader text={t('description.aboutMe')} />
             <Box className='body-font overflow-hidden bg-white text-gray-700'>
-                <Container maxW='7xl' mx='auto' px={{ base: '5', md: '10', lg: '20' }} py={{ base: '12', md: '16', lg: '24' }}>
+                <Container
+                    maxW='7xl'
+                    mx='auto'
+                    px={{ base: '5', md: '10', lg: '20' }}
+                    py={{ base: '12', md: '16', lg: '24' }}
+                >
                     <Flex flexWrap='wrap' justify='center'>
                         <Box
                             w='full'
@@ -24,10 +29,16 @@ const AboutMe = () => {
                             py={{ base: '6', lg: '0' }}
                             pl={{ lg: '10' }}
                         >
-                            <Text mb={{ base: '3', md: '4', lg: '6' }} fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
+                            <Text
+                                mb={{ base: '3', md: '4', lg: '6' }}
+                                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                            >
                                 {t('description.firstSentence')}
                             </Text>
-                            <Text mb={{ base: '3', md: '4', lg: '6' }} fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}>
+                            <Text
+                                mb={{ base: '3', md: '4', lg: '6' }}
+                                fontSize={{ base: 'xl', md: '2xl', lg: '3xl' }}
+                            >
                                 {t('description.secondSentence')}
                             </Text>
                         </Box>

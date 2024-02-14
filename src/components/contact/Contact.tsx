@@ -55,7 +55,12 @@ const Banner: FC = () => {
                 </Box>
 
                 <Box>
-                    <Text lineHeight={1.2} fontSize={'2xl'} mt={10}>
+                    <Text
+                        wordBreak={'break-all'}
+                        lineHeight={1.2}
+                        fontSize={'2xl'}
+                        mt={10}
+                    >
                         {t('description.email')}{' '}
                         <Mailto
                             emailText='pdinis1@gmail.com'
@@ -63,6 +68,7 @@ const Banner: FC = () => {
                         />
                     </Text>
                     <Text
+                        wordBreak={'break-all'}
                         color={'orange.500'}
                         lineHeight={1.2}
                         fontSize={'2xl'}
@@ -72,6 +78,7 @@ const Banner: FC = () => {
                         <Link href='https://github.com/peterdinis'>Github</Link>
                     </Text>
                     <Text
+                        wordBreak={'break-all'}
                         lineHeight={1.2}
                         color={'blue.400'}
                         fontSize={'2xl'}
@@ -87,6 +94,5 @@ const Banner: FC = () => {
         </chakra.div>
     );
 };
-
 
 export default ContactMe;

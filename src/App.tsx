@@ -17,7 +17,9 @@ const App: FC = () => {
                 <Hero />
                 <AboutMe />
                 <FavoriteStack />
+                <Projects />
                 <ExpirienceTimeline />
+                <ContactMe />
                 <Footer />
             </Layout>
         </>

@@ -57,7 +57,7 @@ const ExperienceTimeline: FC = () => {
                     <motion.div
                         key={index}
                         whileHover={{
-                            scale: 1.10,
+                            scale: 1.1,
                             transition: { duration: 0.2 },
                         }}
                     >
