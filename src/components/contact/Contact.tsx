@@ -11,7 +11,7 @@ import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import Mailto from '../shared/Mailto';
 
-export const ContactMe: FC = () => {
+const ContactMe: FC = () => {
     return (
         <Container maxW='5xl' p='6'>
             <Banner />
@@ -87,3 +87,6 @@ const Banner: FC = () => {
         </chakra.div>
     );
 };
+
+
+export default ContactMe;

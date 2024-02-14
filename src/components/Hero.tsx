@@ -81,6 +81,7 @@ const Hero: FC = () => {
                                 bgGradient='linear(to-tr, teal.500, teal.800)'
                                 bgClip='text'
                                 fontSize={{ base: 32, md: 63 }}
+                                wordBreak={"break-all"}
                             >
                                 <Typewriter
                                     loop={false}
