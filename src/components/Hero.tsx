@@ -19,8 +19,8 @@ import { ILanguage } from '../interfaces/Language';
 import { Typewriter } from 'react-simple-typewriter';
 
 const languages = {
-    en: { nativeName: 'Anglická verzia' },
-    sk: { nativeName: 'Slovenská verzia' },
+    en: { nativeName: 'Anglicky' },
+    sk: { nativeName: 'Slovensky' },
 } as ILanguage;
 
 const Hero: FC = () => {
@@ -30,29 +30,31 @@ const Hero: FC = () => {
 
     return (
         <chakra.div id='me'>
-            <VStack
-                m='auto'
-                my={{ base: 4, md: 10 }}
-                mt={{ base: 4, md: 10 }}
-                zIndex='100'
-            >
-                <Link
-                    href='https://github.com/peterdinis'
-                    textDecoration='none'
-                    isExternal={true}
-                    style={{ textDecoration: 'none' }}
+            {!isMobile && (
+                <VStack
+                    m='auto'
+                    my={{ base: 4, md: 10 }}
+                    mt={{ base: 4, md: 10 }}
+                    zIndex='100'
                 >
-                    <Button
-                        borderRadius='full'
-                        borderColor='blue.600'
-                        borderWidth='2px'
-                        px={{ base: 4, md: 8 }} // Add padding for better responsiveness
-                        py={{ base: 2, md: 4 }} // Add padding for better responsiveness
+                    <Link
+                        href='https://github.com/peterdinis'
+                        textDecoration='none'
+                        isExternal={true}
+                        style={{ textDecoration: 'none' }}
                     >
-                        {t('description.welcome')}
-                    </Button>
-                </Link>
-            </VStack>
+                        <Button
+                            borderRadius='full'
+                            borderColor='blue.600'
+                            borderWidth='2px'
+                            px={{ base: 4, md: 8 }}
+                            py={{ base: 2, md: 4 }}
+                        >
+                            {t('description.welcome')}
+                        </Button>
+                    </Link>
+                </VStack>
+            )}
             <Flex
                 flex={{ base: 1, md: 1, sm: 0, xs: 0 }}
                 justify='space-between'

@@ -15,12 +15,6 @@ const App: FC = () => {
             <Navbar />
             <Layout>
                 <Hero />
-                <AboutMe />
-                <FavoriteStack />
-                <Projects />
-                <ContactMe />
-                <ExpirienceTimeline />
-                <Footer />
             </Layout>
         </>
     );
