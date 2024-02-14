@@ -53,13 +53,13 @@ const ExperienceTimeline: FC = () => {
                 {t('description.expireinceHeader')}
             </chakra.h3>
 
-            <VerticalTimeline layout='1-column'>
+            <VerticalTimeline  layout='1-column'>
                 {timelineElements.map((element, index) => (
                     <motion.div
                         key={index}
                         whileHover={{
                             scale: 1.05,
-                            transition: { duration: 0.3 },
+                            transition: { duration: 0.4 },
                         }}
                     >
                         <VerticalTimelineElement
@@ -68,8 +68,8 @@ const ExperienceTimeline: FC = () => {
                                 background:
                                     colorMode === 'dark' ? '#2D3748' : '#fff',
                                 boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
-                                borderRadius: '8px',
-                                padding: '16px',
+                                borderRadius: '11px',
+                                padding: '18px',
                                 marginTop: '2rem',
                                 color:
                                     colorMode === 'dark' ? 'white' : 'inherit',

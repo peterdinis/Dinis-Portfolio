@@ -82,7 +82,7 @@ const Hero: FC = () => {
                             >
                                 <Typewriter
                                     loop={false}
-                                    typeSpeed={90}
+                                    typeSpeed={130}
                                     words={[
                                         'Peter Dinis Junior Fullstack Developer',
                                     ]}
