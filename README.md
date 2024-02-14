@@ -1,12 +1,12 @@
-## Moje nové portfólio 
+## Moje nové portfólio
 
 Použité technológie:
-- React
-- Typescript
-- Vite
-- Chakra UI
-- i18next
 
+-   React
+-   Typescript
+-   Vite
+-   Chakra UI
+-   i18next
 
 # React + TypeScript + Vite
 
