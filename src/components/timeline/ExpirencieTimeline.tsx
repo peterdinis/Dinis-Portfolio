@@ -53,7 +53,7 @@ const ExperienceTimeline: FC = () => {
                 {t('description.expireinceHeader')}
             </chakra.h3>
 
-            <VerticalTimeline  layout='1-column'>
+            <VerticalTimeline>
                 {timelineElements.map((element, index) => (
                     <motion.div
                         key={index}
