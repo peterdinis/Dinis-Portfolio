@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.vertical-timeline-element-icon {
+    background: #fff;
+}
+
 html::-webkit-scrollbar {
     width: 16px;
     height: 16px;
