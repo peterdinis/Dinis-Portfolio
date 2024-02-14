@@ -65,9 +65,7 @@ const Hero: FC = () => {
                     xs: 'column-reverse',
                 }}
             >
-                <Stack
-                    mt={isMobile ? { base: 36, md: 4 } : { base: 0, md: 0 }}
-                >
+                <Stack mt={isMobile ? { base: 36, md: 4 } : { base: 0, md: 0 }}>
                     <Heading
                         fontSize={{
                             base: '4xl',
@@ -81,6 +79,7 @@ const Hero: FC = () => {
                                 bgGradient='linear(to-tr, teal.500, teal.800)'
                                 bgClip='text'
                                 fontSize={{ base: 32, md: 63 }}
+                                wordBreak={'break-all'}
                             >
                                 <Typewriter
                                     loop={false}
@@ -129,7 +128,11 @@ const Hero: FC = () => {
                             }}
                             src={me}
                             zIndex={1}
-                            mt={isMobile ? { base: 36, md: 4 } : { base: 0, md: 0 }}
+                            mt={
+                                isMobile
+                                    ? { base: 36, md: 4 }
+                                    : { base: 0, md: 0 }
+                            }
                         />
                     </Text>
                 </Stack>
