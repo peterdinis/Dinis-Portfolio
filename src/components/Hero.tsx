@@ -96,6 +96,7 @@ const Hero: FC = () => {
                             {Object.keys(languages).map((lng) => (
                                 <Button
                                     bg={'teal.500'}
+                                    _hover={{ bg: 'teal.500' }}
                                     key={lng}
                                     style={{
                                         fontWeight:

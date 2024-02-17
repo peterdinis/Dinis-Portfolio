@@ -63,7 +63,11 @@ const ProjectCard: FC<IProjectCardProps> = ({
                     </Badge>
                 </CardBody>
                 <CardFooter>
-                    <Button bg={'teal.700'} variant='solid'>
+                    <Button
+                        _hover={{ bg: 'teal.700' }}
+                        bg={'teal.700'}
+                        variant='solid'
+                    >
                         {colorMode === 'light' ? (
                             <Link color='white' href={githubLink}>
                                 {githubLinkText}
@@ -75,7 +79,12 @@ const ProjectCard: FC<IProjectCardProps> = ({
                         )}
                     </Button>
                     {deployLink && (
-                        <Button ml={5} bg={'red.700'} variant='solid'>
+                        <Button
+                            _hover={{ bg: 'red.700' }}
+                            ml={5}
+                            bg={'red.700'}
+                            variant='solid'
+                        >
                             {colorMode === 'light' ? (
                                 <Link color='white' href={deployLink}>
                                     {deployText}
