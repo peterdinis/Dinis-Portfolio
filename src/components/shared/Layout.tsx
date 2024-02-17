@@ -1,11 +1,8 @@
-import { FC, ReactNode, Suspense } from 'react';
+import { FC, Suspense } from 'react';
 import { Box } from '@chakra-ui/react';
 import AnimationWrapper from './AnimationWrapper';
 import FallbackLoader from './FallbackLoader';
-
-interface ILayoutProps {
-    children?: ReactNode;
-}
+import { ILayoutProps } from '../../interfaces/IShared';
 
 const Layout: FC<ILayoutProps> = ({ children }: ILayoutProps) => {
     return (

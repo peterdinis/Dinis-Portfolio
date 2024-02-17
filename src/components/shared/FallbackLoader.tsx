@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
 import { CircularProgress, Box, Text } from '@chakra-ui/react';
-
-interface ICircularProgressWithLabelProps {
-    value: number;
-}
+import { ICircularProgressWithLabelProps } from '../../interfaces/IShared';
 
 function CircularProgressWithLabel({ value }: ICircularProgressWithLabelProps) {
     return (

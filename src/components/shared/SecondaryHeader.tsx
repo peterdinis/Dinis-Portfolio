@@ -1,9 +1,6 @@
 import { Center, Heading } from '@chakra-ui/react';
 import { FC } from 'react';
-
-interface ISecondaryHeaderProps {
-    text: string;
-}
+import { ISecondaryHeaderProps } from '../../interfaces/IShared';
 
 const SecondaryHeader: FC<ISecondaryHeaderProps> = ({
     text,

@@ -1,11 +1,6 @@
 import { motion } from 'framer-motion';
-import { FC, ReactNode, HTMLAttributes } from 'react';
-
-interface IAnimationWrapperProps {
-    children?: ReactNode;
-    className?: string;
-    props?: HTMLAttributes<HTMLDivElement>;
-}
+import { FC } from 'react';
+import { IAnimationWrapperProps } from '../../interfaces/IShared';
 
 const AnimationWrapper: FC<IAnimationWrapperProps> = ({
     children,

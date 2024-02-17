@@ -1,11 +1,5 @@
 import { MouseEvent, FC } from 'react';
-
-interface MailtoProps {
-    emailText: string;
-    email: string;
-    headers?: Record<string, string>;
-    obfuscate?: boolean;
-}
+import { MailtoProps } from '../../interfaces/IShared';
 
 const toSearchString = (searchParams: Record<string, string> = {}): string => {
     return Object.keys(searchParams)

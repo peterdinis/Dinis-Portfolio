@@ -13,18 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import { motion } from 'framer-motion';
-
-interface IProjectCardProps {
-    projectName: string;
-    projectDescription: string;
-    projectTech: string;
-    deployLink?: string;
-    deployText?: string;
-    githubLink: string;
-    githubLinkText: string;
-    projectImage?: string;
-    projectAlt?: string;
-}
+import { IProjectCardProps } from '../../interfaces/IProject';
 
 const ProjectCard: FC<IProjectCardProps> = ({
     projectDescription,
@@ -39,7 +28,12 @@ const ProjectCard: FC<IProjectCardProps> = ({
 }) => {
     const { colorMode } = useColorMode();
     return (
-        <motion.div>
+        <motion.div
+            whileHover={{
+                scale: 1.2,
+                transition: { duration: 0.25 },
+            }}
+        >
             <Card borderRadius={20}>
                 <Image objectFit='cover' src={projectImage} alt={projectAlt} />
                 <CardHeader>

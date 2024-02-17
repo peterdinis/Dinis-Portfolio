@@ -1,9 +1,6 @@
-import { Box, BoxProps } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { PropsWithChildren } from 'react';
-
-interface HeaderProps extends BoxProps {
-    underlineColor: string;
-}
+import { HeaderProps, UnderlinedTextProps } from '../../interfaces/IShared';
 
 const Header = ({
     children,
@@ -23,12 +20,6 @@ const Header = ({
         <UnderlinedText color={underlineColor}>{children}</UnderlinedText>
     </Box>
 );
-
-interface UnderlinedTextProps {
-    color: string;
-    h?: string;
-    zIndex?: number;
-}
 
 const UnderlinedText = (props: PropsWithChildren<UnderlinedTextProps>) => (
     <Box as='span' display='inline-block' position='relative'>
