@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
 import SecondaryHeader from './SecondaryHeader';
-import { Box, Flex, Image } from '@chakra-ui/react';
+import { Box, Flex, Image, useColorMode } from '@chakra-ui/react';
 import css from '../../images/css.png';
 import express from '../../images/express.png';
 import firebase from '../../images/firebase-new.png';
@@ -19,6 +19,7 @@ import typescript from '../../images/typescript.png';
 import { useTranslation } from 'react-i18next';
 
 const FavoriteStack: FC = () => {
+    const { colorMode } = useColorMode();
     const imageVariants = {
         hover: { scale: 1.1 },
     };
@@ -32,7 +33,7 @@ const FavoriteStack: FC = () => {
                 boxShadow='2xl'
                 borderRadius='3xl'
                 my='10'
-                bgColor='white'
+                bgColor={colorMode === 'light' ? 'white' : 'gray.700'}
                 id='skills-wrapper'
             >
                 <Flex
