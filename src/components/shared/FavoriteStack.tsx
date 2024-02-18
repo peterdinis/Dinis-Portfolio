@@ -3,19 +3,19 @@ import { motion } from 'framer-motion';
 import SecondaryHeader from './SecondaryHeader';
 import { Box, Flex, Image, useColorMode } from '@chakra-ui/react';
 import css from '../../images/css.png';
-import express from '../../images/express.png';
+import express from '../../images/express-new.png';
 import firebase from '../../images/firebase-new.png';
 import html from '../../images/html.png';
 import javascript from '../../images/javascript.png';
-import jest from '../../images/jest.png';
+import jest from '../../images/jest-new.png';
 import mysql from '../../images/mysql.png';
 import nestjs from '../../images/nestjs.svg';
-import net from '../../images/net.png';
+import net from '../../images/net-new.png';
 import nextjs from '../../images/next-js.svg';
 import pg from '../../images/pg.png';
 import query from '../../images/query.svg';
 import react from '../../images/react.png';
-import typescript from '../../images/typescript.png';
+import typescript from '../../images/typescript-new.png';
 import { useTranslation } from 'react-i18next';
 
 const FavoriteStack: FC = () => {

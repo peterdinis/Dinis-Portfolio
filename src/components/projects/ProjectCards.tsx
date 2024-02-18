@@ -14,13 +14,6 @@ const ProjectsCards: FC = () => {
             templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
         >
             <ProjectCard
-                projectName={'MedPortal'}
-                projectDescription={t('description.firstProjectD')}
-                projectTech={'Asp.Net Mvc, Bootstrap 5.3 Jquery'}
-                githubLink={'https://github.com/peterdinis/MedPortal'}
-                githubLinkText='Github'
-            />
-            <ProjectCard
                 projectName={t('description.secondProjectH')}
                 projectDescription={t('description.secondProjectD')}
                 projectTech={'Asp.Net Postgresql'}
