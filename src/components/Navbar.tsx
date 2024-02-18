@@ -118,25 +118,25 @@ const Navbar: FC = () => {
                                             onClick={scrollMe}
                                             variant='ghost'
                                         >
-                                            O mne
+                                            {t('description.oMne')}
                                         </Button>
                                         <Button
                                             onClick={expirienceScoll}
                                             variant='ghost'
                                         >
-                                            Skúsenosti
+                                            {t('description.skusenosti')}
                                         </Button>
                                         <Button
                                             onClick={projectsScroll}
                                             variant='ghost'
                                         >
-                                            Projekty
+                                            {t('description.projekty')}
                                         </Button>
                                         <Button
                                             onClick={contactsScroll}
                                             variant='ghost'
                                         >
-                                            Kontakt
+                                            {t('description.kontakt')}
                                         </Button>
                                     </DrawerBody>
                                 </DrawerContent>
