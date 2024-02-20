@@ -75,7 +75,7 @@ const FavoriteStack: FC = () => {
                         <Image m={10} src={linux} w={20} boxShadow={12} h={20} />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={zustand} w={20} boxShadow={12} h={20} />
+                        <Image m={10} src={zustand} w={24} boxShadow={12} h={20} />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
