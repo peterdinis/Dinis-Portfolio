@@ -82,9 +82,15 @@ const ExperienceTimeline: FC = () => {
                             position={index % 2 === 0 ? 'left' : 'right'}
                         >
                             <Box className='timelineContentContainer' p={4}>
-                                <Text>{element.text}</Text>
-                                <Text>{element.description}</Text>
-                                <Text>{element.subDescription}</Text>
+                                <Text p={2} color='red.500' fontWeight={'bold'}>
+                                    {element.text}
+                                </Text>
+                                <Text m={4} color='blue.500'>
+                                    {element.description}
+                                </Text>
+                                <Text p={2} fontWeight={'italic'}>
+                                    {element.subDescription}
+                                </Text>
                             </Box>
                         </VerticalTimelineElement>
                     </motion.div>
