@@ -1,7 +1,6 @@
 import {
     Card,
     CardHeader,
-    Heading,
     Text,
     CardBody,
     CardFooter,
@@ -37,9 +36,9 @@ const ProjectCard: FC<IProjectCardProps> = ({
             <Card borderRadius={20}>
                 <Image objectFit='cover' src={projectImage} alt={projectAlt} />
                 <CardHeader>
-                    <Heading textAlign={'center'} size='md' fontWeight={'bold'}>
+                    <Text textAlign={'center'} size='md' fontWeight={'bold'}>
                         {projectName}
-                    </Heading>
+                    </Text>
                 </CardHeader>
                 <CardBody>
                     <Text p={2} fontWeight={'bold'}>
