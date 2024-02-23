@@ -16,14 +16,14 @@ import pg from '../../images/pg.png';
 import query from '../../images/query.svg';
 import react from '../../images/react.png';
 import typescript from '../../images/typescript-new.png';
-import graphql from "../../images/GraphQL.png";
-import figma from "../../images/figma-new.png";
+import graphql from '../../images/GraphQL.png';
+import figma from '../../images/figma-new.png';
 import { useTranslation } from 'react-i18next';
-import linux from "../../images/linux-new.png";
-import mongo from "../../images/mongo.png";
-import csharp from "../../images/csharp.png";
-import tailwind from "../../images/tailwind-new.png";
-import zustand from "../../images/zustand.png";
+import linux from '../../images/linux-new.png';
+import mongo from '../../images/mongo.png';
+import csharp from '../../images/csharp.png';
+import tailwind from '../../images/tailwind-new.png';
+import zustand from '../../images/zustand.png';
 
 const FavoriteStack: FC = () => {
     const { colorMode } = useColorMode();
@@ -57,25 +57,67 @@ const FavoriteStack: FC = () => {
                         <Image m={10} src={css} w={20} boxShadow={12} h={20} />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={graphql} w={20} boxShadow={12} h={20} />
+                        <Image
+                            m={10}
+                            src={graphql}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={csharp} w={20} boxShadow={12} h={20} />
+                        <Image
+                            m={10}
+                            src={csharp}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={figma} w={20} boxShadow={12} h={20} />
+                        <Image
+                            m={10}
+                            src={figma}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={tailwind} w={20} boxShadow={12} h={20} />
+                        <Image
+                            m={10}
+                            src={tailwind}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={mongo} w={20} boxShadow={12} h={20} />
+                        <Image
+                            m={10}
+                            src={mongo}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={linux} w={20} boxShadow={12} h={20} />
+                        <Image
+                            m={10}
+                            src={linux}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={zustand} w={24} boxShadow={12} h={20} />
+                        <Image
+                            m={10}
+                            src={zustand}
+                            w={24}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
