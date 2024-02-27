@@ -5,7 +5,6 @@ import {
     CardBody,
     CardFooter,
     Button,
-    Image,
     Link,
     useColorMode,
     Badge,
@@ -22,8 +21,6 @@ const ProjectCard: FC<IProjectCardProps> = ({
     githubLink,
     deployText,
     githubLinkText,
-    projectImage,
-    projectAlt,
 }) => {
     const { colorMode } = useColorMode();
     return (
@@ -34,7 +31,6 @@ const ProjectCard: FC<IProjectCardProps> = ({
             }}
         >
             <Card borderRadius={20}>
-                <Image objectFit='cover' src={projectImage} alt={projectAlt} />
                 <CardHeader>
                     <Text textAlign={'center'} size='md' fontWeight={'bold'}>
                         {projectName}

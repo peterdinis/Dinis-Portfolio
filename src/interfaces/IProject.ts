@@ -6,6 +6,4 @@ export interface IProjectCardProps {
     deployText?: string;
     githubLink: string;
     githubLinkText: string;
-    projectImage?: string;
-    projectAlt?: string;
 }
