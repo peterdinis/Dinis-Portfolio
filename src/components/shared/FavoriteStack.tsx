@@ -54,7 +54,14 @@ const FavoriteStack: FC = () => {
                     justify='center'
                 >
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={css} w={20} boxShadow={12} h={20} />
+                        <Image
+                            alt='css'
+                            m={10}
+                            src={css}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
@@ -63,10 +70,12 @@ const FavoriteStack: FC = () => {
                             w={20}
                             boxShadow={12}
                             h={20}
+                            alt='graphql'
                         />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='csharp'
                             m={10}
                             src={csharp}
                             w={20}
@@ -76,6 +85,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='figma'
                             m={10}
                             src={figma}
                             w={20}
@@ -85,6 +95,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='tailwind'
                             m={10}
                             src={tailwind}
                             w={20}
@@ -94,6 +105,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='mongodb'
                             m={10}
                             src={mongo}
                             w={20}
@@ -103,6 +115,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='linux'
                             m={10}
                             src={linux}
                             w={20}
@@ -112,6 +125,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='zustand'
                             m={10}
                             src={zustand}
                             w={24}
@@ -121,6 +135,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='express'
                             m={10}
                             src={express}
                             w={20}
@@ -130,6 +145,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='firebase'
                             m={10}
                             src={firebase}
                             w={20}
@@ -138,10 +154,18 @@ const FavoriteStack: FC = () => {
                         />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={html} w={20} boxShadow={12} h={20} />
+                        <Image
+                            alt='html'
+                            m={10}
+                            src={html}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='javascript'
                             m={10}
                             src={javascript}
                             w={20}
@@ -150,10 +174,18 @@ const FavoriteStack: FC = () => {
                         />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={jest} w={20} boxShadow={12} h={20} />
+                        <Image
+                            alt='jest'
+                            m={10}
+                            src={jest}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='mysql'
                             m={10}
                             src={mysql}
                             w={20}
@@ -163,6 +195,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='nestjs'
                             m={10}
                             src={nestjs}
                             w={20}
@@ -171,10 +204,18 @@ const FavoriteStack: FC = () => {
                         />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={net} w={20} boxShadow={12} h={20} />
+                        <Image
+                            alt='aspnet'
+                            m={10}
+                            src={net}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='nextjs'
                             m={10}
                             src={nextjs}
                             w={20}
@@ -183,10 +224,18 @@ const FavoriteStack: FC = () => {
                         />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
-                        <Image m={10} src={pg} w={20} boxShadow={12} h={20} />
+                        <Image
+                            alt='postgresql'
+                            m={10}
+                            src={pg}
+                            w={20}
+                            boxShadow={12}
+                            h={20}
+                        />
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='react-query'
                             m={10}
                             src={query}
                             w={20}
@@ -196,6 +245,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='react'
                             m={10}
                             src={react}
                             w={20}
@@ -205,6 +255,7 @@ const FavoriteStack: FC = () => {
                     </motion.div>
                     <motion.div variants={imageVariants} whileHover='hover'>
                         <Image
+                            alt='typescript'
                             m={10}
                             src={typescript}
                             w={20}
