@@ -8,7 +8,7 @@ const AboutMe = () => {
     return (
         <chakra.div id='about'>
             <SecondaryHeader text={t('description.aboutMe')} />
-            <Box className='body-font overflow-hidden bg-white text-gray-700'>
+            <Box>
                 <Container
                     maxW='7xl'
                     mx='auto'
