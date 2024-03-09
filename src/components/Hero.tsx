@@ -15,13 +15,8 @@ import {
 import { FC } from 'react';
 import me from '../images/me.jpg';
 import { useTranslation } from 'react-i18next';
-import { ILanguage } from '../interfaces/Language';
 import { Typewriter } from 'react-simple-typewriter';
-
-const languages = {
-    en: { nativeName: 'Anglicky' },
-    sk: { nativeName: 'Slovensky' },
-} as ILanguage;
+import { languages } from '../utils/languages';
 
 const Hero: FC = () => {
     const { i18n, t } = useTranslation();
