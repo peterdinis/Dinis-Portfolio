@@ -13,15 +13,7 @@ const ProjectsCards: FC = () => {
             gap={10}
             templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
         >
-            <ProjectCard
-                projectName={t('description.secondProjectH')}
-                projectDescription={t('description.secondProjectD')}
-                projectTech={'Asp.Net Postgresql'}
-                githubLink={
-                    'https://github.com/peterdinis/Spst-Kniznica-Backend'
-                }
-                githubLinkText='Github'
-            />
+            
             <ProjectCard
                 projectName={'NextPortfolio'}
                 projectDescription={t('description.thirdProjectD')}
