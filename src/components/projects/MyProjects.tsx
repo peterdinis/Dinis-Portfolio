@@ -4,7 +4,7 @@ import ProjectsCards from './ProjectCards';
 import { chakra } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 
-const Projects: FC = () => {
+const MyProjects: FC = () => {
     const { t } = useTranslation();
 
     return (
@@ -15,4 +15,4 @@ const Projects: FC = () => {
     );
 };
 
-export default Projects;
+export default MyProjects;

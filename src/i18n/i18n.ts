@@ -14,6 +14,8 @@ i18n.use(LanguageDetector)
             en: {
                 translation: {
                     description: {
+                        sketchCraft: "Light weight clone of figma",
+                        shareSync: "Application for storing files",
                         firstExpirienceH:
                             'SPŠT Bardejov (1 year) - Work alongside school. FullStack Developer',
                         firstExpirienceSubH:
@@ -47,6 +49,8 @@ i18n.use(LanguageDetector)
                         skusenosti: 'Expirience',
                         projekty: 'Projects',
                         kontakt: 'Contact',
+                        bugOverflow: "Frontend for BugOverflow application",
+                        bugOverflowAPI: "API for our application where I can write programming questions and I can also answer them",
                         secondSentence:
                             'I have the most experience with technologies: React Nestjs and Typescript Node.',
                         firstSentence:
@@ -58,6 +62,10 @@ i18n.use(LanguageDetector)
             sk: {
                 translation: {
                     description: {
+                        sketchCraft: "Jednoduchý figma clone",
+                        shareSync: "Applikácia na ukladanie súborov",
+                        bugOverflow: "Frontend ku applikácií bug overflow",
+                        bugOverflowAPI: "API pre našu applikáciu kde viem písať programátorske otázky a viem na ne aj odpovedať",
                         firstExpirienceH:
                             'SPŠT Bardejov (1-rok) práca popri škole. FullStack Developer',
                         firstExpirienceSubH:
