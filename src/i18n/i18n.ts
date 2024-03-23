@@ -49,6 +49,8 @@ i18n.use(LanguageDetector)
                         skusenosti: 'Expirience',
                         projekty: 'Projects',
                         kontakt: 'Contact',
+                        thirdProjectD:
+                            'My second portfolio that I created',
                         firstPortfolio: "My first porfolio",
                         secondPortfolio: "My second porfolio",
                         bugOverflow: "Frontend for BugOverflow application",
