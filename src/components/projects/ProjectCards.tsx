@@ -13,9 +13,9 @@ const ProjectsCards: FC = () => {
             gap={10}
             templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
         >
-            
+
             <ProjectCard
-                projectName={'NextPortfolio'}
+                projectName={t("description.secondPortfolio")}
                 projectDescription={t('description.thirdProjectD')}
                 projectTech={'Nextjs Typescript TailwindCss'}
                 githubLink={'https://github.com/peterdinis/Next-Portfolio'}
@@ -23,8 +23,8 @@ const ProjectsCards: FC = () => {
                 deployLink='next-portfolio-rose-omega.vercel.app'
                 deployText='Online'
             />
-            <ProjectCard
-                projectName={'Moje prvé portfólio'}
+            {/* <ProjectCard
+                projectName={t("description.firstPortfolio")}
                 projectDescription={t('description.fourProjectD')}
                 projectTech={'React Javascript Material UI'}
                 githubLink={'https://github.com/peterdinis/Portfolio-Dinis'}
@@ -61,7 +61,7 @@ const ProjectsCards: FC = () => {
                 githubLinkText='Github'
                 deployLink='https://reddit-next-js.vercel.app/'
                 deployText='Online'
-            />
+            /> */}
         </SimpleGrid>
     );
 };

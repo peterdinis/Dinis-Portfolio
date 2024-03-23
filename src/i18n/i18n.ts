@@ -49,6 +49,8 @@ i18n.use(LanguageDetector)
                         skusenosti: 'Expirience',
                         projekty: 'Projects',
                         kontakt: 'Contact',
+                        firstPortfolio: "My first porfolio",
+                        secondPortfolio: "My second porfolio",
                         bugOverflow: "Frontend for BugOverflow application",
                         bugOverflowAPI: "API for our application where I can write programming questions and I can also answer them",
                         secondSentence:
@@ -92,6 +94,8 @@ i18n.use(LanguageDetector)
                         sixProjectD: 'Hadík hra online',
                         fifthProjectD:
                             'Jednoduchý html / css / javascript editor spravený v Reacte',
+                        firstPortfolio: "Moje prvé portfólio",
+                        secondPortfolio: "Moje druhé portfólio",
                         fourProjectD: 'Moje prvé portfólio ktoré som vytvoril',
                         thirdProjectD:
                             'Moje druhé portfólio ktoré som vytvoril',

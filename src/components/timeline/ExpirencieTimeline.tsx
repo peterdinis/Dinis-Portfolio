@@ -49,7 +49,7 @@ const ExperienceTimeline: FC = () => {
                 mb={18}
                 textAlign='center'
             >
-                {t('description.expireinceHeader')}
+                {t('description.expirienceHeader')}
             </chakra.h3>
 
             <VerticalTimeline>
