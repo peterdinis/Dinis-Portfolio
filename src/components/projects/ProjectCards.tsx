@@ -13,9 +13,8 @@ const ProjectsCards: FC = () => {
             gap={10}
             templateColumns='repeat(auto-fill, minmax(200px, 1fr))'
         >
-
             <ProjectCard
-                projectName={t("description.secondPortfolio")}
+                projectName={t('description.secondPortfolio')}
                 projectDescription={t('description.thirdProjectD')}
                 projectTech={'Nextjs Typescript TailwindCss'}
                 githubLink={'https://github.com/peterdinis/Next-Portfolio'}
@@ -23,15 +22,17 @@ const ProjectsCards: FC = () => {
                 deployLink='next-portfolio-rose-omega.vercel.app'
                 deployText='Online'
             />
-            {/* <ProjectCard
-                projectName={t("description.firstPortfolio")}
-                projectDescription={t('description.fourProjectD')}
+
+            <ProjectCard
+                projectName={t('description.firstPortfolio')}
+                projectDescription={t('description.firstPortfolio')}
                 projectTech={'React Javascript Material UI'}
                 githubLink={'https://github.com/peterdinis/Portfolio-Dinis'}
                 githubLinkText='Github'
                 deployLink='https://portfolio-dinis.vercel.app/'
                 deployText='Online'
             />
+
             <ProjectCard
                 projectName={'React-Code-Editor'}
                 projectDescription={t('description.fifthProjectD')}
@@ -41,6 +42,25 @@ const ProjectsCards: FC = () => {
                 deployLink='react-code-editor-flame.vercel.app'
                 deployText='Online'
             />
+
+            <ProjectCard
+                projectName={'Sketch-Craft'}
+                projectDescription={t('description.sketchCraft')}
+                projectTech={'Nextjs Typescript Tailwindcss Shadcn UI'}
+                githubLink={'https://github.com/peterdinis/Sketch-Craft'}
+                githubLinkText='Github'
+            />
+
+            <ProjectCard
+                projectName={'Reddit clone'}
+                projectDescription={t('description.sevenProjectH')}
+                projectTech={'Nextjs Typescript Firebase Chakra UI'}
+                githubLink={'reddit-next-js.vercel.app'}
+                githubLinkText='Github'
+                deployLink='https://reddit-next-js.vercel.app/'
+                deployText='Online'
+            />
+
             <ProjectCard
                 projectName={t('description.sixProjectH')}
                 projectDescription={t('description.sixProjectD')}
@@ -52,16 +72,6 @@ const ProjectsCards: FC = () => {
                 deployLink='https://modest-elion-018f87.netlify.app/'
                 deployText='Online'
             />
-
-            <ProjectCard
-                projectName={t('description.sevenProjectH')}
-                projectDescription={t('description.sevenProjectD')}
-                projectTech={'Nextjs Typescript Firebase Chakra UI'}
-                githubLink={'reddit-next-js.vercel.app'}
-                githubLinkText='Github'
-                deployLink='https://reddit-next-js.vercel.app/'
-                deployText='Online'
-            /> */}
         </SimpleGrid>
     );
 };

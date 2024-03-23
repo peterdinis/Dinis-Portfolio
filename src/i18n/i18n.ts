@@ -14,8 +14,8 @@ i18n.use(LanguageDetector)
             en: {
                 translation: {
                     description: {
-                        sketchCraft: "Light weight clone of figma",
-                        shareSync: "Application for storing files",
+                        sketchCraft: 'Light weight clone of figma',
+                        shareSync: 'Application for storing files',
                         firstExpirienceH:
                             'SPŠT Bardejov (1 year) - Work alongside school. FullStack Developer',
                         firstExpirienceSubH:
@@ -49,12 +49,15 @@ i18n.use(LanguageDetector)
                         skusenosti: 'Expirience',
                         projekty: 'Projects',
                         kontakt: 'Contact',
-                        thirdProjectD:
-                            'My second portfolio that I created',
-                        firstPortfolio: "My first porfolio",
-                        secondPortfolio: "My second porfolio",
-                        bugOverflow: "Frontend for BugOverflow application",
-                        bugOverflowAPI: "API for our application where I can write programming questions and I can also answer them",
+                        sevenProjectH: 'Clone of reddit website',
+                        thirdProjectD: 'My second portfolio that I created',
+                        firstPortfolio: 'My first porfolio that I created',
+                        secondPortfolio: 'My second porfolio',
+                        bugOverflow: 'Frontend for BugOverflow application',
+                        fifthProjectD:
+                            'Simple code editor for writing html / css and javascript',
+                        bugOverflowAPI:
+                            'API for our application where I can write programming questions and I can also answer them',
                         secondSentence:
                             'I have the most experience with technologies: React Nestjs and Typescript Node.',
                         firstSentence:
@@ -66,10 +69,11 @@ i18n.use(LanguageDetector)
             sk: {
                 translation: {
                     description: {
-                        sketchCraft: "Jednoduchý figma clone",
-                        shareSync: "Applikácia na ukladanie súborov",
-                        bugOverflow: "Frontend ku applikácií bug overflow",
-                        bugOverflowAPI: "API pre našu applikáciu kde viem písať programátorske otázky a viem na ne aj odpovedať",
+                        sketchCraft: 'Jednoduchý figma clone',
+                        shareSync: 'Applikácia na ukladanie súborov',
+                        bugOverflow: 'Frontend ku applikácií bug overflow',
+                        bugOverflowAPI:
+                            'API pre našu applikáciu kde viem písať programátorske otázky a viem na ne aj odpovedať',
                         firstExpirienceH:
                             'SPŠT Bardejov (1-rok) práca popri škole. FullStack Developer',
                         firstExpirienceSubH:
@@ -93,11 +97,11 @@ i18n.use(LanguageDetector)
                         sevenProjectD: 'Reddit klon',
                         sevenProjectH: 'Klon webstránky reddit',
                         sixProjectH: 'Hadík hra',
-                        sixProjectD: 'Hadík hra online',
+                        sixProjectD: 'Hadík hra othirdProjectDnline',
                         fifthProjectD:
                             'Jednoduchý html / css / javascript editor spravený v Reacte',
-                        firstPortfolio: "Moje prvé portfólio",
-                        secondPortfolio: "Moje druhé portfólio",
+                        firstPortfolio: 'Moje prvé portfólio',
+                        secondPortfolio: 'Moje druhé portfólio',
                         fourProjectD: 'Moje prvé portfólio ktoré som vytvoril',
                         thirdProjectD:
                             'Moje druhé portfólio ktoré som vytvoril',

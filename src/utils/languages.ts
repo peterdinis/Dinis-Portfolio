@@ -1,4 +1,4 @@
-import { ILanguage } from "../interfaces/Language";
+import { ILanguage } from '../interfaces/Language';
 
 export const languages = {
     en: { nativeName: 'English' },
