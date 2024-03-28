@@ -9,6 +9,7 @@ const ProjectsCards: FC = () => {
     return (
         <SimpleGrid
             mt={6}
+            p={3}
             spacing={6}
             gap={10}
             templateColumns='repeat(auto-fill, minmax(200px, 1fr))'

@@ -14,7 +14,7 @@ import { motion } from 'framer-motion';
 
 const ContactMe: FC = () => {
     return (
-        <Container maxW='5xl' p='6'>
+        <Container maxW='6xl' p='6' borderRadius={10}>
             <Banner />
         </Container>
     );
