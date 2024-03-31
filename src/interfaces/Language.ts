@@ -1,7 +1,7 @@
 interface Language {
-    nativeName: string;
+	nativeName: string;
 }
 
 export interface ILanguage {
-    [key: string]: Language;
+	[key: string]: Language;
 }

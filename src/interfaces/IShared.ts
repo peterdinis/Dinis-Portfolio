@@ -1,37 +1,37 @@
-import { BoxProps } from '@chakra-ui/react';
-import { ReactNode, HTMLAttributes } from 'react';
+import type { BoxProps } from "@chakra-ui/react";
+import type { HTMLAttributes, ReactNode } from "react";
 
 export interface IAnimationWrapperProps {
-    children?: ReactNode;
-    className?: string;
-    props?: HTMLAttributes<HTMLDivElement>;
+	children?: ReactNode;
+	className?: string;
+	props?: HTMLAttributes<HTMLDivElement>;
 }
 
 export interface ICircularProgressWithLabelProps {
-    value: number;
+	value: number;
 }
 
 export interface HeaderProps extends BoxProps {
-    underlineColor: string;
+	underlineColor: string;
 }
 
 export interface UnderlinedTextProps {
-    color: string;
-    h?: string;
-    zIndex?: number;
+	color: string;
+	h?: string;
+	zIndex?: number;
 }
 
 export interface ILayoutProps {
-    children?: ReactNode;
+	children?: ReactNode;
 }
 
 export interface MailtoProps {
-    emailText: string;
-    email: string;
-    headers?: Record<string, string>;
-    obfuscate?: boolean;
+	emailText: string;
+	email: string;
+	headers?: Record<string, string>;
+	obfuscate?: boolean;
 }
 
 export interface ISecondaryHeaderProps {
-    text: string;
+	text: string;
 }
