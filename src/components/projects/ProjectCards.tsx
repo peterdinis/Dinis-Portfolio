@@ -73,30 +73,6 @@ const ProjectsCards: FC = () => {
 				deployLink="https://modest-elion-018f87.netlify.app/"
 				deployText="Online"
 			/>
-
-			<ProjectCard
-				projectName={"Bug-Overflow"}
-				projectDescription={t("description.bugOverflow")}
-				projectTech={"Nextjs Typescript Graphql Shdacn UI Tailwind css"}
-				githubLink={
-					"https://github.com/peterdinis/Javascript-Snake-Game"
-				}
-				githubLinkText="Github"
-				deployLink="https://github.com/peterdinis/Bug-Overflow"
-				deployText="Online"
-			/>
-
-			<ProjectCard
-				projectName={"Bug-Overflow API"}
-				projectDescription={t("description.bugOverflowAPI")}
-				projectTech={"Express Typescript Graphql Apollo Server Prisma"}
-				githubLink={
-					"https://github.com/peterdinis/Javascript-Snake-Game"
-				}
-				githubLinkText="Github"
-				deployLink="https://github.com/peterdinis/Bug-Overflow-API"
-				deployText="Online"
-			/>
 		</SimpleGrid>
 	);
 };
