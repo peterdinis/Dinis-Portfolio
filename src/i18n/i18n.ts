@@ -62,6 +62,10 @@ i18n.use(LanguageDetector)
 							"I have the most experience with technologies: React Nestjs and Typescript Node.",
 						firstSentence:
 							"Hi 👋 .My name is Peter Dinis. I am 23 years old. I come from Bardejov. I visited Secondary industrial school(SPST) in Bardejov. My favorite sports are Football and Voleyball.",
+						spstClone: "A clone of the SPŠT Library project that I developed for the Unicorn competition",
+						spstAuth: "Auth server for SPŠT Library",
+						spstHeader: "SPŠT Library",
+						spstAuthHeader: "SPŠT Auth server"
 					},
 				},
 			},
@@ -69,6 +73,10 @@ i18n.use(LanguageDetector)
 			sk: {
 				translation: {
 					description: {
+						spstAuthHeader: "SPŠT Autentifikačný server",
+						spstHeader: "SPŠT Knižnica",
+						spstAuth: "Autentifikačný server pre prihlasovanie do spst-knižnica",
+						spstClone: "Klon projektu SPŠT Knižnica ktorí som vývijal pre sútaž Unicorn",
 						sketchCraft: "Jednoduchý figma clone",
 						shareSync: "Applikácia na ukladanie súborov",
 						bugOverflow: "Frontend ku applikácií bug overflow",
