@@ -26,8 +26,8 @@ const ProjectCard: FC<IProjectCardProps> = ({
 	return (
 		<motion.div
 			whileHover={{
-				scale: 1.2,
-				transition: { duration: 0.25 },
+				scale: 1.1,
+				transition: { duration: 0.35 },
 			}}
 		>
 			<Card borderRadius={20}>
