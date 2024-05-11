@@ -57,7 +57,10 @@ const Banner: FC = () => {
 							bgGradient="linear(to-l, #0ea5e9,#2563eb)"
 							bgClip="text"
 						>
-							{t("description.contactSecHeader")}
+							<Mailto
+								emailText={t("description.contactSecHeader")}
+								email={"pdinis1@gmail.com"}
+							/>
 						</chakra.h2>
 					</Box>
 
