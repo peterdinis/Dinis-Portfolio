@@ -7,4 +7,5 @@ Použité technológie:
 -   Vite
 -   Chakra UI
 -   i18next
--   Prettier
+-   Biome
+-   Bun package manager
