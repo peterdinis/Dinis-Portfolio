@@ -7,5 +7,5 @@ Použité technológie:
 -   Vite
 -   Chakra UI
 -   i18next
--   Biome
+-   Biome for linting
 -   Bun package manager
