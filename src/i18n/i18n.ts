@@ -33,7 +33,7 @@ i18n.use(LanguageDetector)
 						fourExperienceH:
 							"Jump Soft Since 1.3.2023 Fullstack developer",
 						fourExperienceD:
-							"Internal development platform and language of the company (Twinzu), Java, Javascript, PostgreSQL, GitLab, Docker. Projects I am/was working on: 1. Slovak Chamber of Tax Advisors. 2. Office for Supervision of Health Care (UDZS). 3. Development of an internal company application for attendance monitoring",
+							"Internal development platform and language of the company (Twinzu), Java, Javascript, PostgreSQL, GitLab, Docker. Projects I am/was working on: 1. Slovak Chamber of Tax Advisors. 2. Office for Supervision of Health Care (UDZS). 3. Development of an internal company application for attendance monitoring. 4. Electronic form application(EForm). 5 People-to-people (partial modifications)",
 
 						welcome: "Hi 👋 Welcome to my portfolio.",
 						aboutMe: "A few sentences about me",
@@ -116,7 +116,7 @@ i18n.use(LanguageDetector)
 						fourExperienceH:
 							"Jump Soft Od 1.3.2023 Fullstack developer",
 						fourExperienceD:
-							"Interná vývojová platforma a jazyk spoločnosti (Twinzu), Java, Javascript, PostgreSQL, GitLab, Docker. Projekty, na ktorých pracujem/pracoval som: 1. Slovenská komora daňových poradcov. 2. Úrad pre dohľad nad zdravotnou starostlivosťou UDZS 3.Vyvoj internej firemnej aplikácie pre monitorovanie dochádzky",
+							"Interná vývojová platforma a jazyk spoločnosti (Twinzu), Java, Javascript, PostgreSQL, GitLab, Docker. Projekty, na ktorých pracujem/pracoval som: 1. Slovenská komora daňových poradcov. 2. Úrad pre dohľad nad zdravotnou starostlivosťou UDZS 3.Vyvoj internej firemnej aplikácie pre monitorovanie dochádzky. 4. Applikácia elektronické formuláre(Eformuláre). 5 Ľudia-ľudom(čiastočné úpravy na projekte) ",
 						expirienceHeader: "Moje skúsenosti",
 						secondProjectH: "Spšt knižnica API",
 						sevenProjectD: "Reddit klon",
