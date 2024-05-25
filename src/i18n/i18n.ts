@@ -44,7 +44,8 @@ i18n.use(LanguageDetector)
 						contactSecHeader: "So, write me. 🖊️",
 						email: "My email: ",
 						github: "My github: ",
-						taskMasterDesc: "Task master. An alternative to Jira. We can create our team, create projects for project tasks, sprints.",
+						taskMasterDesc:
+							"Task master. An alternative to Jira. We can create our team, create projects for project tasks, sprints.",
 						taskMasterFE: "Frontend part for Task Master project",
 						taskMasterAPI: "API. For the task master project.",
 						nodeStarter:
@@ -83,7 +84,8 @@ i18n.use(LanguageDetector)
 					description: {
 						taskMasterAPI: "API, Pre projekt Task Master",
 						taskMasterFE: "Frontend applikácia pre Task Master",
-						taskMasterDesc: "Task master. Alternatíva pre Jiru. Vieme si vytvoriť svoj tím, vytvárať projekty pre projekt tasky, šprinty.",
+						taskMasterDesc:
+							"Task master. Alternatíva pre Jiru. Vieme si vytvoriť svoj tím, vytvárať projekty pre projekt tasky, šprinty.",
 						nodeStarter:
 							"Template pre node applikácie. Použité technologie Node Typescript Bun",
 						visionCraft:

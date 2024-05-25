@@ -22,7 +22,6 @@ import query from "../../images/query.svg";
 import react from "../../images/react.png";
 import tailwind from "../../images/tailwind-new.png";
 import typescript from "../../images/typescript-new.png";
-import zustand from "../../images/zustand.png";
 import SecondaryHeader from "./SecondaryHeader";
 
 const FavoriteStack: FC = () => {
@@ -119,16 +118,6 @@ const FavoriteStack: FC = () => {
 							m={10}
 							src={linux}
 							w={20}
-							boxShadow={12}
-							h={20}
-						/>
-					</motion.div>
-					<motion.div variants={imageVariants} whileHover="hover">
-						<Image
-							alt="zustand"
-							m={10}
-							src={zustand}
-							w={24}
 							boxShadow={12}
 							h={20}
 						/>

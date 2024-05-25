@@ -90,8 +90,8 @@ const Hero: FC = () => {
 						<ButtonGroup spacing={2}>
 							{Object.keys(languages).map((lng) => (
 								<Button
-									bg={"teal.500"}
-									_hover={{ bg: "teal.500" }}
+									bg={"teal.700"}
+									_hover={{ bg: "teal.700" }}
 									key={lng}
 									style={{
 										fontWeight:
@@ -104,7 +104,7 @@ const Hero: FC = () => {
 										i18n.changeLanguage(lng);
 									}}
 								>
-									<p>{languages[lng].nativeName}</p>
+									<Text>{languages[lng].nativeName}</Text>
 								</Button>
 							))}
 						</ButtonGroup>
