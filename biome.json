@@ -4,10 +4,22 @@
 		"enabled": true
 	},
 	"formatter": {
-		"enabled": true,
 		"indentStyle": "tab",
 		"indentWidth": 4,
-		"formatWithErrors": false
+		"formatWithErrors": true,
+		"enabled": true,
+		"attributePosition": "auto"
+	},
+	"javascript": {
+		"formatter": {
+			"arrowParentheses": "always",
+			"bracketSameLine": false,
+			"bracketSpacing": true,
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"semicolons": "always",
+			"trailingComma": "all"
+		}
 	},
 	"linter": {
 		"enabled": true,
