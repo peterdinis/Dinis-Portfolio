@@ -31,7 +31,7 @@ i18n.use(LanguageDetector)
 						thirdExperienceD:
 							"The company developed an e-shop for selling licenses of software products, where I could act as a seller or a manufacturer. In the application, I could establish various relationships (seller - manufacturer). Technologies used included Nx (Monorepo), Vue.js, Nest.js, Docker, Postgresql, and Jest. I was part of a small 7-member team creating this application.",
 						fourExperienceH:
-							"Jump Soft Since 1.3.2023 Fullstack developer",
+							"Jump Soft 1.3.2023 - 27.5.2024 Fullstack developer",
 						fourExperienceD:
 							"Internal development platform and language of the company (Twinzu), Java, Javascript, PostgreSQL, GitLab, Docker. Projects I am/was working on: 1. Slovak Chamber of Tax Advisors. 2. Office for Supervision of Health Care (UDZS). 3. Development of an internal company application for attendance monitoring. 4. Electronic form application(EForm). 5 People-to-people (partial modifications)",
 
@@ -116,7 +116,7 @@ i18n.use(LanguageDetector)
 						thirdExperienceD:
 							"Firma vytvárala eshop na ktorom sa dajú predávať licencie na softverové produkty. Vedel som byť predajca alebo výrobca. V applikácií som si vedel vytvárať rôzne vzťahy(predajca - výrobca). Techonológie ktoré boli použité: Nx(Monorepo) Vuejs, Nestjs, Docker, Postgresql, Jest. Bol som v malom 7-členom tíme ktorý vytváral tú applikáciu.",
 						fourExperienceH:
-							"Jump Soft Od 1.3.2023 Fullstack developer",
+							"Jump Soft 1.3.2023 - 27.5.2024 Fullstack developer",
 						fourExperienceD:
 							"Interná vývojová platforma a jazyk spoločnosti (Twinzu), Java, Javascript, PostgreSQL, GitLab, Docker. Projekty, na ktorých pracujem/pracoval som: 1. Slovenská komora daňových poradcov. 2. Úrad pre dohľad nad zdravotnou starostlivosťou UDZS 3.Vyvoj internej firemnej aplikácie pre monitorovanie dochádzky. 4. Applikácia elektronické formuláre(Eformuláre). 5 Ľudia-ľudom(čiastočné úpravy na projekte) ",
 						expirienceHeader: "Moje skúsenosti",
