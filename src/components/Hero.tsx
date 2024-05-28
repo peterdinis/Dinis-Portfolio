@@ -5,10 +5,8 @@ import {
 	ButtonGroup,
 	Flex,
 	Heading,
-	Link,
 	Stack,
 	Text,
-	VStack,
 	chakra,
 	useBreakpointValue,
 } from "@chakra-ui/react";
@@ -17,38 +15,17 @@ import { useTranslation } from "react-i18next";
 import { Typewriter } from "react-simple-typewriter";
 import me from "../images/me.jpg";
 import { languages } from "../utils/languages";
+import HeroSmallBanner from "./HeroSmallBanner";
 
 const Hero: FC = () => {
-	const { i18n, t } = useTranslation();
+	const { i18n} = useTranslation();
 
 	const isMobile = useBreakpointValue({ base: true, md: false });
 
 	return (
 		<chakra.div id="me">
 			{!isMobile && (
-				<VStack
-					m="auto"
-					my={{ base: 4, md: 10 }}
-					mt={{ base: 4, md: 10 }}
-					zIndex="100"
-				>
-					<Link
-						href="https://github.com/peterdinis"
-						textDecoration="none"
-						isExternal={true}
-						style={{ textDecoration: "none" }}
-					>
-						<Button
-							borderRadius="full"
-							borderColor="blue.600"
-							borderWidth="2px"
-							px={{ base: 4, md: 8 }}
-							py={{ base: 2, md: 4 }}
-						>
-							{t("description.welcome")}
-						</Button>
-					</Link>
-				</VStack>
+				<HeroSmallBanner />
 			)}
 			<Flex
 				flex={{ base: 1, md: 1, sm: 0, xs: 0 }}
