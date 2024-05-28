@@ -1,11 +1,11 @@
 import { ChakraProvider, Spinner } from "@chakra-ui/react";
 import { StrictMode, Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import ScrollToTop from "react-scroll-to-top";
 import "react-vertical-timeline-component/style.min.css";
 import App from "./App.tsx";
 import "./i18n/i18n.ts";
 import "./index.css";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<StrictMode>
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 			>
 				<App />
 			</Suspense>
-			<ScrollToTop smooth={true} />
+			<ScrollToTop />
 		</ChakraProvider>
 	</StrictMode>,
 );
