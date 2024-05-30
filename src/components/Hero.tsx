@@ -57,7 +57,7 @@ const Hero: FC = () => {
 									loop={false}
 									typeSpeed={130}
 									words={[
-										"Peter Dinis.Fullstack Developer",
+										"Peter Dinis. Fullstack Developer",
 									]}
 								/>
 							</Text>
