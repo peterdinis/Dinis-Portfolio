@@ -52,6 +52,8 @@ const ProjectsCards: FC = () => {
 				}
 				githubLink={"https://github.com/peterdinis/spst-library"}
 				githubLinkText="Github"
+				deployLink="https://spst-library-production.up.railway.app/"
+				deployText="Online"
 			/>
 
 			<ProjectCard
@@ -60,6 +62,8 @@ const ProjectsCards: FC = () => {
 				projectTech={"Nestjs Typescript Prisma Postgresql"}
 				githubLink={"https://github.com/peterdinis/spst-library-auth"}
 				githubLinkText="Github"
+				deployLink="https://spst-library-auth-production.up.railway.app/"
+				deployText="Online"
 			/>
 
 			<ProjectCard
