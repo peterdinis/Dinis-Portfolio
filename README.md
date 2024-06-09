@@ -9,3 +9,4 @@ Použité technológie:
 -   i18next
 -   Biome for linting
 -   Bun package manager
+-   Eslint
