@@ -10,3 +10,4 @@ Použité technológie:
 -   Biome for linting
 -   Bun package manager
 -   Eslint
+-   Tanstack router
