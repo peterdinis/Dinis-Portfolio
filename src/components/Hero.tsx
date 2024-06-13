@@ -18,15 +18,13 @@ import { languages } from "../utils/languages";
 import HeroSmallBanner from "./HeroSmallBanner";
 
 const Hero: FC = () => {
-	const { i18n} = useTranslation();
+	const { i18n } = useTranslation();
 
 	const isMobile = useBreakpointValue({ base: true, md: false });
 
 	return (
 		<chakra.div id="me">
-			{!isMobile && (
-				<HeroSmallBanner />
-			)}
+			{!isMobile && <HeroSmallBanner />}
 			<Flex
 				flex={{ base: 1, md: 1, sm: 0, xs: 0 }}
 				justify="space-between"
@@ -56,9 +54,7 @@ const Hero: FC = () => {
 								<Typewriter
 									loop={false}
 									typeSpeed={130}
-									words={[
-										"Peter Dinis. Fullstack Developer",
-									]}
+									words={["Peter Dinis. Fullstack Developer"]}
 								/>
 							</Text>
 						</Stack>
