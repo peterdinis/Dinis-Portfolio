@@ -65,9 +65,9 @@ i18n.use(LanguageDetector)
 						bugOverflowAPI:
 							"API for our application where I can write programming questions and I can also answer them",
 						secondSentence:
-							"I have the most experience with technologies: React Nestjs and Typescript Node.",
+							"I have the most experience with technologies: React Javascript Nestjs and Typescript Node.",
 						firstSentence:
-							"Hi 👋 .My name is Peter Dinis. I am 23 years old. I come from Bardejov. I visited Secondary industrial school(SPST) in Bardejov. My favorite sports are Football and Voleyball.",
+							"Hi 👋. My name is Peter Dinis. I am 23 years old. I come from Bardejov. I visited Secondary industrial school(SPST) in Bardejov. My favorite sports are Football and Voleyball.",
 						spstClone:
 							"A clone of the SPŠT Library project that I developed for the Unicorn competition",
 						spstAuth: "Auth server for SPŠT Library",
@@ -151,9 +151,9 @@ i18n.use(LanguageDetector)
 						expireinceHeader: "Moje skúsenosti",
 						favoriteStack: "Môj obľubený tech stack",
 						secondSentence:
-							"Najväčšie skúsenosti mám z technológiami: React Nestjs a Typescript Node.",
+							"Najväčšie skúsenosti mám z technológiami: React Javascript Nestjs a Typescript Node.",
 						firstSentence:
-							"Ahoj 👋 . Volám sa Peter Dinis. Mám 23 rokov. Pochádzam z Bardejova. Navštevoval som Strednú priemyselnú školu technickú(SPŠT) v Bardejove. Medzi moje záujmy patrí futbal, volejbal.",
+							"Ahoj 👋. Volám sa Peter Dinis. Mám 23 rokov. Pochádzam z Bardejova. Navštevoval som Strednú priemyselnú školu technickú(SPŠT) v Bardejove. Medzi moje záujmy patrí futbal, volejbal.",
 					},
 				},
 			},

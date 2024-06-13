@@ -1,5 +1,6 @@
 import type { FC, MouseEvent } from "react";
 import type { MailtoProps } from "../../interfaces/IShared";
+import { Link } from "@chakra-ui/react";
 
 const toSearchString = (searchParams: Record<string, string> = {}): string => {
 	return Object.keys(searchParams)
@@ -31,15 +32,15 @@ const Mailto: FC<MailtoProps> = ({
 	};
 
 	const renderLink = () => (
-		<a href={createMailtoLink(email, headers)} {...others}>
+		<Link href={createMailtoLink(email, headers)} {...others}>
 			{emailText}
-		</a>
+		</Link>
 	);
 
 	const renderObfuscatedLink = () => (
-		<a onClick={handleClick} href="mailto:obfuscated" {...others}>
+		<Link onClick={handleClick} href="mailto:obfuscated" {...others}>
 			{emailText}
-		</a>
+		</Link>
 	);
 
 	return obfuscate ? renderObfuscatedLink() : renderLink();

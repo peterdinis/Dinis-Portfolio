@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Link, Stack, Text } from "@chakra-ui/react";
 import type { FC } from "react";
 
 const NotFoundWrapper: FC = () => {
@@ -24,7 +24,7 @@ const NotFoundWrapper: FC = () => {
 						</Text>
 					</Heading>
 					<Button>
-						<a href="/">Go back to main page</a>
+						<Link href="/">Go back to main page</Link>
 					</Button>
 				</Stack>
 			</Container>
