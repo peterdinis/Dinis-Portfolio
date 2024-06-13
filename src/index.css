@@ -7,8 +7,15 @@
   font-style: normal;
 }
 
+:root {
+  --scrollbarBackground: #fff;
+  --iconBackground: #551b54;
+  --webkitMain: #111;
+  --webkitSecond: #434343;
+}
+
 .vertical-timeline-element-icon {
-  background: #fff;
+  background: var(--scrollbarBackground);
 }
 
 html::-webkit-scrollbar {
@@ -17,7 +24,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #ffffff;
+  background: var(--scrollbarBackground);
   border-radius: 16px;
   box-shadow:
     inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
@@ -25,7 +32,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);
+  background: linear-gradient(90deg, var(--webkitSecond), var(--webkitSecond) 1px, var(--webkitMain) 0, var(--webkitMain));
 }
 
 .top-to-btm {
@@ -38,21 +45,21 @@ html::-webkit-scrollbar-track {
   z-index: 20;
 }
 .icon-style {
-  background-color: #551b54;
-  border: 2px solid #fff;
+  background-color: var(--iconBackground);
+  border: 2px solid var(--scrollbarBackground);
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  color: #fff;
+  color: var(--scrollbarBackground);
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
   transition: all 0.5s ease-in-out;
 }
 .icon-style:hover {
   animation: none;
-  background: #fff;
-  color: #551b54;
-  border: 2px solid #551b54;
+  background: var(--scrollbarBackground);
+  color: var(--iconBackground);
+  border: 2px solid var(--iconBackground);
 }
 @keyframes movebtn {
   0% {
