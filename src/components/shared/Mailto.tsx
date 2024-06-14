@@ -1,6 +1,6 @@
+import { Link } from "@chakra-ui/react";
 import type { FC, MouseEvent } from "react";
 import type { MailtoProps } from "../../interfaces/IShared";
-import { Link } from "@chakra-ui/react";
 
 const toSearchString = (searchParams: Record<string, string> = {}): string => {
 	return Object.keys(searchParams)

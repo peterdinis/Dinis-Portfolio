@@ -1,6 +1,14 @@
 "use client";
 
-import { Box, Button, Container, Heading, Link, Stack, Text } from "@chakra-ui/react";
+import {
+	Box,
+	Button,
+	Container,
+	Heading,
+	Link,
+	Stack,
+	Text,
+} from "@chakra-ui/react";
 import type { FC } from "react";
 
 const NotFoundWrapper: FC = () => {
