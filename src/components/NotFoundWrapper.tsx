@@ -28,11 +28,11 @@ const NotFoundWrapper: FC = () => {
 					>
 						Requested page does <br />
 						<Text as={"span"} color={"green.400"}>
-							Not Exists
+							not exists
 						</Text>
 					</Heading>
 					<Button>
-						<Link href="/">Go back to main page</Link>
+						<Link href="/">Go home</Link>
 					</Button>
 				</Stack>
 			</Container>
