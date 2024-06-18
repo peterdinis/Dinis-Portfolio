@@ -84,7 +84,6 @@ const ProjectsCards: FC = () => {
 
 			<ProjectCard
 				projectName={t("description.sixProjectH")}
-				projectDescription={t("description.sixProjectD")}
 				projectTech={"Html, Css, Javascript, Bootstrap"}
 				githubLink={
 					"https://github.com/peterdinis/Javascript-Snake-Game"
@@ -92,22 +91,6 @@ const ProjectsCards: FC = () => {
 				githubLinkText="Github"
 				deployLink="https://modest-elion-018f87.netlify.app/"
 				deployText="Online"
-			/>
-
-			<ProjectCard
-				projectName={t("description.taskMasterFE")}
-				projectDescription={t("description.taskMasterDesc")}
-				projectTech={"Nextjs Typescript Tailwind NextUI Graphql"}
-				githubLink={"https://github.com/peterdinis/master-task"}
-				githubLinkText="Github"
-			/>
-
-			<ProjectCard
-				projectName={t("description.taskMasterAPI")}
-				projectDescription={t("description.taskMasterDesc")}
-				projectTech={"Nestjs Graphql Typescript Prisma"}
-				githubLink={"https://github.com/peterdinis/Task-Master-API"}
-				githubLinkText="Github"
 			/>
 		</SimpleGrid>
 	);

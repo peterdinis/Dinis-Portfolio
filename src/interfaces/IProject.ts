@@ -1,6 +1,6 @@
 export interface IProjectCardProps {
 	projectName: string;
-	projectDescription: string;
+	projectDescription?: string;
 	projectTech: string;
 	deployLink?: string;
 	deployText?: string;
