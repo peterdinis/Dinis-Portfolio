@@ -15,7 +15,7 @@ import {
 	useDisclosure,
 	useMediaQuery,
 } from "@chakra-ui/react";
-import { Menu, Moon, Sun } from "lucide-react";
+import{HamburgerIcon, MoonIcon, SunIcon} from "@chakra-ui/icons";
 import { type FC, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -94,7 +94,7 @@ const Navbar: FC = () => {
 						<></>
 					)}
 					<Button onClick={toggleColorMode}>
-						{colorMode === "light" ? <Moon /> : <Sun />}
+						{colorMode === "light" ? <MoonIcon fontSize={20} /> : <SunIcon fontSize={20} />}
 					</Button>
 
 					{isLargerThanMD ? (
@@ -103,7 +103,7 @@ const Navbar: FC = () => {
 						<>
 							<Button
 								as={IconButton}
-								icon={<Menu />}
+								icon={<HamburgerIcon fontSize={20} />}
 								onClick={onOpen}
 							></Button>
 							<Drawer

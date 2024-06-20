@@ -1,4 +1,4 @@
-import { ChevronUp } from "lucide-react";
+import { ArrowUpIcon } from "@chakra-ui/icons";
 import { type FC, useEffect, useState } from "react";
 
 const ScrollToTop: FC = () => {
@@ -22,7 +22,9 @@ const ScrollToTop: FC = () => {
 	return (
 		<div className="top-to-btm">
 			{showTopBtn && (
-				<ChevronUp
+				<ArrowUpIcon
+					h={10}
+					fontSize={60}
 					onClick={goToTop}
 					className="icon-position icon-style"
 				/>
