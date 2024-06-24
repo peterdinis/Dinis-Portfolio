@@ -20,6 +20,8 @@ const ProjectsCards: FC = () => {
 				projectTech={"Nextjs Typescript TailwindCss"}
 				githubLink={"https://github.com/peterdinis/Next-Portfolio"}
 				githubLinkText="Github"
+				deployLink="https://next-portfolio-rose-omega.vercel.app"
+				deployText="Online"
 			/>
 
 			<ProjectCard
@@ -28,6 +30,8 @@ const ProjectsCards: FC = () => {
 				projectTech={"React Javascript Material UI"}
 				githubLink={"https://github.com/peterdinis/Portfolio-Dinis"}
 				githubLinkText="Github"
+				deployLink="https://portfolio-dinis.vercel.app/"
+				deployText="Online"
 			/>
 
 			<ProjectCard
@@ -36,6 +40,8 @@ const ProjectsCards: FC = () => {
 				projectTech={"React Typescript Recoil Material UI"}
 				githubLink={"https://github.com/peterdinis/React-Code-Editor"}
 				githubLinkText="Github"
+				deployLink="https://react-code-editor-flame.vercel.app"
+				deployText="Online"
 			/>
 
 			<ProjectCard
@@ -73,6 +79,8 @@ const ProjectsCards: FC = () => {
 					"https://github.com/peterdinis/Javascript-Snake-Game"
 				}
 				githubLinkText="Github"
+				deployLink="https://modest-elion-018f87.netlify.app/"
+				deployText="Online"
 			/>
 		</SimpleGrid>
 	);
