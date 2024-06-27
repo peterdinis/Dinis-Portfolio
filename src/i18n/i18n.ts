@@ -72,6 +72,7 @@ i18n.use(LanguageDetector)
 							"A clone of the SPŠT Library project that I developed for the Unicorn competition",
 						spstAuth: "Auth server for SPŠT Library",
 						spstHeader: "SPŠT Library",
+						podwave: "Application for listening podcasts",
 						spstAuthHeader: "SPŠT Auth server",
 						visionCraft:
 							"Vision-Craft application for creating online websites, without coding",
@@ -149,6 +150,7 @@ i18n.use(LanguageDetector)
 						aboutMe: "Pár viet o mne",
 						projectsHeader: "Moje projekty",
 						expireinceHeader: "Moje skúsenosti",
+						podwave: "Applikácia na počúvanie podcastov",
 						favoriteStack: "Môj obľubený tech stack",
 						secondSentence:
 							"Najväčšie skúsenosti mám z technológiami: React Javascript Nestjs a Typescript Node.",
