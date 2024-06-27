@@ -72,6 +72,7 @@ i18n.use(LanguageDetector)
 							"A clone of the SPŠT Library project that I developed for the Unicorn competition",
 						spstAuth: "Auth server for SPŠT Library",
 						spstHeader: "SPŠT Library",
+						sixProjectH: "Snake game",
 						podwave: "Application for listening podcasts",
 						spstAuthHeader: "SPŠT Auth server",
 						visionCraft:
