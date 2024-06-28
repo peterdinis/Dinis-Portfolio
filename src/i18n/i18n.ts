@@ -74,9 +74,7 @@ i18n.use(LanguageDetector)
 						spstHeader: "SPŠT Library",
 						sixProjectH: "Snake game",
 						podwave: "Application for listening podcasts",
-						spstAuthHeader: "SPŠT Auth server",
-						visionCraft:
-							"Vision-Craft application for creating online websites, without coding",
+						spstAuthHeader: "SPŠT Auth server"
 					},
 				},
 			},
