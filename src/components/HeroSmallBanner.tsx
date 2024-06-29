@@ -1,4 +1,4 @@
-import { Button, Link, VStack } from "@chakra-ui/react";
+import { Button, Box, VStack } from "@chakra-ui/react";
 import type { FC } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -11,10 +11,8 @@ const HeroSmallBanner: FC = () => {
 			mt={{ base: 4, md: 10 }}
 			zIndex="100"
 		>
-			<Link
-				href="https://github.com/peterdinis"
+			<Box
 				textDecoration="none"
-				isExternal={true}
 				style={{ textDecoration: "none" }}
 			>
 				<Button
@@ -26,7 +24,7 @@ const HeroSmallBanner: FC = () => {
 				>
 					{t("description.welcome")}
 				</Button>
-			</Link>
+			</Box>
 		</VStack>
 	);
 };
