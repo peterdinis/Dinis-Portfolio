@@ -10,10 +10,12 @@ import {
 	Text,
 } from "@chakra-ui/react";
 import type { FC } from "react";
+import Navbar from "./Navbar";
 
 const NotFoundWrapper: FC = () => {
 	return (
 		<>
+			<Navbar />
 			<Container maxW={"3xl"}>
 				<Stack
 					as={Box}
