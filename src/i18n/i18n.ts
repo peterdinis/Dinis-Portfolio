@@ -74,7 +74,7 @@ i18n.use(LanguageDetector)
 						spstHeader: "SPŠT Library",
 						sixProjectH: "Snake game",
 						podwave: "Application for listening podcasts",
-						spstAuthHeader: "SPŠT Auth server"
+						spstAuthHeader: "SPŠT Auth server",
 					},
 				},
 			},
