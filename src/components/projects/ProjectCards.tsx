@@ -74,6 +74,22 @@ const ProjectsCards: FC = () => {
 				githubLinkText="Github"
 			/>
 
+			<ProjectCard 
+				projectName="Vision Craft"
+				projectDescription={t("description.visionCraft")}
+				projectTech="Nextjs Typescript Prisma Shadcn UI Bun Tailwind"
+				githubLink="https://github.com/peterdinis/Vision-Craft"
+				githubLinkText="Github"
+			/>
+
+			<ProjectCard 
+				projectName={"Interview Prep"}
+				projectDescription={t("description.interviewPrep")}
+				projectTech="Nextjs Chakra Ui OpenAI Typescript"
+				githubLink="https://github.com/peterdinis/Interview-Prep"
+				githubLinkText="Github"
+			/>
+
 			<ProjectCard
 				projectName={"Node Starter"}
 				projectDescription={t("description.nodeStarter")}
