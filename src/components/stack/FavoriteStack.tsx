@@ -25,54 +25,54 @@ import SecondaryHeader from "../shared/SecondaryHeader";
 import StackImage from "./StackImage";
 
 const FavoriteStack: FC = () => {
-  const { colorMode } = useColorMode();
+	const { colorMode } = useColorMode();
 
-  const { t } = useTranslation();
+	const { t } = useTranslation();
 
-  return (
-    <>
-      <SecondaryHeader text={t("description.favoriteStack")} />
-      <Box
-        boxShadow="2xl"
-        borderRadius="3xl"
-        my="10"
-        bgColor={colorMode === "light" ? "white" : "gray.700"}
-        id="skills-wrapper"
-      >
-        <Flex
-          gap={{ base: 16, lg: 16, md: 16, sm: 14, xs: 10 }}
-          wrap="wrap"
-          p={{ base: 10, lg: 10, md: 10, sm: 10, xs: 0 }}
-          pt={{ base: 10, lg: 10, md: 10, sm: 10, xs: 10 }}
-          pb={{ base: 10, lg: 10, md: 10, sm: 10, xs: 10 }}
-          my={{ base: 0, lg: 0, md: 0, sm: 4, xs: 10 }}
-          alignItems="center"
-          justify="center"
-        >
-          <StackImage imageSrc={css} altSrc="css" />
-          <StackImage imageSrc={graphql} altSrc="graphql" />
-          <StackImage imageSrc={csharp} altSrc="csharp" />
-          <StackImage imageSrc={figma} altSrc="figma" />
-          <StackImage imageSrc={tailwind} altSrc="tailwind" />
-          <StackImage imageSrc={mongo} altSrc="mongodb" />
-          <StackImage imageSrc={linux} altSrc="linux" />
-          <StackImage imageSrc={express} altSrc="express" />
-          <StackImage imageSrc={firebase} altSrc="firebase" />
-          <StackImage imageSrc={html} altSrc="html" />
-          <StackImage imageSrc={javascript} altSrc="javascript" />
-          <StackImage imageSrc={jest} altSrc="jest" />
-          <StackImage imageSrc={mysql} altSrc="mysql" />
-          <StackImage imageSrc={nestjs} altSrc="nestjs" />
-          <StackImage imageSrc={net} altSrc="asp.net" />
-          <StackImage imageSrc={nextjs} altSrc="nextjs" />
-          <StackImage imageSrc={pg} altSrc="postgresql" />
-          <StackImage imageSrc={query} altSrc="tanstack-query" />
-          <StackImage imageSrc={react} altSrc="react" />
-          <StackImage imageSrc={typescript} altSrc="typescript" />
-        </Flex>
-      </Box>
-    </>
-  );
+	return (
+		<>
+			<SecondaryHeader text={t("description.favoriteStack")} />
+			<Box
+				boxShadow="2xl"
+				borderRadius="3xl"
+				my="10"
+				bgColor={colorMode === "light" ? "white" : "gray.700"}
+				id="skills-wrapper"
+			>
+				<Flex
+					gap={{ base: 16, lg: 16, md: 16, sm: 14, xs: 10 }}
+					wrap="wrap"
+					p={{ base: 10, lg: 10, md: 10, sm: 10, xs: 0 }}
+					pt={{ base: 10, lg: 10, md: 10, sm: 10, xs: 10 }}
+					pb={{ base: 10, lg: 10, md: 10, sm: 10, xs: 10 }}
+					my={{ base: 0, lg: 0, md: 0, sm: 4, xs: 10 }}
+					alignItems="center"
+					justify="center"
+				>
+					<StackImage imageSrc={css} altSrc="css" />
+					<StackImage imageSrc={graphql} altSrc="graphql" />
+					<StackImage imageSrc={csharp} altSrc="csharp" />
+					<StackImage imageSrc={figma} altSrc="figma" />
+					<StackImage imageSrc={tailwind} altSrc="tailwind" />
+					<StackImage imageSrc={mongo} altSrc="mongodb" />
+					<StackImage imageSrc={linux} altSrc="linux" />
+					<StackImage imageSrc={express} altSrc="express" />
+					<StackImage imageSrc={firebase} altSrc="firebase" />
+					<StackImage imageSrc={html} altSrc="html" />
+					<StackImage imageSrc={javascript} altSrc="javascript" />
+					<StackImage imageSrc={jest} altSrc="jest" />
+					<StackImage imageSrc={mysql} altSrc="mysql" />
+					<StackImage imageSrc={nestjs} altSrc="nestjs" />
+					<StackImage imageSrc={net} altSrc="asp.net" />
+					<StackImage imageSrc={nextjs} altSrc="nextjs" />
+					<StackImage imageSrc={pg} altSrc="postgresql" />
+					<StackImage imageSrc={query} altSrc="tanstack-query" />
+					<StackImage imageSrc={react} altSrc="react" />
+					<StackImage imageSrc={typescript} altSrc="typescript" />
+				</Flex>
+			</Box>
+		</>
+	);
 };
 
 export default FavoriteStack;
