@@ -64,7 +64,7 @@ const Hero: FC = () => {
 							{Object.keys(languages).map((lng) => (
 								<Button
 									bg={"teal.400"}
-									_hover={{ bg: "teal.700" }}
+									_hover={{ bg: "teal.500" }}
 									key={lng}
 									style={{
 										fontWeight:
@@ -77,7 +77,7 @@ const Hero: FC = () => {
 										i18n.changeLanguage(lng);
 									}}
 								>
-									<Text color={"gray.700"}>
+									<Text>
 										{languages[lng].nativeName}
 									</Text>
 								</Button>
