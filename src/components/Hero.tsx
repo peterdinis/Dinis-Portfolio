@@ -77,9 +77,7 @@ const Hero: FC = () => {
 										i18n.changeLanguage(lng);
 									}}
 								>
-									<Text>
-										{languages[lng].nativeName}
-									</Text>
+									<Text>{languages[lng].nativeName}</Text>
 								</Button>
 							))}
 						</ButtonGroup>
