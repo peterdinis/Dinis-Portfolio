@@ -76,6 +76,7 @@ i18n.use(LanguageDetector)
 						interviewPrep: "Application for practicing interviews",
 						podwave: "Application for listening podcasts",
 						spstAuthHeader: "SPŠT Auth server",
+						docuNest: "An application for writing notes from AI supports"
 					},
 				},
 			},
@@ -89,8 +90,8 @@ i18n.use(LanguageDetector)
 							"Task master. Alternatíva pre Jiru. Vieme si vytvoriť svoj tím, vytvárať projekty pre projekt tasky, šprinty.",
 						nodeStarter:
 							"Template pre node applikácie. Použité technologie Node Typescript Bun",
-						visionCraft:
-							"Vision-Craft aplikácia na tvorbu online webstránok, bez kódovania",
+						docuNest:
+							"Applikácia na písanie poznámok z AI podporov",
 						spstAuthHeader: "SPŠT Autentifikačný server",
 						spstHeader: "SPŠT Knižnica",
 						spstAuth:
