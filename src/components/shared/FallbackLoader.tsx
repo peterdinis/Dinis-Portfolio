@@ -1,5 +1,5 @@
 import { Box, CircularProgress, Text } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import type { ICircularProgressWithLabelProps } from "../../interfaces/IShared";
 
 function CircularProgressWithLabel({ value }: ICircularProgressWithLabelProps) {
@@ -29,7 +29,7 @@ function CircularProgressWithLabel({ value }: ICircularProgressWithLabelProps) {
 	);
 }
 
-export default function FallbackLoader() {
+const FallbackLoader: FC = () => {
 	const [progress, setProgress] = useState(10);
 
 	useEffect(() => {
@@ -45,3 +45,5 @@ export default function FallbackLoader() {
 
 	return <CircularProgressWithLabel value={progress} />;
 }
+
+export default FallbackLoader;
