@@ -91,16 +91,6 @@ const ProjectsCards: FC = () => {
 			/>
 
 			<ProjectCard
-				projectName={"Node Starter"}
-				projectDescription={t("description.nodeStarter")}
-				projectTech={"Node Express Typescript Bun Biome"}
-				githubLink={
-					"https://github.com/peterdinis/Node-Typescript-Starter"
-				}
-				githubLinkText="Github"
-			/>
-
-			<ProjectCard
 				projectName={t("description.sixProjectH")}
 				projectTech={"Html, Css, Javascript, Bootstrap"}
 				githubLink={
