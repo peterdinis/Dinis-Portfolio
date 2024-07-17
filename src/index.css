@@ -10,7 +10,7 @@
 
 :root {
   --scrollbarBackground: #fff;
-  --iconBackground: #551b54;
+  --iconBackground: #8b00889e;
   --webkitMain: #111;
   --webkitSecond: #434343;
 }
@@ -58,7 +58,7 @@ html::-webkit-scrollbar-track {
   border: 2px solid var(--scrollbarBackground);
   border-radius: 50%;
   height: 50px;
-  width: 50px;
+  width: 3.5rem;
   color: var(--scrollbarBackground);
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
