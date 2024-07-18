@@ -91,7 +91,7 @@ i18n.use(LanguageDetector)
 						nodeStarter:
 							"Template pre node applikácie. Použité technologie Node Typescript Bun",
 						docuNest:
-							"Applikácia na písanie poznámok z AI podporov",
+							"Applikácia na písanie poznámok z AI podporou",
 						spstAuthHeader: "SPŠT Autentifikačný server",
 						spstHeader: "SPŠT Knižnica",
 						spstAuth:
