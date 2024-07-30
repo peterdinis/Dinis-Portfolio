@@ -72,6 +72,8 @@ const ProjectsCards: FC = () => {
 				projectTech={"Nextjs Typescript Shadcn UI Convex Tailwind"}
 				githubLink={"https://github.com/peterdinis/Podwave"}
 				githubLinkText="Github"
+				deployLink="https://podwave-r5lctvvip-peter-dinis-projects.vercel.app/"
+				deployText="Online"
 			/>
 
 			<ProjectCard
