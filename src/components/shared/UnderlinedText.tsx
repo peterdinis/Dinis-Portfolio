@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
-import { PropsWithChildren } from "react";
-import { UnderlinedTextProps } from "../../interfaces/IShared";
+import type { PropsWithChildren } from "react";
+import type { UnderlinedTextProps } from "../../interfaces/IShared";
 
 const UnderlinedText = (props: PropsWithChildren<UnderlinedTextProps>) => (
 	<Box as="span" display="inline-block" position="relative">
@@ -17,4 +17,4 @@ const UnderlinedText = (props: PropsWithChildren<UnderlinedTextProps>) => (
 	</Box>
 );
 
-export default UnderlinedText
+export default UnderlinedText;

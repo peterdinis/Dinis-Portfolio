@@ -1,8 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import type { PropsWithChildren } from "react";
-import type {
-	HeaderProps,
-} from "../../interfaces/IShared";
+import type { HeaderProps } from "../../interfaces/IShared";
 import UnderlinedText from "./UnderlinedText";
 
 const Header = ({

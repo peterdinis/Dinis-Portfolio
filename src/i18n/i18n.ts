@@ -76,7 +76,8 @@ i18n.use(LanguageDetector)
 						interviewPrep: "Application for practicing interviews",
 						podwave: "Application for listening podcasts",
 						spstAuthHeader: "SPŠT Auth server",
-						docuNest: "An application for writing notes from AI supports"
+						docuNest:
+							"An application for writing notes from AI supports",
 					},
 				},
 			},
