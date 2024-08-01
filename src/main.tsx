@@ -11,28 +11,28 @@ import { routeTree } from "./routeTree.gen.ts";
 const router = createRouter({ routeTree });
 
 declare module "@tanstack/react-router" {
-	interface Register {
-		router: typeof router;
-	}
+  interface Register {
+    router: typeof router;
+  }
 }
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-	<StrictMode>
-		<ChakraProvider>
-			<Suspense
-				fallback={
-					<Spinner
-						thickness="4px"
-						speed="0.65s"
-						emptyColor="gray.200"
-						color="blue.500"
-						size="xl"
-					/>
-				}
-			>
-				<RouterProvider router={router} />
-			</Suspense>
-			<ScrollToTop />
-		</ChakraProvider>
-	</StrictMode>,
+  <StrictMode>
+    <ChakraProvider>
+      <Suspense
+        fallback={
+          <Spinner
+            thickness="5px"
+            speed="0.65s"
+            emptyColor="gray.200"
+            color="blue.500"
+            size="2xl"
+          />
+        }
+      >
+        <RouterProvider router={router} />
+      </Suspense>
+      <ScrollToTop />
+    </ChakraProvider>
+  </StrictMode>
 );
