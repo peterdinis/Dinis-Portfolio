@@ -53,7 +53,7 @@ i18n.use(LanguageDetector)
 						linkedIn: "My linkedIn: ",
 						oMne: "About me",
 						skusenosti: "Expirience",
-						projekty: "Projects",
+						projekty: "My projects",
 						kontakt: "Contact",
 						sevenProjectH: "Clone of reddit website",
 						thirdProjectD: "My second portfolio that I created",
