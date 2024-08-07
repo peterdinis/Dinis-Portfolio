@@ -82,6 +82,8 @@ const ProjectsCards: FC = () => {
 				projectTech="Nextjs Typescript Prisma NextUI Bun"
 				githubLink="https://github.com/peterdinis/Vision-Craft"
 				githubLinkText="Github"
+				deployLink="https://docu-nest.vercel.app/"
+				deployText="Online"
 			/>
 
 			<ProjectCard
