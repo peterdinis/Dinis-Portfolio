@@ -41,7 +41,7 @@ i18n.use(LanguageDetector)
 						projectsHeader: "My projects",
 						expirienceHeader: "My expirience",
 						contactHeader: "Are you interested in my work?",
-						contactSecHeader: "So, write me. 🖊️",
+						contactSecHeader: "So, write me message. 🖊️",
 						email: "My email: ",
 						github: "My github: ",
 						taskMasterDesc:
