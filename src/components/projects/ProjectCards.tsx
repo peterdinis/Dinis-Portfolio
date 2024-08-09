@@ -79,7 +79,7 @@ const ProjectsCards: FC = () => {
 			<ProjectCard
 				projectName="Docu Nest"
 				projectDescription={t("description.docuNest")}
-				projectTech="Nextjs Typescript Prisma NextUI Bun"
+				projectTech="Nextjs Typescript Prisma NextUI Tailwind Next-Auth"
 				githubLink="https://github.com/peterdinis/Vision-Craft"
 				githubLinkText="Github"
 				deployLink="https://docu-nest.vercel.app/"
