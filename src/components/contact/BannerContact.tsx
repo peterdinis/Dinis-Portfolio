@@ -5,11 +5,13 @@ import {
 	Text,
 	chakra,
 	useColorModeValue,
+	Flex,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import type { FC } from "react";
 import { useTranslation } from "react-i18next";
 import Mailto from "../shared/Mailto";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const BannerContact: FC = () => {
 	const { t } = useTranslation();
@@ -68,7 +70,9 @@ const BannerContact: FC = () => {
 								email={"pdinis1@gmail.com"}
 							/>
 						</Text>
-						<Text
+
+						<Flex
+							alignItems="center"
 							wordBreak={"break-all"}
 							color={"orange.500"}
 							lineHeight={1.2}
@@ -76,11 +80,14 @@ const BannerContact: FC = () => {
 							mt={10}
 						>
 							{t("description.github")}
-							<Link href="https://github.com/peterdinis">
+							<Link href="https://github.com/peterdinis" ml={2}>
+								<FaGithub style={{ display: "inline", marginRight: "8px" }} />
 								Github
 							</Link>
-						</Text>
-						<Text
+						</Flex>
+
+						<Flex
+							alignItems="center"
 							wordBreak={"break-all"}
 							lineHeight={1.2}
 							color={"blue.400"}
@@ -88,10 +95,11 @@ const BannerContact: FC = () => {
 							mt={10}
 						>
 							{t("description.linkedIn")}
-							<Link href="https://www.linkedin.com/in/peter-dinis-58520b214/">
+							<Link href="https://www.linkedin.com/in/peter-dinis-58520b214/" ml={2}>
+								<FaLinkedin style={{ display: "inline", marginRight: "8px" }} />
 								LinkedIn
 							</Link>
-						</Text>
+						</Flex>
 					</Box>
 				</Stack>
 			</motion.div>
