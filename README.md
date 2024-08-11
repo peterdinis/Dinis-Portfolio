@@ -7,7 +7,7 @@ Použité technológie:
 -   Vite
 -   Chakra UI
 -   i18next
--   Biome for linting
--   Bun package manager
+-   Pnpm package manager
 -   Eslint
 -   Tanstack router
+-   Prettier for formatting
