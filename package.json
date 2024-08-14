@@ -7,8 +7,7 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "format": "prettier --check --ignore-path .gitignore .",
-        "format:fix": "prettier --write --ignore-path .gitignore ."
+        "format": "prettier --write --ignore-path .gitignore ."
     },
     "dependencies": {
         "@chakra-ui/icons": "^2.1.1",
