@@ -13,6 +13,8 @@
     --iconBackground: #004776fe;
     --webkitMain: #111;
     --webkitSecond: #434343;
+    --webkitHslaMain: hsla(0, 0, 0, 0.25);
+    --webkitHslaSecond: hsla(0, 0%, 100%, 0.25);
 }
 
 .vertical-timeline-element-icon {
@@ -28,8 +30,8 @@ html::-webkit-scrollbar-thumb {
     background: var(--scrollbarBackground);
     border-radius: 16px;
     box-shadow:
-        inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-        inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+        inset 2px 2px 2px var(--webkitHslaSecond),
+        inset -2px -2px 2px var(--webkitHslaMain);
 }
 
 html::-webkit-scrollbar-track {
