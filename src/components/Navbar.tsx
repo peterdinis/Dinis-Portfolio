@@ -20,7 +20,7 @@ import { type FC, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Navbar: FC = () => {
-    const [scroll] = useState(false);
+    const [scroll, _] = useState(false);
     const { colorMode, toggleColorMode } = useColorMode();
     const { isOpen, onOpen, onClose } = useDisclosure();
     const { t } = useTranslation();
