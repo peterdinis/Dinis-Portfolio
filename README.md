@@ -11,3 +11,5 @@ Použité technológie:
 -   Eslint
 -   Tanstack router
 -   Prettier for formatting
+-   React Icons
+-   Framer Motion
