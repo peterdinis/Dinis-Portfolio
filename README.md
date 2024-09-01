@@ -13,3 +13,4 @@ Použité technológie:
 -   Prettier for formatting
 -   React Icons
 -   Framer Motion
+-   Tanstack Router

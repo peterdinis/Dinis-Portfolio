@@ -34,24 +34,24 @@ const Navbar: FC = () => {
     };
 
     const expirienceScoll = () => {
-        const heroSection = document.querySelector(
+        const expirienceSection = document.querySelector(
             '#expirience',
         ) as unknown as HTMLElement;
-        heroSection.scrollIntoView({ behavior: 'smooth' });
+        expirienceSection.scrollIntoView({ behavior: 'smooth' });
     };
 
     const projectsScroll = () => {
-        const heroSection = document.querySelector(
+        const projectsSection = document.querySelector(
             '#projects',
         ) as unknown as HTMLElement;
-        heroSection.scrollIntoView({ behavior: 'smooth' });
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
     };
 
     const contactsScroll = () => {
-        const heroSection = document.querySelector(
+        const contactSection = document.querySelector(
             '#contact',
         ) as unknown as HTMLElement;
-        heroSection.scrollIntoView({ behavior: 'smooth' });
+        contactSection.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
