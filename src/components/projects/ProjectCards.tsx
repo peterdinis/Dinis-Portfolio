@@ -87,14 +87,6 @@ const ProjectsCards: FC = () => {
             />
 
             <ProjectCard
-                projectName={'Interview Prep'}
-                projectDescription={t('description.interviewPrep')}
-                projectTech='Nextjs Chakra Ui OpenAI Typescript'
-                githubLink='https://github.com/peterdinis/Interview-Prep'
-                githubLinkText='Github'
-            />
-
-            <ProjectCard
                 projectName={t('description.sixProjectH')}
                 projectTech={'Html, Css, Javascript, Bootstrap'}
                 githubLink={
