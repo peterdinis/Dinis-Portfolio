@@ -14,6 +14,8 @@ i18n.use(LanguageDetector)
             en: {
                 translation: {
                     description: {
+                        notionHeader: "Notion application",
+                        notionClone: "My simple version of notion application",
                         sketchCraft: 'Light weight clone of figma',
                         shareSync: 'Application for storing files',
                         firstExpirienceH:
@@ -85,6 +87,8 @@ i18n.use(LanguageDetector)
             sk: {
                 translation: {
                     description: {
+                        notionHeader: "Notion applikácia",
+                        notionClone: "Moja jednoduchá verzia applikácie Notion",
                         taskMasterAPI: 'API, Pre projekt Task Master',
                         taskMasterFE: 'Frontend applikácia pre Task Master',
                         taskMasterDesc:

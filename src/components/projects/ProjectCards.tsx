@@ -35,6 +35,16 @@ const ProjectsCards: FC = () => {
             />
 
             <ProjectCard
+                projectName={t('description.notionHeader')}
+                projectDescription={t('description.notionClone')}
+                projectTech={'Nextjs Typescript Convex Tailwind'}
+                githubLink={'https://github.com/peterdinis/My-Notion'}
+                githubLinkText='Github'
+                deployLink='https://my-notion-peach.vercel.app/'
+                deployText='Online'
+            />
+
+            <ProjectCard
                 projectName={'React-Code-Editor'}
                 projectDescription={t('description.fifthProjectD')}
                 projectTech={'React Typescript Recoil Material UI'}
