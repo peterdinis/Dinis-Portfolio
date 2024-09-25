@@ -48,7 +48,9 @@ const ProjectCard: FC<IProjectCardProps> = ({
                         p={1.5}
                         colorScheme='green'
                     >
-                        <Text ml={2} p={1}>{projectTech}</Text>
+                        <Text ml={2} p={1}>
+                            {projectTech}
+                        </Text>
                     </Badge>
                 </CardBody>
                 <CardFooter>

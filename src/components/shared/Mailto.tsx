@@ -33,13 +33,26 @@ const Mailto: FC<MailtoProps> = ({
     };
 
     const renderLink = () => (
-        <Link marginTop={3} href={createMailtoLink(email, headers)} display="flex" alignItems="center" {...others}>
+        <Link
+            marginTop={3}
+            href={createMailtoLink(email, headers)}
+            display='flex'
+            alignItems='center'
+            {...others}
+        >
             <EmailIcon marginEnd={2} /> {emailText}
         </Link>
     );
 
     const renderObfuscatedLink = () => (
-        <Link marginTop={3} onClick={handleClick} href='mailto:obfuscated' display="flex" alignItems="center" {...others}>
+        <Link
+            marginTop={3}
+            onClick={handleClick}
+            href='mailto:obfuscated'
+            display='flex'
+            alignItems='center'
+            {...others}
+        >
             <EmailIcon marginEnd={2} /> {emailText}
         </Link>
     );
