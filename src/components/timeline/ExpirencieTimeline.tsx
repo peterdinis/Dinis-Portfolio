@@ -34,6 +34,12 @@ const ExperienceTimeline: FC = () => {
             subDescription: t('description.fourExperienceD'),
             icon: <CheckCircleIcon color='blue.500' boxSize={6} />,
         },
+
+        {
+            text: t('description.fifthExperienceH'),
+            subDescription: t('description.fifthExperienceD'),
+            icon: <CheckCircleIcon color='blue.500' boxSize={6} />,
+        },
     ];
 
     return (
