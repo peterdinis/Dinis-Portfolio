@@ -97,6 +97,14 @@ const ProjectsCards: FC = () => {
             />
 
             <ProjectCard
+                projectName='Docu Nest 2.0'
+                projectDescription={t('description.docuNest')}
+                projectTech='Nextjs Typescript Shadcn UI Tailwind Prisma Next-Auth'
+                githubLink='https://github.com/peterdinis/Vision-Craft'
+                githubLinkText='Github'
+            />
+
+            <ProjectCard
                 projectName={t('description.sixProjectH')}
                 projectTech={'Html, Css, Javascript, Bootstrap'}
                 githubLink={
