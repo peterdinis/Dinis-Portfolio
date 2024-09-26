@@ -2,23 +2,7 @@ import { Link } from '@chakra-ui/react';
 import type { FC, MouseEvent } from 'react';
 import type { MailtoProps } from '../../interfaces/IShared';
 import { EmailIcon } from '@chakra-ui/icons';
-
-const toSearchString = (searchParams: Record<string, string> = {}): string => {
-    return Object.keys(searchParams)
-        .map((key) => `${key}=${encodeURIComponent(searchParams[key])}`)
-        .join('&');
-};
-
-const createMailtoLink = (
-    email: string,
-    headers?: Record<string, string>,
-): string => {
-    let link = `mailto:${email}`;
-    if (headers) {
-        link += `?${toSearchString(headers)}`;
-    }
-    return link;
-};
+import { createMailtoLink } from '../../utils/mailto';
 
 const Mailto: FC<MailtoProps> = ({
     email,
