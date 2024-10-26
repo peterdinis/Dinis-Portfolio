@@ -63,11 +63,8 @@ i18n.use(LanguageDetector)
                         thirdProjectD: 'My second portfolio that I created',
                         firstPortfolio: 'My first porfolio that I created',
                         secondPortfolio: 'My second porfolio',
-                        bugOverflow: 'Frontend for BugOverflow application',
                         fifthProjectD:
                             'Simple code editor for writing html / css and javascript',
-                        bugOverflowAPI:
-                            'API for our application where I can write programming questions and I can also answer them',
                         secondSentence:
                             'I have the most experience with technologies: React Javascript Nestjs and Typescript Node.',
                         firstSentence:
@@ -77,7 +74,6 @@ i18n.use(LanguageDetector)
                         spstAuth: 'Auth server for SPŠT Library',
                         spstHeader: 'SPŠT Library',
                         sixProjectH: 'Snake game',
-                        interviewPrep: 'Application for practicing interviews',
                         podwave: 'Application for listening podcasts',
                         spstAuthHeader: 'SPŠT Auth server',
                         docuNest:
@@ -154,7 +150,6 @@ i18n.use(LanguageDetector)
                         linkedIn: 'Môj linkedIn: ',
                         github: 'Môj github: ',
                         email: 'Môj email: ',
-                        interviewPrep: 'Aplikácia na precvičenie interviews',
                         contactSecHeader: 'Tak mi napíš 🖊️',
                         contactHeader: 'Zaujala ťa moja tvorba ?',
                         welcome: 'Ahoj 👋 Vitaj na mojom portfóliu.',
