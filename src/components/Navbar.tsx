@@ -69,7 +69,9 @@ const Navbar: FC = () => {
         >
             <Link>
                 <HStack>
-                    <Text as={"kbd"} fontSize={"1.3rem"} fontWeight={'bold'}>Peter Dinis</Text>
+                    <Text as={'kbd'} fontSize={'1.3rem'} fontWeight={'bold'}>
+                        Peter Dinis
+                    </Text>
                 </HStack>
             </Link>
 

@@ -71,7 +71,7 @@ i18n.use(LanguageDetector)
                         secondSentence:
                             'I have the most experience with technologies: React Javascript Nestjs and Typescript Node.',
                         firstSentence:
-                            'Hi 👋. My name is Peter Dinis. I am 23 years old. I come from Bardejov. I visited Secondary industrial school(SPST) in Bardejov. My favorite sports are Football and Volleyball.',
+                            'Hi 👋. My name is Peter Dinis. I am 23 years old. I come from Bardejov. I visited Secondary industrial school(SPST) in Bardejov. My favorite sports are Football and Volleyball. Now working on Prague.',
                         spstClone:
                             'A clone of the SPŠT Library project that I developed for the Unicorn competition',
                         spstAuth: 'Auth server for SPŠT Library',
@@ -166,7 +166,7 @@ i18n.use(LanguageDetector)
                         secondSentence:
                             'Najväčšie skúsenosti mám z technológiami: React Javascript Nestjs a Typescript Node.',
                         firstSentence:
-                            'Ahoj 👋. Volám sa Peter Dinis. Mám 23 rokov. Pochádzam z Bardejova. Navštevoval som Strednú priemyselnú školu technickú(SPŠT) v Bardejove. Medzi moje záujmy patrí futbal, volejbal.',
+                            'Ahoj 👋. Volám sa Peter Dinis. Mám 23 rokov. Pochádzam z Bardejova. Navštevoval som Strednú priemyselnú školu technickú(SPŠT) v Bardejove. Medzi moje záujmy patrí futbal, volejbal. Aktuálne pracujem v Prahe.',
                     },
                 },
             },
