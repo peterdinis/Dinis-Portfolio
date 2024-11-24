@@ -1,7 +1,6 @@
 import { Box, Flex, useColorMode } from '@chakra-ui/react';
 import type { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import graphql from '../../images/GraphQL.png';
 import csharp from '../../images/csharp.png';
 import css from '../../images/css.png';
 import express from '../../images/express-new.png';
@@ -50,7 +49,6 @@ const FavoriteStack: FC = () => {
                     justify='center'
                 >
                     <StackImage imageSrc={css} altSrc='css' />
-                    <StackImage imageSrc={graphql} altSrc='graphql' />
                     <StackImage imageSrc={csharp} altSrc='csharp' />
                     <StackImage imageSrc={figma} altSrc='figma' />
                     <StackImage imageSrc={tailwind} altSrc='tailwind' />
