@@ -55,11 +55,22 @@ html::-webkit-scrollbar-track {
     z-index: 20;
 }
 
+.circle-icon {
+    fill: #006699;
+    height: 25px !important;
+    width: 25px !important;
+}
+
+.email-icon {
+    margin: 8px;
+}
+
 .icon-style {
     background-color: var(--iconBackground);
     border: 2px solid var(--scrollbarBackground);
     border-radius: 50%;
-    height: 50px;
+    height: 38px;
+    padding: 3px;
     width: 3.5rem;
     color: var(--scrollbarBackground);
     cursor: pointer;

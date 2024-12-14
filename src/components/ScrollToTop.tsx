@@ -1,4 +1,4 @@
-import { ArrowUpIcon } from '@chakra-ui/icons';
+import { FaArrowUp } from "react-icons/fa6";
 import { type FC, useEffect, useState } from 'react';
 
 const ScrollToTop: FC = () => {
@@ -22,9 +22,7 @@ const ScrollToTop: FC = () => {
     return (
         <div className='top-to-btm'>
             {showTopBtn && (
-                <ArrowUpIcon
-                    h={10}
-                    fontSize={60}
+                <FaArrowUp
                     onClick={goToTop}
                     className='icon-position icon-style'
                 />

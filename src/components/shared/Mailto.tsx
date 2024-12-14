@@ -1,7 +1,7 @@
 import { Link } from '@chakra-ui/react';
 import type { FC, MouseEvent } from 'react';
 import type { MailtoProps } from '../../interfaces/IShared';
-import { EmailIcon } from '@chakra-ui/icons';
+import { MdEmail } from "react-icons/md";
 import { createMailtoLink } from '../../utils/mailto';
 
 const Mailto: FC<MailtoProps> = ({
@@ -24,7 +24,7 @@ const Mailto: FC<MailtoProps> = ({
             alignItems='center'
             {...others}
         >
-            <EmailIcon marginEnd={2} /> {emailText}
+            <MdEmail className="email-icon" /> {emailText}
         </Link>
     );
 
@@ -37,7 +37,7 @@ const Mailto: FC<MailtoProps> = ({
             alignItems='center'
             {...others}
         >
-            <EmailIcon marginEnd={2} /> {emailText}
+            <MdEmail className="email-icon" /> {emailText}
         </Link>
     );
 
