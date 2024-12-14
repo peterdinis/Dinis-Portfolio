@@ -1,4 +1,7 @@
-import { HamburgerIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { IoIosMoon } from "react-icons/io";
+import { FaSun } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import {
     Button,
     Drawer,
@@ -97,9 +100,9 @@ const Navbar: FC = () => {
                     )}
                     <Button onClick={toggleColorMode}>
                         {colorMode === 'light' ? (
-                            <MoonIcon fontSize={20} />
+                            <IoIosMoon className="navbar-icon" />
                         ) : (
-                            <SunIcon fontSize={20} />
+                            <FaSun className="navbar-icon" />
                         )}
                     </Button>
 
@@ -109,7 +112,7 @@ const Navbar: FC = () => {
                         <>
                             <Button
                                 as={IconButton}
-                                icon={<HamburgerIcon fontSize={20} />}
+                                icon={<GiHamburgerMenu className="navbar-icon" />}
                                 onClick={onOpen}
                             ></Button>
                             <Drawer
