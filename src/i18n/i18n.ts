@@ -38,7 +38,7 @@ i18n.use(LanguageDetector)
                             'Internal development platform and language of the company (Twinzu), Java, Javascript, PostgreSQL, GitLab, Docker. Projects I am/was working on: 1. Slovak Chamber of Tax Advisors. 2. Office for Supervision of Health Care (UDZS). 3. Development of an internal company application for attendance monitoring. 4. Electronic form application(EForm). 5 People-to-people (partial modifications)',
 
                         fifthExperienceH: 'MeDitorial React.js Developer',
-                        fifthExperienceD: 'Starting 1.10',
+                        fifthExperienceD: 'From 1.10',
                         welcome: 'Hi 👋 Welcome to my portfolio.',
                         aboutMe: 'A few sentences about me',
                         favoriteStack: 'My favorite tech stack',
@@ -86,7 +86,7 @@ i18n.use(LanguageDetector)
                 translation: {
                     description: {
                         fifthExperienceH: 'MeDitorial React.js Developer',
-                        fifthExperienceD: 'Začínam 1.10',
+                        fifthExperienceD: 'Od 1.10',
                         notionHeader: 'Notion applikácia',
                         notionClone: 'Moja jednoduchá verzia applikácie Notion',
                         taskMasterAPI: 'API, Pre projekt Task Master',
