@@ -6,11 +6,8 @@ Použité technológie:
 -   Typescript
 -   Vite
 -   Chakra UI
--   i18next
+-   i18next for translations
 -   Pnpm package manager
--   Eslint
--   Tanstack router
--   Prettier for formatting
--   React Icons
--   Framer Motion
--   Tanstack Router
+-   Eslint for formatting
+
+And other packages
