@@ -1,5 +1,3 @@
-'use client';
-
 import { Image } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import type { FC } from 'react';

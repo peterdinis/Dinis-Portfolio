@@ -38,7 +38,7 @@ const Hero: FC = () => {
                 <Stack mt={isMobile ? { base: 36, md: 4 } : { base: 0, md: 0 }}>
                     <Heading
                         fontSize={{
-                            base: '4xl',
+                            base: '5xl',
                             md: '6xl',
                             lg: '6xl',
                         }}
