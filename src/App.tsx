@@ -7,7 +7,7 @@ import ContactMe from './components/contact/Contact';
 import MyProjects from './components/projects/MyProjects';
 import Layout from './components/shared/Layout';
 import FavoriteStack from './components/stack/FavoriteStack';
-import ExpirienceTimeline from './components/timeline/ExpirencieTimeline';
+import ExpirienceTimeline from './components/timeline/ExpirienceTimeline';
 
 const App: FC = () => {
     return (

@@ -8,7 +8,7 @@ import {
     VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 
-const ExperienceTimeline: FC = () => {
+const ExpirienceTimeline: FC = () => {
     const { t } = useTranslation();
     const { colorMode } = useColorMode();
 
@@ -108,4 +108,4 @@ const ExperienceTimeline: FC = () => {
     );
 };
 
-export default ExperienceTimeline;
+export default ExpirienceTimeline;
