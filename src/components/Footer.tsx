@@ -18,7 +18,7 @@ const Footer: FC = () => {
                 alignItems={'center'}
             >
                 <Text wordBreak={'break-all'} fontSize={35}>
-                    &copy; Peter Dinis 2024
+                    &copy; Peter Dinis 2025
                 </Text>
             </Container>
         </Stack>

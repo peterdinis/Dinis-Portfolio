@@ -5,7 +5,6 @@ import csharp from '../../images/csharp.png';
 import css from '../../images/css.png';
 import express from '../../images/express-new.png';
 import figma from '../../images/figma-new.png';
-import firebase from '../../images/firebase-new.png';
 import html from '../../images/html.png';
 import javascript from '../../images/javascript.png';
 import jest from '../../images/jest-new.png';
@@ -55,7 +54,6 @@ const FavoriteStack: FC = () => {
                     <StackImage imageSrc={mongo} altSrc='mongodb' />
                     <StackImage imageSrc={linux} altSrc='linux' />
                     <StackImage imageSrc={express} altSrc='express' />
-                    <StackImage imageSrc={firebase} altSrc='firebase' />
                     <StackImage imageSrc={html} altSrc='html' />
                     <StackImage imageSrc={javascript} altSrc='javascript' />
                     <StackImage imageSrc={jest} altSrc='jest' />
