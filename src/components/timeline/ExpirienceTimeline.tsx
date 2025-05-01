@@ -1,4 +1,4 @@
-import { CiCircleCheck } from "react-icons/ci";
+import { CiCircleCheck } from 'react-icons/ci';
 import { Box, Container, Text, chakra, useColorMode } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import type { FC } from 'react';
@@ -17,28 +17,28 @@ const ExpirienceTimeline: FC = () => {
             text: t('description.firstExpirienceH'),
             description: t('description.firstExpirienceSubH'),
             subDescription: t('description.firstExpirienceD'),
-            icon: <CiCircleCheck className="circle-icon" />,
+            icon: <CiCircleCheck className='circle-icon' />,
         },
         {
             text: t('description.secondExpirienceH'),
             subDescription: t('description.secondExpirienceD'),
-            icon: <CiCircleCheck className="circle-icon" />,
+            icon: <CiCircleCheck className='circle-icon' />,
         },
         {
             text: t('description.thirdExperienceH'),
             subDescription: t('description.thirdExperienceD'),
-            icon: <CiCircleCheck className="circle-icon" />,
+            icon: <CiCircleCheck className='circle-icon' />,
         },
         {
             text: t('description.fourExperienceH'),
             subDescription: t('description.fourExperienceD'),
-            icon: <CiCircleCheck className="circle-icon" />,
+            icon: <CiCircleCheck className='circle-icon' />,
         },
 
         {
             text: t('description.fifthExperienceH'),
             subDescription: t('description.fifthExperienceD'),
-            icon: <CiCircleCheck className="circle-icon" />,
+            icon: <CiCircleCheck className='circle-icon' />,
         },
     ];
 

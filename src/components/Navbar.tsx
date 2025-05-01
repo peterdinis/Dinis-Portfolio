@@ -1,6 +1,6 @@
-import { IoIosMoon } from "react-icons/io";
-import { FaSun } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { IoIosMoon } from 'react-icons/io';
+import { FaSun } from 'react-icons/fa';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 import {
     Button,
@@ -100,9 +100,9 @@ const Navbar: FC = () => {
                     )}
                     <Button onClick={toggleColorMode}>
                         {colorMode === 'light' ? (
-                            <IoIosMoon className="navbar-icon" />
+                            <IoIosMoon className='navbar-icon' />
                         ) : (
-                            <FaSun className="navbar-icon" />
+                            <FaSun className='navbar-icon' />
                         )}
                     </Button>
 
@@ -112,7 +112,9 @@ const Navbar: FC = () => {
                         <>
                             <Button
                                 as={IconButton}
-                                icon={<GiHamburgerMenu className="navbar-icon" />}
+                                icon={
+                                    <GiHamburgerMenu className='navbar-icon' />
+                                }
                                 onClick={onOpen}
                             ></Button>
                             <Drawer

@@ -1,4 +1,4 @@
-import { FaArrowUp } from "react-icons/fa6";
+import { FaArrowUp } from 'react-icons/fa6';
 import { type FC, useEffect, useState } from 'react';
 
 const ScrollToTop: FC = () => {
