@@ -15,7 +15,7 @@
         "@emotion/styled": "^11.14.0",
         "@tanstack/react-router": "^1.119.0",
         "@tanstack/router-devtools": "^1.119.1",
-        "framer-motion": "^11.18.2",
+        "framer-motion": "^12.9.4",
         "i18next": "^23.16.8",
         "i18next-browser-languagedetector": "^7.2.2",
         "react": "^19.1.0",
