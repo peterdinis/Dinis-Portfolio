@@ -9,5 +9,3 @@ Použité technológie:
 - i18next for translations
 - Pnpm package manager
 - Eslint for formatting
-
-And other packages
