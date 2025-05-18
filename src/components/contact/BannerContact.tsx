@@ -52,7 +52,7 @@ const BannerContact: FC = () => {
                         >
                             <Mailto
                                 emailText={t('description.contactSecHeader')}
-                                email={'pdinis1@gmail.com'}
+                                email={'peterdinis611@gmail.com'}
                             />
                         </chakra.h2>
                     </Box>
@@ -66,8 +66,8 @@ const BannerContact: FC = () => {
                         >
                             {t('description.email')}{' '}
                             <Mailto
-                                emailText='pdinis1@gmail.com'
-                                email={'pdinis1@gmail.com'}
+                                emailText='peterdinis611@gmail.com'
+                                email={'peterdinis611@gmail.com'}
                             />
                         </Text>
 

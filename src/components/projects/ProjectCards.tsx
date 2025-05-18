@@ -60,29 +60,9 @@ const ProjectsCards: FC = () => {
                 projectTech={
                     'Nextjs Typescript T3Stack ShadcnUI Prisma Postgresql'
                 }
-                githubLink={'https://github.com/peterdinis/spst-library'}
+                githubLink={'https://github.com/peterdinis/Library-App'}
                 githubLinkText='Github'
-                deployLink='https://spst-library.vercel.app/'
-                deployText='Online'
-            />
-
-            <ProjectCard
-                projectName={t('description.spstAuthHeader')}
-                projectDescription={t('description.spstAuth')}
-                projectTech={'Nestjs Typescript Prisma Postgresql'}
-                githubLink={'https://github.com/peterdinis/spst-library-auth'}
-                githubLinkText='Github'
-                deployLink='https://spst-library-auth-production.up.railway.app'
-                deployText='Online'
-            />
-
-            <ProjectCard
-                projectName={'Podwave'}
-                projectDescription={t('description.podwave')}
-                projectTech={'Nextjs Typescript Shadcn UI Convex Tailwind'}
-                githubLink={'https://github.com/peterdinis/Podwave'}
-                githubLinkText='Github'
-                deployLink='https://podwave-r5lctvvip-peter-dinis-projects.vercel.app/'
+                deployLink='https://library-app-production-4e64.up.railway.app/'
                 deployText='Online'
             />
 
@@ -94,14 +74,6 @@ const ProjectsCards: FC = () => {
                 githubLinkText='Github'
                 deployLink='https://docu-nest.vercel.app/'
                 deployText='Online'
-            />
-
-            <ProjectCard
-                projectName='Docu Nest 2.0'
-                projectDescription={t('description.docuNest')}
-                projectTech='Nextjs Typescript Shadcn UI Tailwind Prisma Next-Auth'
-                githubLink='https://github.com/peterdinis/Vision-Craft'
-                githubLinkText='Github'
             />
 
             <ProjectCard
