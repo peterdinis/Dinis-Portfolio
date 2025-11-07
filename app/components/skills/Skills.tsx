@@ -5,15 +5,30 @@ import { motion } from 'framer-motion';
 import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const skills = [
-    { name: 'REACT', color: 'var(--mc-sky)', icon: '⚛️' },
-    { name: 'NEXT.JS', color: 'var(--mc-diamond)', icon: '▲' },
-    { name: 'TYPESCRIPT', color: 'var(--mc-water)', icon: '📘' },
-    { name: 'NODE.JS', color: 'var(--mc-grass)', icon: '🟢' },
-    { name: 'PYTHON', color: 'var(--mc-gold)', icon: '🐍' },
-    { name: 'TAILWIND', color: 'var(--mc-wood)', icon: '🎨' },
-    { name: 'THREE.JS', color: 'var(--mc-lava)', icon: '🎮' },
-    { name: 'WEBGL', color: 'var(--mc-diamond)', icon: '✨' },
-    { name: 'GIT', color: 'var(--mc-stone)', icon: '🔀' },
+    {
+        name: "Frontend Development",
+        icon: "⚛️",
+        color: "var(--mc-sky)",
+        description: "Html, Css, Scss, Javascript, Typescript, React, Nextjs, TailwindCss, Tanstack Query",
+    },
+    {
+        name: "Backend Development",
+        icon: "🟢",
+        color: "var(--mc-grass)",
+        description: "Node.js, MongoDB, Nestjs, Graphql, Mysql, Postgresql, C#",
+    },
+    {
+        name: "Cloud & DevOps",
+        icon: "☁️",
+        color: "var(--mc-diamond)",
+        description: "AWS, Docker, Linux",
+    },
+    {
+        name: "Mobile Development",
+        icon: "📱",
+        color: "var(--mc-wood)",
+        description: "React Native, Progressive Web Apps",
+    },
 ];
 
 const Skills: FC = () => {
@@ -27,7 +42,7 @@ const Skills: FC = () => {
                 <AnimatedBlock>
                     <div
                         className='minecraft-block p-4 md:p-6 text-center'
-                        style={{ backgroundColor: 'var(--mc-grass)' }}
+                        style={{ backgroundColor: 'var(--mc-diamond)' }}
                     >
                         <h2
                             className='pixel-text text-2xl md:text-3xl lg:text-4xl'
@@ -38,7 +53,7 @@ const Skills: FC = () => {
                     </div>
                 </AnimatedBlock>
 
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-4'>
+                <div className='grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4'>
                     {skills.map((skill, index) => (
                         <AnimatedBlock key={index} delay={index * 0.1}>
                             <motion.div
@@ -54,6 +69,12 @@ const Skills: FC = () => {
                                     style={{ color: 'var(--mc-dark)' }}
                                 >
                                     {skill.name}
+                                </p>
+                                <p
+                                    className='text-[8px] md:text-xs lg:text-sm leading-relaxed mt-1'
+                                    style={{ color: 'var(--mc-light)' }}
+                                >
+                                    {skill.description}
                                 </p>
                             </motion.div>
                         </AnimatedBlock>

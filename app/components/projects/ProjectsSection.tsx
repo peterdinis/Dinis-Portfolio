@@ -5,29 +5,54 @@ import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const projects = [
     {
-        title: 'MINECRAFT PORTFOLIO',
-        description:
-            'A MINECRAFT-STYLED WEB APPLICATION WITH 3D ANIMATIONS, BLOCKY DESIGN AND PIXELATED UI ELEMENTS. BUILT WITH NEXT.JS AND THREE.JS.',
-        tech: ['REACT', 'NEXT.JS', 'THREE.JS', 'TAILWIND'],
+        title: "PDF-Tools",
+        description: "Simple app with lot of tools for working with PDFS",
+        tech: ["Nextjs", "Server Actions", "Typescript", "QPDF", "Shadcn UI", "Tailwindcss"],
         color: 'var(--mc-grass)',
-        stats: { blocks: '1000+', fps: '60', visitors: '10K+' },
+        stats: { demo: 'Live', github: 'Code' }
     },
     {
-        title: '3D BLOCK GAME',
-        description:
-            'AN INTERACTIVE 3D GAME BUILT WITH MINECRAFT AESTHETICS, BLOCKY ANIMATIONS AND PHYSICS. FEATURES REAL-TIME RENDERING AND SMOOTH CONTROLS.',
-        tech: ['THREE.JS', 'REACT', 'WEBGL', 'TYPESCRIPT'],
+        title: "Code editor",
+        description: "Simple code editor, for html, css, javascript written in React and Typescript",
+        tech: ["React", "Vite", "Typescript", "Material UI"],
         color: 'var(--mc-diamond)',
-        stats: { blocks: '5000+', fps: '60', players: '1K+' },
+        stats: { demo: 'Live', github: 'Code' }
     },
     {
-        title: 'BLOCKY UI LIBRARY',
-        description:
-            'A GAME-INSPIRED UI COMPONENT LIBRARY WITH PIXELATED STYLING, BLOCKY BUTTONS AND MINECRAFT-THEMED COMPONENTS. FULLY RESPONSIVE AND ANIMATED.',
-        tech: ['REACT', 'TYPESCRIPT', 'CSS', 'FRAMER-MOTION'],
+        title: "CV-Vision",
+        description: "Application for analyzing CVs",
+        tech: ["Nextjs", "Typescript", "TailwindCss", "ShadcnUI", "OpenAI API", "Server Actions"],
         color: 'var(--mc-gold)',
-        stats: { components: '50+', downloads: '5K+', stars: '200+' },
+        stats: { demo: 'Live', github: 'Code' }
     },
+    {
+        title: "Box-Drop",
+        description: "Application for uploading files photos and other files, with option for sharing files with connected users",
+        tech: ["Nextjs", "Typescript", "Shadcn UI", "Clerkjs", "Tailwindcss", "Drizzle ORM"],
+        color: 'var(--mc-red)',
+        stats: { demo: 'Live', github: 'Code' }
+    },
+    {
+        title: "PDF Crafter",
+        description: "Application for building PDFs",
+        tech: ["Nextjs", "typescript", "TailwindCss", "ShadcnUI"],
+        color: 'var(--mc-blue)',
+        stats: { demo: 'Live', github: 'Code' }
+    },
+    {
+        title: "Req Jet",
+        description: "Simple Post-man clone",
+        tech: ["Nextjs", "Typescript", "Tailwindcss", "ShadcnUI", "Supabase"],
+        color: 'var(--mc-purple)',
+        stats: { demo: 'Live', github: 'Code' }
+    },
+    {
+        title: "Lexicon",
+        description: "Application for taking notes",
+        tech: ["Nextjs", "Typescript", "Tailwindcss", "Server Actions", "Shadcn UI"],
+        color: 'var(--mc-orange)',
+        stats: { demo: 'Live', github: 'Code' }
+    }
 ];
 
 const ProjectsSection: FC = () => {
@@ -86,8 +111,7 @@ const ProjectsSection: FC = () => {
                                             whileHover={{ scale: 1.1 }}
                                             className='minecraft-block px-2 md:px-3 py-1 text-[8px] md:text-xs'
                                             style={{
-                                                backgroundColor:
-                                                    'var(--mc-wood)',
+                                                backgroundColor: 'var(--mc-wood)',
                                                 color: 'var(--mc-light)',
                                             }}
                                         >
@@ -95,30 +119,25 @@ const ProjectsSection: FC = () => {
                                         </motion.span>
                                     ))}
                                 </div>
-                                <div className='grid grid-cols-3 gap-2 mt-3'>
+                                <div className='grid grid-cols-2 gap-2 mt-3'>
                                     {Object.entries(project.stats).map(
                                         ([key, value], statIndex) => (
                                             <div
                                                 key={statIndex}
                                                 className='text-center p-2'
                                                 style={{
-                                                    backgroundColor:
-                                                        'var(--mc-dirt)',
+                                                    backgroundColor: 'var(--mc-dirt)',
                                                 }}
                                             >
                                                 <p
                                                     className='text-xs md:text-sm font-bold'
-                                                    style={{
-                                                        color: 'var(--mc-light)',
-                                                    }}
+                                                    style={{ color: 'var(--mc-light)' }}
                                                 >
                                                     {value}
                                                 </p>
                                                 <p
                                                     className='text-[8px] md:text-xs'
-                                                    style={{
-                                                        color: 'var(--mc-light)',
-                                                    }}
+                                                    style={{ color: 'var(--mc-light)' }}
                                                 >
                                                     {key.toUpperCase()}
                                                 </p>
