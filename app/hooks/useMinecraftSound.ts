@@ -17,8 +17,8 @@ export function useMinecraftSound() {
                 return;
             }
 
-            // Try to play from CDN first, but use fallback immediately if it fails
-            const tryPlayFromCDN = () => {
+            // Try to play from local public/sounds folder first
+            const tryPlayFromLocal = () => {
                 try {
                     const soundUrls = getMinecraftSoundURLs(type);
                     if (!soundUrls || soundUrls.length === 0) {
@@ -26,7 +26,7 @@ export function useMinecraftSound() {
                         return;
                     }
 
-                    const cacheKey = `${type}-cdn`;
+                    const cacheKey = `${type}-local`;
                     let audio = audioCache.current.get(cacheKey);
 
                     if (!audio) {
@@ -42,7 +42,7 @@ export function useMinecraftSound() {
                             'error',
                             () => {
                                 console.log(
-                                    `CDN sound failed for ${type}, using fallback`
+                                    `Local sound failed for ${type}, using fallback`
                                 );
                                 playFallbackSound(type, volume);
                             },
@@ -64,13 +64,13 @@ export function useMinecraftSound() {
                         });
                     }
                 } catch (error) {
-                    console.error('Error playing CDN sound:', error);
+                    console.error('Error playing local sound:', error);
                     playFallbackSound(type, volume);
                 }
             };
 
-            // Try CDN first, fallback to generated sound if it fails
-            tryPlayFromCDN();
+            // Try local files first, fallback to generated sound if it fails
+            tryPlayFromLocal();
         },
         []
     );
@@ -82,40 +82,17 @@ export function useMinecraftSound() {
  * Get multiple URLs for Minecraft sounds with fallbacks
  */
 function getMinecraftSoundURLs(type: SoundType): string[] {
-    // Try local files first
-    const localFiles = [`/sounds/${type}.ogg`, `/sounds/${type}.mp3`];
-
-    // CDN URLs - multiple sources for reliability
-    const cdnUrls: Record<SoundType, string[]> = {
-        click: [
-            'https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.4/assets/minecraft/sounds/ui/button_click.ogg',
-            'https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/sounds/ui/button_click.ogg',
-            'https://assets.mixkit.co/sfx/preview/mixkit-game-click-1114.mp3',
-        ],
-        stone: [
-            'https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.4/assets/minecraft/sounds/block/stone/place1.ogg',
-            'https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/sounds/block/stone/place1.ogg',
-            'https://assets.mixkit.co/sfx/preview/mixkit-retro-game-hit-2181.mp3',
-        ],
-        wood: [
-            'https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.4/assets/minecraft/sounds/block/wood/place1.ogg',
-            'https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/sounds/block/wood/place1.ogg',
-            'https://assets.mixkit.co/sfx/preview/mixkit-game-ball-tap-2075.mp3',
-        ],
-        plop: [
-            'https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.4/assets/minecraft/sounds/entity/item/pickup.ogg',
-            'https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/sounds/entity/item/pickup.ogg',
-            'https://assets.mixkit.co/sfx/preview/mixkit-game-ball-tap-2075.mp3',
-        ],
-        pop: [
-            'https://cdn.jsdelivr.net/gh/InventivetalentDev/minecraft-assets@1.20.4/assets/minecraft/sounds/ui/button_click.ogg',
-            'https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.20.4/assets/minecraft/sounds/ui/button_click.ogg',
-            'https://assets.mixkit.co/sfx/preview/mixkit-game-click-1114.mp3',
-        ],
+    // Map sound types to actual filenames in public/sounds
+    const soundFiles: Record<SoundType, string[]> = {
+        click: ['/sounds/click.mp3', '/sounds/click.ogg'],
+        stone: ['/sounds/stone.mp3', '/sounds/stone.ogg'],
+        wood: ['/sounds/wood.mp3', '/sounds/wood.ogg'],
+        plop: ['/sounds/plop.mp3', '/sounds/plop.ogg'],
+        pop: ['/sounds/pop.mp3', '/sounds/pop.ogg'],
     };
 
-    // Combine local files with CDN URLs
-    return [...localFiles, ...(cdnUrls[type] || [])];
+    // Return local files only (from public/sounds directory)
+    return soundFiles[type] || [];
 }
 
 /**
