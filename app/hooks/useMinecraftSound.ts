@@ -105,8 +105,8 @@ function playFallbackSound(type: SoundType, volume: number) {
     }
 
     try {
-        const AudioContext =
-            window.AudioContext || (window as any).webkitAudioContext;
+        const AudioContext: typeof window.AudioContext | undefined =
+    window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
         if (!AudioContext) {
             return;
         }
@@ -177,7 +177,7 @@ function playFallbackSound(type: SoundType, volume: number) {
             try {
                 audioContext.close();
             } catch (e) {
-                // Ignore cleanup errors
+                throw new Error(e instanceof Error ? e.message : String(e));
             }
         };
     } catch (error) {

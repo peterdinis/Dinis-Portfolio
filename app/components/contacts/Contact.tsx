@@ -38,7 +38,10 @@ const Contact: FC = () => {
                             className='text-xs md:text-sm lg:text-base text-center'
                             style={{ color: 'var(--mc-light)' }}
                         >
-                            🎮 READY TO START A NEW PROJECT? LET'S CONNECT!
+                            <p>
+                                🎮 READY TO START A NEW PROJECT? LET&apos;S CONNECT!
+                            </p>
+
                         </p>
                         <div className='grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-4'>
                             {[

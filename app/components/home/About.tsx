@@ -43,9 +43,9 @@ const About: FC = () => {
                             className='text-xs md:text-sm lg:text-base leading-relaxed mb-4'
                             style={{ color: 'var(--mc-light)' }}
                         >
-                            🎮 WELCOME TO MY BLOCKY WORLD! I'M A PASSIONATE
+                            🎮 WELCOME TO MY BLOCKY WORLD! I&apos;M A PASSIONATE
                             DEVELOPER WHO LOVES CREATING UNIQUE AND ENGAGING WEB
-                            EXPERIENCES. INSPIRED BY MINECRAFT'S ICONIC
+                            EXPERIENCES. INSPIRED BY MINECRAFT&apos;S ICONIC
                             AESTHETIC, I BUILD APPLICATIONS THAT COMBINE
                             FUNCTIONALITY WITH PLAYFUL DESIGN.
                         </p>
@@ -53,7 +53,7 @@ const About: FC = () => {
                             className='text-xs md:text-sm lg:text-base leading-relaxed mb-4'
                             style={{ color: 'var(--mc-light)' }}
                         >
-                            ⚡ WHEN I'M NOT CRAFTING CODE, YOU'LL FIND ME
+                            ⚡ WHEN I&apos;M NOT CRAFTING CODE, YOU&apos;LL FIND ME
                             EXPLORING NEW TECHNOLOGIES, BUILDING CREATIVE
                             PROJECTS, AND TURNING IDEAS INTO REALITY, ONE BLOCK
                             AT A TIME.
@@ -62,7 +62,7 @@ const About: FC = () => {
                             className='text-xs md:text-sm lg:text-base leading-relaxed'
                             style={{ color: 'var(--mc-light)' }}
                         >
-                            🚀 LET'S BUILD SOMETHING AMAZING TOGETHER!
+                            🚀 LET&apos;S BUILD SOMETHING AMAZING TOGETHER!
                         </p>
                     </div>
                 </AnimatedBlock>
