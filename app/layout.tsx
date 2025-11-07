@@ -1,32 +1,30 @@
-import type { Metadata } from "next";
-import { Press_Start_2P } from "next/font/google";
-import "./globals.css";
-import ScrollToTop from "./components/ScrollToTop";
+import type { Metadata } from 'next';
+import { Press_Start_2P } from 'next/font/google';
+import './globals.css';
+import ScrollToTop from './components/ScrollToTop';
 
 const pressStart2P = Press_Start_2P({
-  weight: "400",
-  variable: "--font-minecraft",
-  subsets: ["latin"],
+    weight: '400',
+    variable: '--font-minecraft',
+    subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Peter Dinis - Minecraft Portfolio",
-  description: "A blocky portfolio built with Minecraft style",
+    title: 'Peter Dinis - Minecraft Portfolio',
+    description: 'A blocky portfolio built with Minecraft style',
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${pressStart2P.variable} font-minecraft`}
-      >
-        {children}
-        <ScrollToTop />
-      </body>
-    </html>
-  );
+    return (
+        <html lang='en'>
+            <body className={`${pressStart2P.variable} font-minecraft`}>
+                {children}
+                <ScrollToTop />
+            </body>
+        </html>
+    );
 }

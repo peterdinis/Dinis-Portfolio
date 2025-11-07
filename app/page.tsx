@@ -14,26 +14,28 @@ import ProjectsSection from './components/projects/ProjectsSection';
 import Contact from './components/contacts/Contact';
 
 export default function Home() {
+    return (
+        <Suspense fallback={<MinecraftLoading />}>
+            <div
+                className='min-h-screen overflow-x-hidden minecraft-background'
+                style={{ color: 'var(--mc-light)' }}
+            >
+                <Navigation />
 
-  return (
-    <Suspense fallback={<MinecraftLoading />}>
-      <div className="min-h-screen overflow-x-hidden minecraft-background" style={{ color: 'var(--mc-light)' }}>
-        <Navigation />
+                <Hero />
 
-        <Hero />
+                <Achivments />
 
-        <Achivments />
+                <About />
 
-        <About />
+                <Skills />
 
-        <Skills />
+                <ProjectsSection />
 
-        <ProjectsSection />
+                <Contact />
 
-        <Contact />
-
-        <Footer />
-      </div>
-    </Suspense>
-  );
+                <Footer />
+            </div>
+        </Suspense>
+    );
 }
