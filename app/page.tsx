@@ -1,16 +1,15 @@
 'use client';
 
-import { useState, Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { Suspense } from 'react';
 import { motion } from 'framer-motion';
-import MinecraftScene from './components/MinecraftScene';
-import { AnimatedBlock, FloatingBlock } from './components/AnimatedBlock';
+import { AnimatedBlock } from './components/AnimatedBlock';
 import ScrollToTop from './components/ScrollToTop';
 import MinecraftLoading from './components/MinecraftLoading';
 import { useMinecraftSound } from './hooks/useMinecraftSound';
 import Navigation from './components/shared/Navigation';
 import Hero from './components/home/Hero';
+import Achivments from './components/home/Achivments';
+import About from './components/home/About';
 
 export default function Home() {
   const { playSound } = useMinecraftSound();
@@ -51,103 +50,16 @@ export default function Home() {
     },
   ];
 
-  const achievements = [
-    { label: 'BLOCKS PLACED', value: '10K+', color: 'var(--mc-grass)' },
-    { label: 'PROJECTS BUILT', value: '50+', color: 'var(--mc-diamond)' },
-    { label: 'LINES OF CODE', value: '100K+', color: 'var(--mc-gold)' },
-  ];
-
-  const minecraftFacts = [
-    'MINECRAFT WAS RELEASED IN 2011 AND HAS SOLD OVER 300 MILLION COPIES',
-    'THE GAME USES JAVA AND C++ FOR DIFFERENT PLATFORMS',
-    'MINECRAFT WORLDS ARE INFINITE (THEORETICALLY)',
-    'THERE ARE OVER 800 DIFFERENT BLOCKS IN MINECRAFT',
-    'THE GAME HAS BEEN USED FOR EDUCATION IN SCHOOLS WORLDWIDE',
-  ];
-
   return (
     <Suspense fallback={<MinecraftLoading />}>
       <div className="min-h-screen overflow-x-hidden minecraft-background" style={{ color: 'var(--mc-light)' }}>
      <Navigation />
-     
+
       <Hero />
 
-      {/* Achievements Section */}
-      <section className="py-8 md:py-16" style={{ backgroundColor: 'var(--mc-dark)' }}>
-        <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {achievements.map((achievement, index) => (
-              <AnimatedBlock key={index} delay={index * 0.1}>
-                <motion.div
-                  whileHover={{ scale: 1.1, y: -5 }}
-                  className="minecraft-block p-4 md:p-6 text-center"
-                  style={{ backgroundColor: achievement.color }}
-                >
-                  <p className="pixel-text text-2xl md:text-3xl font-bold mb-2" style={{ color: 'var(--mc-dark)' }}>
-                    {achievement.value}
-                  </p>
-                  <p className="text-xs md:text-sm" style={{ color: 'var(--mc-dark)' }}>
-                    {achievement.label}
-                  </p>
-                </motion.div>
-              </AnimatedBlock>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Achivments />
 
-      {/* About Section */}
-      <section id="about" className="min-h-screen flex items-center justify-center p-4 md:p-8 py-12 md:py-16" style={{ backgroundColor: 'var(--mc-dark)' }}>
-        <div className="max-w-4xl w-full space-y-6 md:space-y-8">
-          <AnimatedBlock>
-            <div className="minecraft-block p-4 md:p-6 text-center" style={{ backgroundColor: 'var(--mc-wood)' }}>
-              <h2 className="pixel-text text-2xl md:text-3xl lg:text-4xl mb-4 md:mb-6" style={{ color: 'var(--mc-light)' }}>
-                👤 ABOUT ME
-              </h2>
-            </div>
-          </AnimatedBlock>
-
-          <AnimatedBlock delay={0.2}>
-            <div className="minecraft-block p-6 md:p-8" style={{ backgroundColor: 'var(--mc-dirt)' }}>
-              <p className="text-xs md:text-sm lg:text-base leading-relaxed mb-4" style={{ color: 'var(--mc-light)' }}>
-                🎮 WELCOME TO MY BLOCKY WORLD! I'M A PASSIONATE DEVELOPER WHO LOVES CREATING
-                UNIQUE AND ENGAGING WEB EXPERIENCES. INSPIRED BY MINECRAFT'S ICONIC AESTHETIC,
-                I BUILD APPLICATIONS THAT COMBINE FUNCTIONALITY WITH PLAYFUL DESIGN.
-              </p>
-              <p className="text-xs md:text-sm lg:text-base leading-relaxed mb-4" style={{ color: 'var(--mc-light)' }}>
-                ⚡ WHEN I'M NOT CRAFTING CODE, YOU'LL FIND ME EXPLORING NEW TECHNOLOGIES,
-                BUILDING CREATIVE PROJECTS, AND TURNING IDEAS INTO REALITY, ONE BLOCK AT A TIME.
-              </p>
-              <p className="text-xs md:text-sm lg:text-base leading-relaxed" style={{ color: 'var(--mc-light)' }}>
-                🚀 LET'S BUILD SOMETHING AMAZING TOGETHER!
-              </p>
-            </div>
-          </AnimatedBlock>
-
-          {/* Minecraft Facts */}
-          <AnimatedBlock delay={0.4}>
-            <div className="minecraft-block p-4 md:p-6" style={{ backgroundColor: 'var(--mc-stone)' }}>
-              <h3 className="pixel-text text-lg md:text-xl mb-4" style={{ color: 'var(--mc-light)' }}>
-                🧱 MINECRAFT FACTS
-              </h3>
-              <div className="space-y-2">
-                {minecraftFacts.map((fact, index) => (
-                  <motion.p
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="text-[10px] md:text-xs lg:text-sm" style={{ color: 'var(--mc-light)' }}
-                  >
-                    • {fact}
-                  </motion.p>
-                ))}
-              </div>
-            </div>
-          </AnimatedBlock>
-        </div>
-      </section>
+      <About />
 
       {/* Skills Section */}
       <section id="skills" className="min-h-screen flex items-center justify-center p-4 md:p-8 py-12 md:py-16" style={{ backgroundColor: 'var(--mc-dark)' }}>
@@ -294,9 +206,6 @@ export default function Home() {
           © 2025 PETER DINIS | BUILT WITH MINECRAFT STYLE & THREE.JS 🎮
         </p>
       </motion.footer>
-
-      {/* Scroll to Top Button */}
-      <ScrollToTop />
     </div>
     </Suspense>
   );

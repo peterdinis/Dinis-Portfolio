@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Press_Start_2P } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "./components/ScrollToTop";
 
 const pressStart2P = Press_Start_2P({
   weight: "400",
@@ -24,6 +25,7 @@ export default function RootLayout({
         className={`${pressStart2P.variable} font-minecraft`}
       >
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );
