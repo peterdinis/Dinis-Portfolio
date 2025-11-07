@@ -1,9 +1,9 @@
 'use client';
 
 import { FC } from 'react';
-import { AnimatedBlock } from '../AnimatedBlock';
 import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
 import { motion } from 'framer-motion';
+import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const Contact: FC = () => {
     const { playSound } = useMinecraftSound();

@@ -84,8 +84,8 @@ export function useMinecraftSound() {
 function getMinecraftSoundURLs(type: SoundType): string[] {
     // Map sound types to actual filenames in public/sounds
     const soundFiles: Record<SoundType, string[]> = {
-        click: ['/sounds/click.mp3', '/sounds/click.ogg'],
-        stone: ['/sounds/stone.mp3', '/sounds/stone.ogg'],
+        click: ['/sounds/Voicy_Say2 - spider.mp3'],
+        stone: ['/sounds/Voicy_Strong4 - attack.mp3'],
         wood: ['/sounds/wood.mp3', '/sounds/wood.ogg'],
         plop: ['/sounds/plop.mp3', '/sounds/plop.ogg'],
         pop: ['/sounds/pop.mp3', '/sounds/pop.ogg'],

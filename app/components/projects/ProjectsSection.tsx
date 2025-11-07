@@ -1,7 +1,7 @@
 import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
 import { FC } from 'react';
-import { AnimatedBlock } from '../AnimatedBlock';
 import { motion } from 'framer-motion';
+import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const projects = [
     {

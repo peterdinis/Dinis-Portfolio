@@ -1,8 +1,8 @@
 'use client';
 
 import { FC } from 'react';
-import { AnimatedBlock } from '../AnimatedBlock';
 import { motion } from 'framer-motion';
+import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const achievements = [
     { label: 'BLOCKS PLACED', value: '10K+', color: 'var(--mc-grass)' },

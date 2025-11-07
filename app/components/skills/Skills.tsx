@@ -1,8 +1,8 @@
 'use client';
 
 import { FC } from 'react';
-import { AnimatedBlock } from '../AnimatedBlock';
 import { motion } from 'framer-motion';
+import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const skills = [
     { name: 'REACT', color: 'var(--mc-sky)', icon: '⚛️' },

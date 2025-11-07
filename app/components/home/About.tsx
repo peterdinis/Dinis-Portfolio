@@ -1,8 +1,8 @@
 'use client';
 
 import { FC } from 'react';
-import { AnimatedBlock } from '../AnimatedBlock';
 import { motion } from 'framer-motion';
+import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const minecraftFacts = [
     'MINECRAFT WAS RELEASED IN 2011 AND HAS SOLD OVER 300 MILLION COPIES',
