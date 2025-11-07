@@ -86,9 +86,9 @@ function getMinecraftSoundURLs(type: SoundType): string[] {
     const soundFiles: Record<SoundType, string[]> = {
         click: ['/sounds/Voicy_Say2 - spider.mp3'],
         stone: ['/sounds/Voicy_Strong4 - attack.mp3'],
-        wood: ['/sounds/wood.mp3', '/sounds/wood.ogg'],
-        plop: ['/sounds/plop.mp3', '/sounds/plop.ogg'],
-        pop: ['/sounds/pop.mp3', '/sounds/pop.ogg'],
+        wood: ['/sounds/Voicy_Shoot1 - crossbow.mp3'],
+        plop: ['/sounds/Voicy_Shoot1 - crossbow.mp3'],
+        pop: ['/sounds/Voicy_Strong4 - attack.mp3'],
     };
 
     // Return local files only (from public/sounds directory)
