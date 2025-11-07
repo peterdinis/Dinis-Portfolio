@@ -9,18 +9,11 @@ import { AnimatedBlock, FloatingBlock } from './components/AnimatedBlock';
 import ScrollToTop from './components/ScrollToTop';
 import MinecraftLoading from './components/MinecraftLoading';
 import { useMinecraftSound } from './hooks/useMinecraftSound';
+import Navigation from './components/shared/Navigation';
+import Hero from './components/home/Hero';
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState('home');
   const { playSound } = useMinecraftSound();
-
-  const sections = [
-    { id: 'home', label: 'HOME', icon: '🏠' },
-    { id: 'about', label: 'ABOUT', icon: '👤' },
-    { id: 'skills', label: 'SKILLS', icon: '⚡' },
-    { id: 'projects', label: 'PROJECTS', icon: '📦' },
-    { id: 'contact', label: 'CONTACT', icon: '📧' },
-  ];
 
   const skills = [
     { name: 'REACT', color: 'var(--mc-sky)', icon: '⚛️' },
@@ -62,7 +55,6 @@ export default function Home() {
     { label: 'BLOCKS PLACED', value: '10K+', color: 'var(--mc-grass)' },
     { label: 'PROJECTS BUILT', value: '50+', color: 'var(--mc-diamond)' },
     { label: 'LINES OF CODE', value: '100K+', color: 'var(--mc-gold)' },
-    { label: 'HAPPY CLIENTS', value: '20+', color: 'var(--mc-lava)' },
   ];
 
   const minecraftFacts = [
@@ -76,123 +68,9 @@ export default function Home() {
   return (
     <Suspense fallback={<MinecraftLoading />}>
       <div className="min-h-screen overflow-x-hidden minecraft-background" style={{ color: 'var(--mc-light)' }}>
-      {/* Navigation */}
-      <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="sticky top-0 z-50 minecraft-block p-2 md:p-4"
-        style={{ backgroundColor: 'var(--mc-dirt)' }}
-      >
-        <div className="container mx-auto flex flex-wrap items-center justify-center gap-2 md:gap-4">
-          {sections.map((section) => (
-            <motion.button
-              key={section.id}
-              onClick={() => {
-                playSound('click', 0.3);
-                setActiveSection(section.id);
-                document.getElementById(section.id)?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className={`minecraft-button px-2 md:px-4 py-2 text-[10px] md:text-xs ${
-                activeSection === section.id ? 'text-black' : 'text-mc-light'
-              }`}
-              style={{
-                backgroundColor: activeSection === section.id ? 'var(--mc-grass)' : 'var(--mc-wood)',
-              }}
-              onMouseEnter={(e) => {
-                if (activeSection !== section.id) {
-                  e.currentTarget.style.backgroundColor = 'var(--mc-stone)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (activeSection !== section.id) {
-                  e.currentTarget.style.backgroundColor = 'var(--mc-wood)';
-                }
-              }}
-            >
-              <span className="mr-1">{section.icon}</span>
-              {section.label}
-            </motion.button>
-          ))}
-        </div>
-      </motion.nav>
-
-      {/* Hero Section with 3D Scene */}
-      <section id="home" className="relative min-h-screen flex flex-col md:flex-row items-center justify-center p-4 md:p-8 overflow-hidden" style={{ backgroundColor: 'var(--mc-dark)' }}>
-        {/* 3D Scene Background */}
-        <div className="absolute inset-0 w-full h-full opacity-20 md:opacity-30 pointer-events-none">
-          <Canvas
-            gl={{ antialias: true, alpha: true }}
-            dpr={[1, 2]}
-            camera={{ position: [0, 2, 8], fov: 50 }}
-          >
-            <Suspense fallback={<div className="w-full h-full flex items-center justify-center"><div className="minecraft-block p-4" style={{ backgroundColor: 'var(--mc-dirt)' }}><p className="text-xs" style={{ color: 'var(--mc-light)' }}>LOADING 3D...</p></div></div>}>
-              <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.5} />
-              <MinecraftScene />
-            </Suspense>
-          </Canvas>
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10 text-center space-y-6 md:space-y-8 max-w-4xl w-full">
-          <AnimatedBlock delay={0.2}>
-            <FloatingBlock>
-              <div className="minecraft-block p-6 md:p-8 inline-block" style={{ backgroundColor: 'var(--mc-grass)' }}>
-                <h1 className="pixel-text text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4" style={{ color: 'var(--mc-dark)' }}>
-                  PETER DINIS
-                </h1>
-              </div>
-            </FloatingBlock>
-          </AnimatedBlock>
-
-          <AnimatedBlock delay={0.4}>
-            <div className="minecraft-block p-4 md:p-6" style={{ backgroundColor: 'var(--mc-dirt)' }}>
-              <p className="pixel-text text-lg md:text-xl lg:text-2xl" style={{ color: 'var(--mc-light)' }}>
-                🎮 DEVELOPER & CREATOR 🎮
-              </p>
-            </div>
-          </AnimatedBlock>
-
-          <AnimatedBlock delay={0.6}>
-            <div className="minecraft-block p-3 md:p-4" style={{ backgroundColor: 'var(--mc-stone)' }}>
-              <p className="text-xs md:text-sm lg:text-base" style={{ color: 'var(--mc-light)' }}>
-                BUILDING BLOCKS OF CODE, ONE PIXEL AT A TIME
-              </p>
-            </div>
-          </AnimatedBlock>
-
-          <AnimatedBlock delay={0.8}>
-            <div className="flex flex-wrap justify-center gap-3 md:gap-4 mt-6 md:mt-8">
-              <motion.button
-                onClick={() => {
-                  playSound('stone', 0.4);
-                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                whileHover={{ scale: 1.1, y: -5 }}
-                whileTap={{ scale: 0.95 }}
-                className="minecraft-button px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-bold"
-                style={{ backgroundColor: 'var(--mc-diamond)', color: 'var(--mc-dark)' }}
-              >
-                📦 VIEW PROJECTS
-              </motion.button>
-              <motion.button
-                onClick={() => {
-                  playSound('stone', 0.4);
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                whileHover={{ scale: 1.1, y: -5 }}
-                whileTap={{ scale: 0.95 }}
-                className="minecraft-button px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-bold"
-                style={{ backgroundColor: 'var(--mc-gold)', color: 'var(--mc-dark)' }}
-              >
-                📧 GET IN TOUCH
-              </motion.button>
-            </div>
-          </AnimatedBlock>
-        </div>
-      </section>
+     <Navigation />
+     
+      <Hero />
 
       {/* Achievements Section */}
       <section className="py-8 md:py-16" style={{ backgroundColor: 'var(--mc-dark)' }}>
@@ -413,7 +291,7 @@ export default function Home() {
         style={{ backgroundColor: 'var(--mc-wood)' }}
       >
         <p className="text-[10px] md:text-xs" style={{ color: 'var(--mc-light)' }}>
-          © 2024 PETER DINIS | BUILT WITH MINECRAFT STYLE & THREE.JS 🎮
+          © 2025 PETER DINIS | BUILT WITH MINECRAFT STYLE & THREE.JS 🎮
         </p>
       </motion.footer>
 
