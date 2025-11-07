@@ -6,28 +6,29 @@ import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const skills = [
     {
-        name: "Frontend Development",
-        icon: "⚛️",
-        color: "var(--mc-sky)",
-        description: "Html, Css, Scss, Javascript, Typescript, React, Nextjs, TailwindCss, Tanstack Query",
+        name: 'Frontend Development',
+        icon: '⚛️',
+        color: 'var(--mc-sky)',
+        description:
+            'Html, Css, Scss, Javascript, Typescript, React, Nextjs, TailwindCss, Tanstack Query',
     },
     {
-        name: "Backend Development",
-        icon: "🟢",
-        color: "var(--mc-grass)",
-        description: "Node.js, MongoDB, Nestjs, Graphql, Mysql, Postgresql, C#",
+        name: 'Backend Development',
+        icon: '🟢',
+        color: 'var(--mc-grass)',
+        description: 'Node.js, MongoDB, Nestjs, Graphql, Mysql, Postgresql, C#',
     },
     {
-        name: "Cloud & DevOps",
-        icon: "☁️",
-        color: "var(--mc-diamond)",
-        description: "AWS, Docker, Linux",
+        name: 'Cloud & DevOps',
+        icon: '☁️',
+        color: 'var(--mc-diamond)',
+        description: 'AWS, Docker, Linux',
     },
     {
-        name: "Mobile Development",
-        icon: "📱",
-        color: "var(--mc-wood)",
-        description: "React Native, Progressive Web Apps",
+        name: 'Mobile Development',
+        icon: '📱',
+        color: 'var(--mc-wood)',
+        description: 'React Native, Progressive Web Apps',
     },
 ];
 

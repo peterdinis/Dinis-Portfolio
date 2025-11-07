@@ -5,54 +5,83 @@ import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const projects = [
     {
-        title: "PDF-Tools",
-        description: "Simple app with lot of tools for working with PDFS",
-        tech: ["Nextjs", "Server Actions", "Typescript", "QPDF", "Shadcn UI", "Tailwindcss"],
+        title: 'PDF-Tools',
+        description: 'Simple app with lot of tools for working with PDFS',
+        tech: [
+            'Nextjs',
+            'Server Actions',
+            'Typescript',
+            'QPDF',
+            'Shadcn UI',
+            'Tailwindcss',
+        ],
         color: 'var(--mc-grass)',
-        stats: { demo: 'Live', github: 'Code' }
+        stats: { demo: 'Live', github: 'Code' },
     },
     {
-        title: "Code editor",
-        description: "Simple code editor, for html, css, javascript written in React and Typescript",
-        tech: ["React", "Vite", "Typescript", "Material UI"],
+        title: 'Code editor',
+        description:
+            'Simple code editor, for html, css, javascript written in React and Typescript',
+        tech: ['React', 'Vite', 'Typescript', 'Material UI'],
         color: 'var(--mc-diamond)',
-        stats: { demo: 'Live', github: 'Code' }
+        stats: { demo: 'Live', github: 'Code' },
     },
     {
-        title: "CV-Vision",
-        description: "Application for analyzing CVs",
-        tech: ["Nextjs", "Typescript", "TailwindCss", "ShadcnUI", "OpenAI API", "Server Actions"],
+        title: 'CV-Vision',
+        description: 'Application for analyzing CVs',
+        tech: [
+            'Nextjs',
+            'Typescript',
+            'TailwindCss',
+            'ShadcnUI',
+            'OpenAI API',
+            'Server Actions',
+        ],
         color: 'var(--mc-gold)',
-        stats: { demo: 'Live', github: 'Code' }
+        stats: { demo: 'Live', github: 'Code' },
     },
     {
-        title: "Box-Drop",
-        description: "Application for uploading files photos and other files, with option for sharing files with connected users",
-        tech: ["Nextjs", "Typescript", "Shadcn UI", "Clerkjs", "Tailwindcss", "Drizzle ORM"],
+        title: 'Box-Drop',
+        description:
+            'Application for uploading files photos and other files, with option for sharing files with connected users',
+        tech: [
+            'Nextjs',
+            'Typescript',
+            'Shadcn UI',
+            'Clerkjs',
+            'Tailwindcss',
+            'Drizzle ORM',
+        ],
         color: 'var(--mc-red)',
-        stats: { demo: 'Live', github: 'Code' }
+        stats: { demo: 'Live', github: 'Code' },
     },
     {
-        title: "PDF Crafter",
-        description: "Application for building PDFs",
-        tech: ["Nextjs", "typescript", "TailwindCss", "ShadcnUI"],
+        title: 'PDF Crafter',
+        description: 'Application for building PDFs',
+        tech: ['Nextjs', 'typescript', 'TailwindCss', 'ShadcnUI'],
         color: 'var(--mc-blue)',
-        stats: { demo: 'Live', github: 'Code' }
+        stats: { demo: 'Live', github: 'Code' },
     },
     {
-        title: "Req Jet",
-        description: "Simple Post-man clone",
-        tech: ["Nextjs", "Typescript", "Tailwindcss", "ShadcnUI", "Supabase"],
+        title: 'Req Jet',
+        description: 'Simple Post-man clone',
+        tech: ['Nextjs', 'Typescript', 'Tailwindcss', 'ShadcnUI', 'Supabase'],
         color: 'var(--mc-purple)',
-        stats: { demo: 'Live', github: 'Code' }
+        stats: { demo: 'Live', github: 'Code' },
     },
     {
-        title: "Lexicon",
-        description: "Application for taking notes",
-        tech: ["Nextjs", "Typescript", "Tailwindcss", "Server Actions", "Shadcn UI"],
+        title: 'Lexicon',
+        description: 'Application for taking notes',
+        tech: [
+            'Nextjs',
+            'Typescript',
+            'Tailwindcss',
+            'Server Actions',
+            'Shadcn UI',
+        ],
         color: 'var(--mc-orange)',
-        stats: { demo: 'Live', github: 'Code' }
-    }
+        stats: { demo: 'Live', github: 'Code' },
+    },
 ];
 
 const ProjectsSection: FC = () => {
@@ -111,7 +140,8 @@ const ProjectsSection: FC = () => {
                                             whileHover={{ scale: 1.1 }}
                                             className='minecraft-block px-2 md:px-3 py-1 text-[8px] md:text-xs'
                                             style={{
-                                                backgroundColor: 'var(--mc-wood)',
+                                                backgroundColor:
+                                                    'var(--mc-wood)',
                                                 color: 'var(--mc-light)',
                                             }}
                                         >
@@ -126,18 +156,23 @@ const ProjectsSection: FC = () => {
                                                 key={statIndex}
                                                 className='text-center p-2'
                                                 style={{
-                                                    backgroundColor: 'var(--mc-dirt)',
+                                                    backgroundColor:
+                                                        'var(--mc-dirt)',
                                                 }}
                                             >
                                                 <p
                                                     className='text-xs md:text-sm font-bold'
-                                                    style={{ color: 'var(--mc-light)' }}
+                                                    style={{
+                                                        color: 'var(--mc-light)',
+                                                    }}
                                                 >
                                                     {value}
                                                 </p>
                                                 <p
                                                     className='text-[8px] md:text-xs'
-                                                    style={{ color: 'var(--mc-light)' }}
+                                                    style={{
+                                                        color: 'var(--mc-light)',
+                                                    }}
                                                 >
                                                     {key.toUpperCase()}
                                                 </p>
