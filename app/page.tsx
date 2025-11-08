@@ -1,39 +1,75 @@
 'use client';
 
 import { Suspense } from 'react';
+import dynamic from 'next/dynamic';
 import Navigation from './components/shared/Navigation';
-import Hero from './components/home/Hero';
-import Achivments from './components/home/Achivments';
-import About from './components/home/About';
 import Footer from './components/shared/Footer';
-import Skills from './components/skills/Skills';
-import ProjectsSection from './components/projects/ProjectsSection';
-import Contact from './components/contacts/Contact';
 import MinecraftLoading from './components/minecraft/MinecraftLoading';
 
+// Dynamické importy pre všetky komponenty s MinecraftLoading fallback
+const Hero = dynamic(() => import('./components/home/Hero'), {
+  ssr: false,
+  loading: () => <MinecraftLoading />,
+});
+
+const Achivments = dynamic(() => import('./components/home/Achivments'), {
+  ssr: false,
+  loading: () => <MinecraftLoading />,
+});
+
+const About = dynamic(() => import('./components/home/About'), {
+  ssr: false,
+  loading: () => <MinecraftLoading />,
+});
+
+const Skills = dynamic(() => import('./components/skills/Skills'), {
+  ssr: false,
+  loading: () => <MinecraftLoading />,
+});
+
+const ProjectsSection = dynamic(() => import('./components/projects/ProjectsSection'), {
+  ssr: false,
+  loading: () => <MinecraftLoading />,
+});
+
+const Contact = dynamic(() => import('./components/contacts/Contact'), {
+  ssr: false,
+  loading: () => <MinecraftLoading />,
+});
+
 export default function Home() {
-    return (
-        <Suspense fallback={<MinecraftLoading />}>
-            <div
-                className='min-h-screen overflow-x-hidden minecraft-background'
-                style={{ color: 'var(--mc-light)' }}
-            >
-                <Navigation />
+  return (
+    <div
+      className='min-h-screen overflow-x-hidden minecraft-background'
+      style={{ color: 'var(--mc-light)' }}
+    >
+      <Navigation />
 
-                <Hero />
+      <Suspense fallback={<MinecraftLoading />}>
+        <Hero />
+      </Suspense>
 
-                <Achivments />
+      <Suspense fallback={<MinecraftLoading />}>
+        <Achivments />
+      </Suspense>
 
-                <About />
+      <Suspense fallback={<MinecraftLoading />}>
+        <About />
+      </Suspense>
 
-                <Skills />
+      <Suspense fallback={<MinecraftLoading />}>
+        <Skills />
+      </Suspense>
 
-                <ProjectsSection />
+      <Suspense fallback={<MinecraftLoading />}>
+        <ProjectsSection />
+      </Suspense>
 
-                <Contact />
+      <Suspense fallback={<MinecraftLoading />}>
+        <Contact />
+      </Suspense>
 
-                <Footer />
-            </div>
-        </Suspense>
-    );
+      <Footer />
+    </div>
+  );
 }
