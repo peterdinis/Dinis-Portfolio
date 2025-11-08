@@ -1,4 +1,4 @@
-'use client';
+"use client"
 
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
@@ -6,7 +6,6 @@ import Navigation from './components/shared/Navigation';
 import Footer from './components/shared/Footer';
 import MinecraftLoading from './components/minecraft/MinecraftLoading';
 
-// Dynamické importy pre všetky komponenty s MinecraftLoading fallback
 const Hero = dynamic(() => import('./components/home/Hero'), {
     ssr: false,
     loading: () => <MinecraftLoading />,
