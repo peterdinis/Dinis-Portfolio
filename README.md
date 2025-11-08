@@ -20,8 +20,8 @@ This is my portfolio website built using **Next.js** and **TypeScript**. The goa
 To run this project locally:
 
 ```bash
-git clone https://github.com/peterdinis/Portfolio-Peter-Dinis
-cd Portfolio-Peter-Dinis
+git clone https://github.com/peterdinis/Dinis-Portfolio
+cd Dinis-Portfolio
 pnpm install
 pnpm run dev
 ```
