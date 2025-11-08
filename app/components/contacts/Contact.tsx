@@ -5,8 +5,52 @@ import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
 import { motion } from 'framer-motion';
 import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
+type ContactLink = {
+    label: string;
+    icon: string;
+    color: string;
+    href: string; // type-safe link
+};
+
+const encodeEmail = (user: string, domain: string) =>
+    `mailto:${user}@${domain}`;
+
+const encodeURL = (url: string) => url; 
+
+const contacts: ContactLink[] = [
+    {
+        label: 'EMAIL ME',
+        icon: '📧',
+        color: 'var(--mc-sky)',
+        href: encodeEmail('peterdinis611', 'gmail.com'),
+    },
+    {
+        label: 'LINKEDIN',
+        icon: '💼',
+        color: 'var(--mc-grass)',
+        href: encodeURL('https://www.linkedin.com/in/peter-dinis-58520b214/'),
+    },
+    {
+        label: 'GITHUB',
+        icon: '🐙',
+        color: 'var(--mc-diamond)',
+        href: encodeURL('https://github.com/peterdinis'),
+    },
+    {
+        label: 'FACEBOOK',
+        icon: '📘',
+        color: 'var(--mc-gold)',
+        href: encodeURL('https://www.facebook.com/peto.dinis/'),
+    },
+];
+
 const Contact: FC = () => {
     const { playSound } = useMinecraftSound();
+
+    const handleClick = (href: string) => {
+        playSound('plop', 0.35);
+        window.open(href, '_blank');
+    };
 
     return (
         <section
@@ -42,31 +86,10 @@ const Contact: FC = () => {
                         </p>
 
                         <div className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-4">
-                            {[
-                                {
-                                    label: 'EMAIL ME',
-                                    icon: '📧',
-                                    color: 'var(--mc-sky)',
-                                },
-                                {
-                                    label: 'LINKEDIN',
-                                    icon: '💼',
-                                    color: 'var(--mc-grass)',
-                                },
-                                {
-                                    label: 'GITHUB',
-                                    icon: '🐙',
-                                    color: 'var(--mc-diamond)',
-                                },
-                                {
-                                    label: 'TWITTER',
-                                    icon: '🐦',
-                                    color: 'var(--mc-gold)',
-                                },
-                            ].map((contact, index) => (
+                            {contacts.map((contact, index) => (
                                 <motion.button
                                     key={index}
-                                    onClick={() => playSound('plop', 0.35)}
+                                    onClick={() => handleClick(contact.href)}
                                     whileHover={{ scale: 1.1, y: -5 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="minecraft-button py-3 md:py-4 text-xs md:text-sm font-bold"
