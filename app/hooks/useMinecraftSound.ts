@@ -36,7 +36,7 @@ export function useMinecraftSound() {
                         audio.addEventListener(
                             'error',
                             () => playFallbackSound(type, volume),
-                            { once: true }
+                            { once: true },
                         );
 
                         audioCache.current.set(cacheKey, audio);
@@ -47,7 +47,9 @@ export function useMinecraftSound() {
 
                     const playPromise = audio.play();
                     if (playPromise !== undefined) {
-                        playPromise.catch(() => playFallbackSound(type, volume));
+                        playPromise.catch(() =>
+                            playFallbackSound(type, volume),
+                        );
                     }
                 } catch (error) {
                     console.error('Error playing local sound:', error);
@@ -57,7 +59,7 @@ export function useMinecraftSound() {
 
             tryPlayFromLocal();
         },
-        []
+        [],
     );
 
     return { playSound };
@@ -84,8 +86,7 @@ function playFallbackSound(type: SoundType, volume: number) {
     if (typeof window === 'undefined') return;
 
     const AudioCtx: typeof AudioContext | undefined =
-        window.AudioContext ||
-        (window as any).webkitAudioContext;
+        window.AudioContext || (window as any).webkitAudioContext;
 
     if (!AudioCtx) return;
 
@@ -105,7 +106,10 @@ function playFallbackSound(type: SoundType, volume: number) {
     gainNode.connect(masterGain);
     masterGain.connect(audioContext.destination);
 
-    const soundParams: Record<SoundType, { freq1: number; freq2: number; duration: number }> = {
+    const soundParams: Record<
+        SoundType,
+        { freq1: number; freq2: number; duration: number }
+    > = {
         click: { freq1: 500, freq2: 600, duration: 0.08 },
         stone: { freq1: 800, freq2: 900, duration: 0.1 },
         wood: { freq1: 350, freq2: 400, duration: 0.12 },
@@ -117,8 +121,14 @@ function playFallbackSound(type: SoundType, volume: number) {
 
     oscillator1.type = 'square';
     oscillator2.type = 'square';
-    oscillator1.frequency.setValueAtTime(params.freq1, audioContext.currentTime);
-    oscillator2.frequency.setValueAtTime(params.freq2, audioContext.currentTime);
+    oscillator1.frequency.setValueAtTime(
+        params.freq1,
+        audioContext.currentTime,
+    );
+    oscillator2.frequency.setValueAtTime(
+        params.freq2,
+        audioContext.currentTime,
+    );
 
     const now = audioContext.currentTime;
     masterGain.gain.setValueAtTime(0, now);

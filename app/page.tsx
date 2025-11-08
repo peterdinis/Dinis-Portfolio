@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
@@ -31,7 +31,7 @@ const ProjectsSection = dynamic(
     {
         ssr: false,
         loading: () => <MinecraftLoading />,
-    }
+    },
 );
 
 const Contact = dynamic(() => import('./components/contacts/Contact'), {

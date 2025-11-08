@@ -5,7 +5,7 @@ import * as THREE from 'three';
 // Create Minecraft-style textures programmatically
 export function createMinecraftTexture(
     baseColor: string,
-    pattern: 'grass' | 'dirt' | 'stone' | 'wood' | 'diamond' | 'gold'
+    pattern: 'grass' | 'dirt' | 'stone' | 'wood' | 'diamond' | 'gold',
 ): THREE.Texture {
     const canvas = document.createElement('canvas');
     canvas.width = 16;
@@ -124,7 +124,7 @@ export function createMinecraftTexture(
 
 // Create textures for all 6 faces of a Minecraft block
 export function createMinecraftBlockTextures(
-    pattern: 'grass' | 'dirt' | 'stone' | 'wood' | 'diamond' | 'gold'
+    pattern: 'grass' | 'dirt' | 'stone' | 'wood' | 'diamond' | 'gold',
 ): THREE.Texture[] {
     const textures: THREE.Texture[] = [];
 

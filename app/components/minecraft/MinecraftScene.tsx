@@ -31,19 +31,19 @@ function MinecraftBlock({
 
             materials.push(new THREE.MeshStandardMaterial({ map: topTexture })); // Top
             materials.push(
-                new THREE.MeshStandardMaterial({ map: bottomTexture })
+                new THREE.MeshStandardMaterial({ map: bottomTexture }),
             ); // Bottom
             materials.push(
-                new THREE.MeshStandardMaterial({ map: sideTexture })
+                new THREE.MeshStandardMaterial({ map: sideTexture }),
             ); // Front
             materials.push(
-                new THREE.MeshStandardMaterial({ map: sideTexture })
+                new THREE.MeshStandardMaterial({ map: sideTexture }),
             ); // Back
             materials.push(
-                new THREE.MeshStandardMaterial({ map: sideTexture })
+                new THREE.MeshStandardMaterial({ map: sideTexture }),
             ); // Right
             materials.push(
-                new THREE.MeshStandardMaterial({ map: sideTexture })
+                new THREE.MeshStandardMaterial({ map: sideTexture }),
             ); // Left
         } else {
             // Other blocks: same texture on all sides
@@ -62,7 +62,7 @@ function MinecraftBlock({
             const texture = createMinecraftTexture(baseColor, blockType);
             for (let i = 0; i < 6; i++) {
                 materials.push(
-                    new THREE.MeshStandardMaterial({ map: texture.clone() })
+                    new THREE.MeshStandardMaterial({ map: texture.clone() }),
                 );
             }
         }
@@ -129,7 +129,7 @@ export default function MinecraftScene() {
                 speed: 0.01,
             },
         ],
-        []
+        [],
     );
 
     return (
