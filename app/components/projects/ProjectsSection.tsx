@@ -1,7 +1,11 @@
+'use client';
+
 import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
 import { FC } from 'react';
 import { motion } from 'framer-motion';
 import { AnimatedBlock } from '../minecraft/AnimatedBlock';
+import Link from 'next/link';
+import { Github } from 'lucide-react';
 
 const projects = [
     {
@@ -16,7 +20,8 @@ const projects = [
             'Tailwindcss',
         ],
         color: 'var(--mc-grass)',
-        stats: { demo: 'Live', github: 'Code' },
+        demo: 'https://pdf-tools-pvi9.vercel.app/',
+        github: 'https://github.com/peterdinis/PDF-Tools',
     },
     {
         title: 'Code editor',
@@ -24,7 +29,8 @@ const projects = [
             'Simple code editor, for html, css, javascript written in React and Typescript',
         tech: ['React', 'Vite', 'Typescript', 'Material UI'],
         color: 'var(--mc-diamond)',
-        stats: { demo: 'Live', github: 'Code' },
+        demo: 'https://react-code-editor-flame.vercel.app/',
+        github: 'https://github.com/peterdinis/React-Code-Editor',
     },
     {
         title: 'CV-Vision',
@@ -38,12 +44,13 @@ const projects = [
             'Server Actions',
         ],
         color: 'var(--mc-gold)',
-        stats: { demo: 'Live', github: 'Code' },
+        demo: 'https://cv-vision-gzur.vercel.app/',
+        github: 'https://github.com/peterdinis/CV-Vision',
     },
     {
         title: 'Box-Drop',
         description:
-            'Application for uploading files photos and other files, with option for sharing files with connected users',
+            'Application for uploading photos and other files, with option for sharing files with connected users',
         tech: [
             'Nextjs',
             'Typescript',
@@ -53,21 +60,24 @@ const projects = [
             'Drizzle ORM',
         ],
         color: 'var(--mc-red)',
-        stats: { demo: 'Live', github: 'Code' },
+        demo: 'https://box-drop-etkd.vercel.app/',
+        github: 'https://github.com/peterdinis/Box-Drop',
     },
     {
         title: 'PDF Crafter',
         description: 'Application for building PDFs',
-        tech: ['Nextjs', 'typescript', 'TailwindCss', 'ShadcnUI'],
+        tech: ['Nextjs', 'Typescript', 'TailwindCss', 'ShadcnUI'],
         color: 'var(--mc-blue)',
-        stats: { demo: 'Live', github: 'Code' },
+        demo: 'https://pdf-crafter.vercel.app/',
+        github: 'https://github.com/peterdinis/PDF-Crafter',
     },
     {
         title: 'Req Jet',
         description: 'Simple Post-man clone',
         tech: ['Nextjs', 'Typescript', 'Tailwindcss', 'ShadcnUI', 'Supabase'],
         color: 'var(--mc-purple)',
-        stats: { demo: 'Live', github: 'Code' },
+        demo: 'https://req-jet.vercel.app/',
+        github: 'https://github.com/peterdinis/Req-Jet',
     },
     {
         title: 'Lexicon',
@@ -80,7 +90,8 @@ const projects = [
             'Shadcn UI',
         ],
         color: 'var(--mc-orange)',
-        stats: { demo: 'Live', github: 'Code' },
+        demo: 'https://lexicon-steel.vercel.app/',
+        github: 'https://github.com/peterdinis/Lexicon',
     },
 ];
 
@@ -116,6 +127,7 @@ const ProjectsSection: FC = () => {
                                 className='minecraft-block p-4 md:p-6 space-y-3 md:space-y-4 h-full'
                                 style={{ backgroundColor: 'var(--mc-stone)' }}
                             >
+                                {/* Header */}
                                 <div
                                     className='p-3 md:p-4 text-center'
                                     style={{ backgroundColor: project.color }}
@@ -127,12 +139,16 @@ const ProjectsSection: FC = () => {
                                         {project.title}
                                     </h3>
                                 </div>
+
+                                {/* Description */}
                                 <p
                                     className='text-[10px] md:text-xs lg:text-sm leading-relaxed'
                                     style={{ color: 'var(--mc-light)' }}
                                 >
                                     {project.description}
                                 </p>
+
+                                {/* Tech stack */}
                                 <div className='flex flex-wrap gap-2 mt-3 md:mt-4'>
                                     {project.tech.map((tech, techIndex) => (
                                         <motion.span
@@ -140,8 +156,7 @@ const ProjectsSection: FC = () => {
                                             whileHover={{ scale: 1.1 }}
                                             className='minecraft-block px-2 md:px-3 py-1 text-[8px] md:text-xs'
                                             style={{
-                                                backgroundColor:
-                                                    'var(--mc-wood)',
+                                                backgroundColor: 'var(--mc-wood)',
                                                 color: 'var(--mc-light)',
                                             }}
                                         >
@@ -149,42 +164,16 @@ const ProjectsSection: FC = () => {
                                         </motion.span>
                                     ))}
                                 </div>
-                                <div className='grid grid-cols-2 gap-2 mt-3'>
-                                    {Object.entries(project.stats).map(
-                                        ([key, value], statIndex) => (
-                                            <div
-                                                key={statIndex}
-                                                className='text-center p-2'
-                                                style={{
-                                                    backgroundColor:
-                                                        'var(--mc-dirt)',
-                                                }}
-                                            >
-                                                <p
-                                                    className='text-xs md:text-sm font-bold'
-                                                    style={{
-                                                        color: 'var(--mc-light)',
-                                                    }}
-                                                >
-                                                    {value}
-                                                </p>
-                                                <p
-                                                    className='text-[8px] md:text-xs'
-                                                    style={{
-                                                        color: 'var(--mc-light)',
-                                                    }}
-                                                >
-                                                    {key.toUpperCase()}
-                                                </p>
-                                            </div>
-                                        )
-                                    )}
-                                </div>
+
+                                {/* Demo button */}
                                 <motion.button
-                                    onClick={() => playSound('wood', 0.35)}
+                                    onClick={() => {
+                                        playSound('wood', 0.35);
+                                        window.open(project.demo, '_blank');
+                                    }}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className='minecraft-button w-full py-2 text-xs md:text-sm font-bold mt-3 md:mt-4'
+                                    className='minecraft-button w-full py-2 text-xs md:text-sm font-bold mt-4'
                                     style={{
                                         backgroundColor: 'var(--mc-gold)',
                                         color: 'var(--mc-dark)',
@@ -192,6 +181,20 @@ const ProjectsSection: FC = () => {
                                 >
                                     🚀 VIEW PROJECT
                                 </motion.button>
+
+                                {/* GitHub button */}
+                                <Link
+                                    href={project.github}
+                                    target='_blank'
+                                    className='minecraft-button w-full py-2 text-xs md:text-sm font-bold mt-2 flex items-center justify-center gap-2'
+                                    style={{
+                                        backgroundColor: 'var(--mc-diamond)',
+                                        color: 'var(--mc-dark)',
+                                    }}
+                                >
+                                    <Github size={16} />
+                                    CODE
+                                </Link>
                             </motion.div>
                         </AnimatedBlock>
                     ))}
