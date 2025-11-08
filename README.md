@@ -7,10 +7,10 @@ This is my portfolio website built using **Next.js** and **TypeScript**. The goa
 
 ## 🛠️ Tech Stack
 
-- **Next.js** – React framework for production-grade applications  
-- **TypeScript** – Strongly-typed language built on top of JavaScript  
-- **Tailwind CSS** – Utility-first CSS framework for rapid UI development  
-- **Framer Motion** – Animation library for smooth transitions and UI effects  
+- **Next.js** – React framework for production-grade applications
+- **TypeScript** – Strongly-typed language built on top of JavaScript
+- **Tailwind CSS** – Utility-first CSS framework for rapid UI development
+- **Framer Motion** – Animation library for smooth transitions and UI effects
 - **Three.js** – 3D graphics and interactive experiences in the browser
 
 ---
@@ -24,3 +24,4 @@ git clone https://github.com/peterdinis/Portfolio-Peter-Dinis
 cd Portfolio-Peter-Dinis
 pnpm install
 pnpm run dev
+```

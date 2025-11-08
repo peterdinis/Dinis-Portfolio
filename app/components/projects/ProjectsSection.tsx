@@ -156,7 +156,8 @@ const ProjectsSection: FC = () => {
                                             whileHover={{ scale: 1.1 }}
                                             className='minecraft-block px-2 md:px-3 py-1 text-[8px] md:text-xs'
                                             style={{
-                                                backgroundColor: 'var(--mc-wood)',
+                                                backgroundColor:
+                                                    'var(--mc-wood)',
                                                 color: 'var(--mc-light)',
                                             }}
                                         >

@@ -53,8 +53,8 @@ const About: FC = () => {
                             className='text-xs md:text-sm lg:text-base leading-relaxed mb-4'
                             style={{ color: 'var(--mc-light)' }}
                         >
-                            ⚡ WHEN I&apos;M NOT CRAFTING CODE, YOU&apos;LL FIND ME
-                            EXPLORING NEW TECHNOLOGIES, BUILDING CREATIVE
+                            ⚡ WHEN I&apos;M NOT CRAFTING CODE, YOU&apos;LL FIND
+                            ME EXPLORING NEW TECHNOLOGIES, BUILDING CREATIVE
                             PROJECTS, AND TURNING IDEAS INTO REALITY, ONE BLOCK
                             AT A TIME.
                         </p>
