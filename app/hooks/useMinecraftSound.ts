@@ -106,7 +106,9 @@ function playFallbackSound(type: SoundType, volume: number) {
 
     try {
         const AudioContext: typeof window.AudioContext | undefined =
-    window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+            window.AudioContext ||
+            (window as unknown as { webkitAudioContext?: typeof AudioContext })
+                .webkitAudioContext;
         if (!AudioContext) {
             return;
         }
