@@ -128,19 +128,21 @@ const ProjectsSection: FC = () => {
                                 style={{ backgroundColor: 'var(--mc-stone)' }}
                             >
                                 {/* Header */}
-                                 <div
+                                <div
                                     className='p-3 md:p-4 text-center minecraft-block'
-                                    style={{ 
+                                    style={{
                                         backgroundColor: project.color,
-                                        borderBottom: '4px solid rgba(0,0,0,0.3)'
+                                        borderBottom:
+                                            '4px solid rgba(0,0,0,0.3)',
                                     }}
                                 >
                                     <h3
                                         className='pixel-text text-xl md:text-2xl font-bold mb-0 tracking-wide'
-                                        style={{ 
+                                        style={{
                                             color: 'var(--mc-dark)',
-                                            textShadow: '2px 2px 0px rgba(255,255,255,0.3)',
-                                            letterSpacing: '0.05em'
+                                            textShadow:
+                                                '2px 2px 0px rgba(255,255,255,0.3)',
+                                            letterSpacing: '0.05em',
                                         }}
                                     >
                                         {project.title}
