@@ -65,10 +65,7 @@ const Skills: FC = () => {
                                 <p className='text-2xl md:text-3xl mb-2'>
                                     {skill.icon}
                                 </p>
-                                <p
-                                    className='pixel-text text-sm md:text-lg lg:text-xl'
-                                    
-                                >
+                                <p className='pixel-text text-sm md:text-lg lg:text-xl'>
                                     {skill.name}
                                 </p>
                                 <p

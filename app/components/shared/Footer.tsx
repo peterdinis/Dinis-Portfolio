@@ -12,10 +12,7 @@ const Footer: FC = () => {
             className='minecraft-block p-4 md:p-6 text-center'
             style={{ backgroundColor: 'var(--mc-wood)' }}
         >
-            <p
-                className='text-xl'
-                style={{ color: 'var(--mc-light)' }}
-            >
+            <p className='text-xl' style={{ color: 'var(--mc-light)' }}>
                 © 2025 PETER DINIS 🎮
             </p>
         </motion.footer>
