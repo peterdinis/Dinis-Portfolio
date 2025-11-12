@@ -13,11 +13,10 @@ const Footer: FC = () => {
             style={{ backgroundColor: 'var(--mc-wood)' }}
         >
             <p
-                className='text-[10px] md:text-xs'
+                className='text-xl'
                 style={{ color: 'var(--mc-light)' }}
             >
-                © 2025 PETER DINIS | BUILT WITH MINECRAFT STYLE & THREE.JS &
-                Next.js 🎮
+                © 2025 PETER DINIS 🎮
             </p>
         </motion.footer>
     );

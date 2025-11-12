@@ -66,8 +66,8 @@ const Skills: FC = () => {
                                     {skill.icon}
                                 </p>
                                 <p
-                                    className='pixel-text text-sm md:text-lg lg:text-xl font-bold'
-                                    style={{ color: 'var(--mc-dark)' }}
+                                    className='pixel-text text-sm md:text-lg lg:text-xl'
+                                    
                                 >
                                     {skill.name}
                                 </p>
