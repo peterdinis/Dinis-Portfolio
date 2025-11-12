@@ -49,7 +49,14 @@ const Contact: FC = () => {
 
     const handleClick = (href: string) => {
         playSound('plop', 0.35);
-        window.open(href, '_blank');
+
+        if (href.startsWith('mailto:')) {
+            // Otvorí natívny email client
+            window.location.href = href;
+        } else {
+            // Ostatné odkazy otvára v novom tab-e
+            window.open(href, '_blank');
+        }
     };
 
     return (
@@ -86,21 +93,36 @@ const Contact: FC = () => {
                         </p>
 
                         <div className='grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-4'>
-                            {contacts.map((contact, index) => (
-                                <motion.button
-                                    key={index}
-                                    onClick={() => handleClick(contact.href)}
-                                    whileHover={{ scale: 1.1, y: -5 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className='minecraft-button py-3 md:py-4 text-xs md:text-sm font-bold'
-                                    style={{
-                                        backgroundColor: contact.color,
-                                        color: 'var(--mc-dark)',
-                                    }}
-                                >
-                                    {contact.icon} {contact.label}
-                                </motion.button>
-                            ))}
+                            {contacts.map((contact, index) =>
+                                contact.label === 'EMAIL ME' ? (
+                                    <a
+                                        key={index}
+                                        href={contact.href}
+                                        className='minecraft-button py-3 md:py-4 text-xs md:text-sm font-bold text-center'
+                                        style={{
+                                            backgroundColor: contact.color,
+                                            color: 'var(--mc-dark)',
+                                        }}
+                                        onClick={() => playSound('plop', 0.35)}
+                                    >
+                                        {contact.icon} {contact.label}
+                                    </a>
+                                ) : (
+                                    <motion.button
+                                        key={index}
+                                        onClick={() => handleClick(contact.href)}
+                                        whileHover={{ scale: 1.1, y: -5 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        className='minecraft-button py-3 md:py-4 text-xs md:text-sm font-bold'
+                                        style={{
+                                            backgroundColor: contact.color,
+                                            color: 'var(--mc-dark)',
+                                        }}
+                                    >
+                                        {contact.icon} {contact.label}
+                                    </motion.button>
+                                )
+                            )}
                         </div>
                     </div>
                 </AnimatedBlock>
