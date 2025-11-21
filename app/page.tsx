@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import Navigation from './components/shared/Navigation';
 import Footer from './components/shared/Footer';
 import MinecraftLoading from './components/minecraft/MinecraftLoading';
+import { TimelineWrapper } from './components/timeline/TimelineWrapper';
 
 const Hero = dynamic(() => import('./components/home/Hero'), {
     ssr: false,
@@ -65,6 +66,10 @@ export default function Home() {
 
             <Suspense fallback={<MinecraftLoading />}>
                 <ProjectsSection />
+            </Suspense>
+
+            <Suspense fallback={<MinecraftLoading />}>
+                <TimelineWrapper />
             </Suspense>
 
             <Suspense fallback={<MinecraftLoading />}>
