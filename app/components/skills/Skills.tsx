@@ -10,19 +10,20 @@ const skills = [
         icon: '⚛️',
         color: 'var(--mc-sky)',
         description:
-            'Html, Css, Scss, Javascript, Typescript, React, Nextjs, TailwindCss, Tanstack Query',
+            'Html, Css, Scss, Javascript, Typescript, React, Nextjs, TailwindCss, Tanstack Query, Less, Chakra UI',
     },
     {
         name: 'Backend Development',
         icon: '🟢',
         color: 'var(--mc-grass)',
-        description: 'Node.js, MongoDB, Nestjs, Graphql, Mysql, Postgresql, C#',
+        description:
+            'Node.js, MongoDB, Nestjs, Graphql, Mysql, Postgresql, C# Asp.Net',
     },
     {
         name: 'Cloud & DevOps',
         icon: '☁️',
         color: 'var(--mc-diamond)',
-        description: 'AWS, Docker, Linux',
+        description: 'AWS, Docker, Linux Azure',
     },
     {
         name: 'Mobile Development',
