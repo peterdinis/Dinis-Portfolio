@@ -2,14 +2,9 @@
 
 import { useCallback, useRef } from 'react';
 
-// Definujeme typ všetkých podporovaných zvukov
 export type SoundType = 'click' | 'stone' | 'wood' | 'plop' | 'pop';
 
-/**
- * Hook to play Minecraft-like sound effects
- */
 export function useMinecraftSound() {
-    // Cache pre audio elementy
     const audioCache = useRef<Map<string, HTMLAudioElement>>(new Map());
 
     const playSound = useCallback(
@@ -65,9 +60,6 @@ export function useMinecraftSound() {
     return { playSound };
 }
 
-/**
- * Mapovanie typov zvukov na URL súbory
- */
 function getMinecraftSoundURLs(type: SoundType): string[] {
     const soundFiles: Record<SoundType, string[]> = {
         click: ['/sounds/Voicy_Say2 - spider.mp3'],
@@ -79,9 +71,6 @@ function getMinecraftSoundURLs(type: SoundType): string[] {
     return soundFiles[type] || [];
 }
 
-/**
- * Fallback: generovanie zvuku cez Web Audio API
- */
 function playFallbackSound(type: SoundType, volume: number) {
     if (typeof window === 'undefined') return;
 

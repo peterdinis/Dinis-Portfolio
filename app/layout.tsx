@@ -28,36 +28,20 @@ export const metadata: Metadata = {
     authors: [
         {
             name: 'Peter Dinis',
-            url: 'https://portfolio-peter-dinis.vercel.app/',
+            url: 'https://dinis-portfolio.vercel.app/',
         },
     ],
     creator: 'Peter Dinis',
     publisher: 'Peter Dinis',
-    metadataBase: new URL('https://portfolio-peter-dinis.vercel.app/'),
+    metadataBase: new URL('https://dinis-portfolio.vercel.app/'),
     openGraph: {
         title: 'Peter Dinis – Full Stack Web Developer',
         description:
             'Explore the portfolio of Peter Dinis, showcasing projects in React, Next.js, Node.js, and more.',
-        url: 'https://portfolio-peter-dinis.vercel.app/',
+        url: 'https://dinis-portfolio.vercel.app/',
         siteName: 'Peter Dinis Portfolio',
         locale: 'en_US',
         type: 'website',
-        images: [
-            {
-                url: 'https://portfolio-peter-dinis.vercel.app/og-image.png',
-                width: 1200,
-                height: 630,
-                alt: 'Peter Dinis Portfolio',
-            },
-        ],
-    },
-    twitter: {
-        card: 'summary_large_image',
-        title: 'Peter Dinis – Full Stack Web Developer',
-        description:
-            'Discover the portfolio of Peter Dinis, a full stack web developer specializing in modern web technologies like React, Next.js, and Node.js.',
-        images: ['https://portfolio-peter-dinis.vercel.app/og-image.png'],
-        creator: '@peter_dinis',
     },
     robots: {
         index: true,
@@ -71,7 +55,7 @@ export const metadata: Metadata = {
         },
     },
     alternates: {
-        canonical: 'https://portfolio-peter-dinis.vercel.app/',
+        canonical: 'https://dinis-portfolio.vercel.app/',
     },
 };
 
