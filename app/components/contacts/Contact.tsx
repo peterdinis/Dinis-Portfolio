@@ -9,7 +9,7 @@ type ContactLink = {
     label: string;
     icon: string;
     color: string;
-    href: string; // type-safe link
+    href: string;
 };
 
 const encodeEmail = (user: string, domain: string) =>
@@ -51,10 +51,8 @@ const Contact: FC = () => {
         playSound('plop', 0.35);
 
         if (href.startsWith('mailto:')) {
-            // Otvorí natívny email client
-            window.location.href = href;
+            window.location.assign(href); // ✔ Bez ESLint chyby
         } else {
-            // Ostatné odkazy otvára v novom tab-e
             window.open(href, '_blank');
         }
     };
@@ -110,9 +108,7 @@ const Contact: FC = () => {
                                 ) : (
                                     <motion.button
                                         key={index}
-                                        onClick={() =>
-                                            handleClick(contact.href)
-                                        }
+                                        onClick={() => handleClick(contact.href)}
                                         whileHover={{ scale: 1.1, y: -5 }}
                                         whileTap={{ scale: 0.95 }}
                                         className='minecraft-button py-3 md:py-4 text-xs md:text-sm font-bold'
