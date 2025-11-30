@@ -3,7 +3,7 @@ import { Briefcase, Calendar, Palette, Code } from 'lucide-react';
 export const TimelineWrapper = () => {
     const experiences = [
         {
-            company: 'RŠD Projects - Freelance',
+            company: 'IBA.CZ',
             position: 'UI/UX Designer & React Developer',
             period: 'August 2024 - Present',
             description:
@@ -17,7 +17,7 @@ export const TimelineWrapper = () => {
                 'UI/UX Design',
                 'Design Systems',
             ],
-            blockType: 'diamond', // diamond block for latest
+            blockType: 'diamond',
         },
         {
             company: 'Meditorial - Prague',
