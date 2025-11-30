@@ -11,13 +11,13 @@
     --mc-deepslate: #1d1c21;
     --mc-wood: #8d6e63;
     --mc-oak: #ad9f8e;
-    
+
     /* Environment Colors */
     --mc-sky: #64b5f6;
     --mc-water: #3ab3da;
     --mc-water-dark: #169c9d;
     --mc-lava: #f9801d;
-    
+
     /* Ore Colors */
     --mc-gold: #ffd83d;
     --mc-gold-dark: #c5792c;
@@ -28,33 +28,33 @@
     --mc-netherite: #2d2a33;
     --mc-iron: #9d9d97;
     --mc-copper: #b4684d;
-    
+
     /* Nether Colors */
     --mc-netherrack: #b02e26;
     --mc-nether-brick: #2c1417;
     --mc-soul-sand: #524939;
     --mc-glowstone: #ffd83d;
     --mc-magma: #ff5722;
-    
+
     /* End Colors */
     --mc-end-stone: #dbd9a9;
     --mc-obsidian: #281f3f;
     --mc-obsidian-dark: #110d1d;
     --mc-purpur: #a77ba5;
-    
+
     /* Nature Colors */
     --mc-leaves: #70b237;
     --mc-dark-oak: #4b3621;
     --mc-birch: #d7ca8c;
     --mc-jungle: #5d7c15;
     --mc-cherry: #f38caa;
-    
+
     /* Functional Colors */
     --mc-error: #b02e26;
     --mc-success: #80c71f;
     --mc-warning: #ffd83d;
     --mc-info: #3ab3da;
-    
+
     /* Base Colors */
     --mc-dark: #1d1c21;
     --mc-light: #f9fffe;
@@ -73,13 +73,13 @@
     --color-mc-deepslate: var(--mc-deepslate);
     --color-mc-wood: var(--mc-wood);
     --color-mc-oak: var(--mc-oak);
-    
+
     /* Environment */
     --color-mc-sky: var(--mc-sky);
     --color-mc-water: var(--mc-water);
     --color-mc-water-dark: var(--mc-water-dark);
     --color-mc-lava: var(--mc-lava);
-    
+
     /* Ores */
     --color-mc-gold: var(--mc-gold);
     --color-mc-gold-dark: var(--mc-gold-dark);
@@ -90,39 +90,39 @@
     --color-mc-netherite: var(--mc-netherite);
     --color-mc-iron: var(--mc-iron);
     --color-mc-copper: var(--mc-copper);
-    
+
     /* Nether */
     --color-mc-netherrack: var(--mc-netherrack);
     --color-mc-nether-brick: var(--mc-nether-brick);
     --color-mc-soul-sand: var(--mc-soul-sand);
     --color-mc-glowstone: var(--mc-glowstone);
     --color-mc-magma: var(--mc-magma);
-    
+
     /* End */
     --color-mc-end-stone: var(--mc-end-stone);
     --color-mc-obsidian: var(--mc-obsidian);
     --color-mc-obsidian-dark: var(--mc-obsidian-dark);
     --color-mc-purpur: var(--mc-purpur);
-    
+
     /* Nature */
     --color-mc-leaves: var(--mc-leaves);
     --color-mc-dark-oak: var(--mc-dark-oak);
     --color-mc-birch: var(--mc-birch);
     --color-mc-jungle: var(--mc-jungle);
     --color-mc-cherry: var(--mc-cherry);
-    
+
     /* Functional */
     --color-mc-error: var(--mc-error);
     --color-mc-success: var(--mc-success);
     --color-mc-warning: var(--mc-warning);
     --color-mc-info: var(--mc-info);
-    
+
     /* Base */
     --color-mc-dark: var(--mc-dark);
     --color-mc-light: var(--mc-light);
     --color-mc-border: var(--mc-border);
     --color-mc-shadow: var(--mc-shadow);
-    
+
     --font-minecraft: var(--font-minecraft);
 }
 
@@ -236,11 +236,14 @@ body {
 }
 
 @keyframes glow {
-    0%, 100% {
+    0%,
+    100% {
         box-shadow: 0 0 5px var(--mc-diamond);
     }
     50% {
-        box-shadow: 0 0 20px var(--mc-diamond), 0 0 30px var(--mc-diamond);
+        box-shadow:
+            0 0 20px var(--mc-diamond),
+            0 0 30px var(--mc-diamond);
     }
 }
 
@@ -307,10 +310,10 @@ canvas {
     /* SVG pattern */
         url('/minecraft-pattern.svg'),
         /* Grid pattern */
-            linear-gradient(var(--mc-border) 1px, transparent 1px),
+        linear-gradient(var(--mc-border) 1px, transparent 1px),
         linear-gradient(90deg, var(--mc-border) 1px, transparent 1px),
         /* Block pattern overlay */
-            repeating-linear-gradient(
+        repeating-linear-gradient(
                 0deg,
                 transparent,
                 transparent 32px,
@@ -354,34 +357,34 @@ canvas {
         ),
         /* Dirt */
         radial-gradient(
-            circle at 80% 70%,
-            rgba(146, 108, 77, 0.05) 0%,
-            transparent 50%
-        ),
+                circle at 80% 70%,
+                rgba(146, 108, 77, 0.05) 0%,
+                transparent 50%
+            ),
         /* Stone */
         radial-gradient(
-            circle at 50% 50%,
-            rgba(156, 157, 151, 0.03) 0%,
-            transparent 50%
-        ),
+                circle at 50% 50%,
+                rgba(156, 157, 151, 0.03) 0%,
+                transparent 50%
+            ),
         /* Wood/Oak */
         radial-gradient(
-            circle at 10% 80%,
-            rgba(173, 159, 142, 0.04) 0%,
-            transparent 50%
-        ),
+                circle at 10% 80%,
+                rgba(173, 159, 142, 0.04) 0%,
+                transparent 50%
+            ),
         /* Diamond glow */
         radial-gradient(
-            circle at 90% 20%,
-            rgba(58, 179, 218, 0.03) 0%,
-            transparent 50%
-        ),
+                circle at 90% 20%,
+                rgba(58, 179, 218, 0.03) 0%,
+                transparent 50%
+            ),
         /* Emerald glow */
         radial-gradient(
-            circle at 15% 60%,
-            rgba(34, 181, 115, 0.03) 0%,
-            transparent 50%
-        );
+                circle at 15% 60%,
+                rgba(34, 181, 115, 0.03) 0%,
+                transparent 50%
+            );
     pointer-events: none;
     z-index: 0;
 }
@@ -393,7 +396,12 @@ canvas {
 
 /* Additional utility classes for Minecraft blocks */
 .mc-grass-block {
-    background: linear-gradient(to bottom, var(--mc-grass) 0%, var(--mc-grass) 30%, var(--mc-dirt) 30%);
+    background: linear-gradient(
+        to bottom,
+        var(--mc-grass) 0%,
+        var(--mc-grass) 30%,
+        var(--mc-dirt) 30%
+    );
 }
 
 .mc-dirt-block {
@@ -402,9 +410,17 @@ canvas {
 
 .mc-stone-block {
     background: var(--mc-stone);
-    background-image: 
-        radial-gradient(circle at 20% 20%, rgba(0,0,0,0.1) 1px, transparent 1px),
-        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-image:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(0, 0, 0, 0.1) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px
+        );
     background-size: 8px 8px;
 }
 
@@ -414,8 +430,8 @@ canvas {
         90deg,
         transparent,
         transparent 4px,
-        rgba(0,0,0,0.1) 4px,
-        rgba(0,0,0,0.1) 5px
+        rgba(0, 0, 0, 0.1) 4px,
+        rgba(0, 0, 0, 0.1) 5px
     );
 }
 
@@ -442,7 +458,9 @@ canvas {
 
 .mc-redstone-active {
     background: var(--mc-redstone);
-    box-shadow: 0 0 10px var(--mc-redstone), 0 0 20px var(--mc-redstone);
+    box-shadow:
+        0 0 10px var(--mc-redstone),
+        0 0 20px var(--mc-redstone);
     animation: pulse 1s ease-in-out infinite;
 }
 

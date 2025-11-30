@@ -108,7 +108,9 @@ const Contact: FC = () => {
                                 ) : (
                                     <motion.button
                                         key={index}
-                                        onClick={() => handleClick(contact.href)}
+                                        onClick={() =>
+                                            handleClick(contact.href)
+                                        }
                                         whileHover={{ scale: 1.1, y: -5 }}
                                         whileTap={{ scale: 0.95 }}
                                         className='minecraft-button py-3 md:py-4 text-xs md:text-sm font-bold'

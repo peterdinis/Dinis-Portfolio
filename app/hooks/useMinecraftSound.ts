@@ -112,8 +112,14 @@ function playFallbackSound(type: SoundType, volume: number) {
 
     oscillator1.type = 'square';
     oscillator2.type = 'square';
-    oscillator1.frequency.setValueAtTime(params.freq1, audioContext.currentTime);
-    oscillator2.frequency.setValueAtTime(params.freq2, audioContext.currentTime);
+    oscillator1.frequency.setValueAtTime(
+        params.freq1,
+        audioContext.currentTime,
+    );
+    oscillator2.frequency.setValueAtTime(
+        params.freq2,
+        audioContext.currentTime,
+    );
 
     const now = audioContext.currentTime;
     masterGain.gain.setValueAtTime(0, now);
