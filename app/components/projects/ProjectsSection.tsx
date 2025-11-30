@@ -43,7 +43,7 @@ const projects = [
             'OpenAI API',
             'Server Actions',
         ],
-        color: 'var(--mc-gold)',
+        color: 'var(--mc-emerald)',
         demo: 'https://cv-vision-gzur.vercel.app/',
         github: 'https://github.com/peterdinis/CV-Vision',
     },
@@ -89,9 +89,23 @@ const projects = [
             'Server Actions',
             'Shadcn UI',
         ],
-        color: 'var(--mc-dirt)',
+        color: 'var(--mc-sky)',
         demo: 'https://lexicon-steel.vercel.app/',
         github: 'https://github.com/peterdinis/Lexicon',
+    },
+    {
+        title: 'Video-Translator',
+        description: 'Application for translating videos to another languages',
+        tech: [
+            'Nextjs',
+            'Typescript',
+            'Tailwindcss',
+            'Gemini Google',
+            'Shadcn UI',
+        ],
+        color: 'var(--mc-purpur)',
+        demo: '#',
+        github: 'https://github.com/peterdinis/Video-Translator',
     },
 ];
 
