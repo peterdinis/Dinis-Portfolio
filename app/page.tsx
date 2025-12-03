@@ -5,39 +5,50 @@ import dynamic from 'next/dynamic';
 import Navigation from './components/shared/Navigation';
 import Footer from './components/shared/Footer';
 import MinecraftLoading from './components/minecraft/MinecraftLoading';
-import { TimelineWrapper } from './components/timeline/TimelineWrapper';
+
+const SimpleLoading = () => (
+    <div className="h-[200px] animate-pulse bg-gray-800/50 rounded-lg" />
+);
 
 const Hero = dynamic(() => import('./components/home/Hero'), {
     ssr: false,
-    loading: () => <MinecraftLoading />,
+    loading: () => <SimpleLoading />,
 });
 
 const Achivments = dynamic(() => import('./components/home/Achivments'), {
     ssr: false,
-    loading: () => <MinecraftLoading />,
+    loading: () => <div className="h-[100px] animate-pulse bg-gray-800/50 rounded" />,
 });
 
 const About = dynamic(() => import('./components/home/About'), {
     ssr: false,
-    loading: () => <MinecraftLoading />,
+    loading: () => <div className="h-[300px] animate-pulse bg-gray-800/50 rounded" />,
 });
 
 const Skills = dynamic(() => import('./components/skills/Skills'), {
     ssr: false,
-    loading: () => <MinecraftLoading />,
+    loading: () => <div className="h-[400px] animate-pulse bg-gray-800/50 rounded-lg" />,
 });
 
 const ProjectsSection = dynamic(
     () => import('./components/projects/ProjectsSection'),
     {
         ssr: false,
-        loading: () => <MinecraftLoading />,
+        loading: () => <div className="h-[500px] animate-pulse bg-gray-800/50 rounded-lg" />,
+    },
+);
+
+const TimelineWrapper = dynamic(
+    () => import('./components/timeline/TimelineWrapper').then(mod => ({ default: mod.TimelineWrapper })),
+    {
+        ssr: false,
+        loading: () => <div className="h-[300px] animate-pulse bg-gray-800/50 rounded-lg" />,
     },
 );
 
 const Contact = dynamic(() => import('./components/contacts/Contact'), {
     ssr: false,
-    loading: () => <MinecraftLoading />,
+    loading: () => <div className="h-[200px] animate-pulse bg-gray-800/50 rounded-lg" />,
 });
 
 export default function Home() {
@@ -49,31 +60,15 @@ export default function Home() {
             <Navigation />
 
             <Suspense fallback={<MinecraftLoading />}>
-                <Hero />
-            </Suspense>
-
-            <Suspense fallback={<MinecraftLoading />}>
-                <Achivments />
-            </Suspense>
-
-            <Suspense fallback={<MinecraftLoading />}>
-                <About />
-            </Suspense>
-
-            <Suspense fallback={<MinecraftLoading />}>
-                <Skills />
-            </Suspense>
-
-            <Suspense fallback={<MinecraftLoading />}>
-                <ProjectsSection />
-            </Suspense>
-
-            <Suspense fallback={<MinecraftLoading />}>
-                <TimelineWrapper />
-            </Suspense>
-
-            <Suspense fallback={<MinecraftLoading />}>
-                <Contact />
+                <div className="space-y-8">
+                    <Hero />
+                    <Achivments />
+                    <About />
+                    <Skills />
+                    <ProjectsSection />
+                    <TimelineWrapper />
+                    <Contact />
+                </div>
             </Suspense>
 
             <Footer />
