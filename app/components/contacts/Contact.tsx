@@ -51,7 +51,7 @@ const Contact: FC = () => {
         playSound('plop', 0.35);
 
         if (href.startsWith('mailto:')) {
-            window.location.assign(href); // ✔ Bez ESLint chyby
+            window.location.assign(href);
         } else {
             window.open(href, '_blank');
         }

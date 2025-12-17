@@ -7,7 +7,7 @@ import Footer from './components/shared/Footer';
 import MinecraftLoading from './components/minecraft/MinecraftLoading';
 
 const SimpleLoading = () => (
-    <div className="h-[200px] animate-pulse bg-gray-800/50 rounded-lg" />
+    <div className='h-50 animate-pulse bg-gray-800/50 rounded-lg' />
 );
 
 const Hero = dynamic(() => import('./components/home/Hero'), {
@@ -17,38 +17,53 @@ const Hero = dynamic(() => import('./components/home/Hero'), {
 
 const Achivments = dynamic(() => import('./components/home/Achivments'), {
     ssr: false,
-    loading: () => <div className="h-[100px] animate-pulse bg-gray-800/50 rounded" />,
+    loading: () => (
+        <div className='h-25 animate-pulse bg-gray-800/50 rounded' />
+    ),
 });
 
 const About = dynamic(() => import('./components/home/About'), {
     ssr: false,
-    loading: () => <div className="h-[300px] animate-pulse bg-gray-800/50 rounded" />,
+    loading: () => (
+        <div className='h-75 animate-pulse bg-gray-800/50 rounded' />
+    ),
 });
 
 const Skills = dynamic(() => import('./components/skills/Skills'), {
     ssr: false,
-    loading: () => <div className="h-[400px] animate-pulse bg-gray-800/50 rounded-lg" />,
+    loading: () => (
+        <div className='h-100 animate-pulse bg-gray-800/50 rounded-lg' />
+    ),
 });
 
 const ProjectsSection = dynamic(
     () => import('./components/projects/ProjectsSection'),
     {
         ssr: false,
-        loading: () => <div className="h-[500px] animate-pulse bg-gray-800/50 rounded-lg" />,
+        loading: () => (
+            <div className='h-125 animate-pulse bg-gray-800/50 rounded-lg' />
+        ),
     },
 );
 
 const TimelineWrapper = dynamic(
-    () => import('./components/timeline/TimelineWrapper').then(mod => ({ default: mod.TimelineWrapper })),
+    () =>
+        import('./components/timeline/TimelineWrapper').then((mod) => ({
+            default: mod.TimelineWrapper,
+        })),
     {
         ssr: false,
-        loading: () => <div className="h-[300px] animate-pulse bg-gray-800/50 rounded-lg" />,
+        loading: () => (
+            <div className='h-75 animate-pulse bg-gray-800/50 rounded-lg' />
+        ),
     },
 );
 
 const Contact = dynamic(() => import('./components/contacts/Contact'), {
     ssr: false,
-    loading: () => <div className="h-[200px] animate-pulse bg-gray-800/50 rounded-lg" />,
+    loading: () => (
+        <div className='h-50 animate-pulse bg-gray-800/50 rounded-lg' />
+    ),
 });
 
 export default function Home() {
@@ -60,7 +75,7 @@ export default function Home() {
             <Navigation />
 
             <Suspense fallback={<MinecraftLoading />}>
-                <div className="space-y-8">
+                <div className='space-y-8'>
                     <Hero />
                     <Achivments />
                     <About />
