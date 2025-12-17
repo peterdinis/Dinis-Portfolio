@@ -107,6 +107,20 @@ const projects = [
         demo: '#',
         github: 'https://github.com/peterdinis/Video-Translator',
     },
+    {
+        title: 'AI-Cooking-Assistant',
+        description: 'Application for learning how to cook',
+        tech: [
+            'Tanstack Start',
+            'Typescript',
+            'Tailwindcss',
+            'OpeanAI',
+            'Shadcn UI',
+        ],
+        color: 'var(--mc-lava)',
+        demo: '#',
+        github: 'https://github.com/peterdinis/Ai-Cooking-Assistant',
+    },
 ];
 
 const ProjectsSection: FC = () => {
