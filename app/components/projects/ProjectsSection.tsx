@@ -118,7 +118,7 @@ const projects = [
             'Shadcn UI',
         ],
         color: 'var(--mc-lava)',
-        demo: '#',
+        demo: 'https://ai-cooking-assistant-kappa.vercel.app',
         github: 'https://github.com/peterdinis/Ai-Cooking-Assistant',
     },
 ];
