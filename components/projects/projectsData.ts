@@ -71,20 +71,6 @@ export const projects = [
         github: 'https://github.com/peterdinis/Req-Jet',
     },
     {
-        title: 'Lexicon',
-        description: 'Application for taking notes',
-        tech: [
-            'Nextjs',
-            'Typescript',
-            'Tailwindcss',
-            'Server Actions',
-            'Shadcn UI',
-        ],
-        color: 'var(--mc-sky)',
-        demo: 'https://lexicon-steel.vercel.app/',
-        github: 'https://github.com/peterdinis/Lexicon',
-    },
-    {
         title: 'Video-Translator',
         description: 'Application for translating videos to another languages',
         tech: [
@@ -95,7 +81,7 @@ export const projects = [
             'Shadcn UI',
         ],
         color: 'var(--mc-purpur)',
-        demo: '#',
+        demo: 'https://video-translator-sand.vercel.app/',
         github: 'https://github.com/peterdinis/Video-Translator',
     },
     {
