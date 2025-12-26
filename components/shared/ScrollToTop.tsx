@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
+import { useMinecraftSound } from '@/hooks/useMinecraftSound';
 
 export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false);

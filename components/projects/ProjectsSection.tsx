@@ -1,12 +1,12 @@
 'use client';
 
-import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
 import { FC } from 'react';
 import { motion } from 'framer-motion';
 import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 import Link from 'next/link';
 import { Github } from 'lucide-react';
 import { projects } from './projectsData';
+import { useMinecraftSound } from '@/hooks/useMinecraftSound';
 
 const ProjectsSection: FC = () => {
     const { playSound } = useMinecraftSound();

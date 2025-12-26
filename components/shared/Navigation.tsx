@@ -2,7 +2,7 @@
 
 import { FC, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
+import { useMinecraftSound } from '@/hooks/useMinecraftSound';
 
 const sections = [
     { id: 'home', label: 'HOME', icon: '🏠' },
@@ -16,7 +16,6 @@ const Navigation: FC = () => {
     const [activeSection, setActiveSection] = useState('home');
     const { playSound } = useMinecraftSound();
 
-    // Aktualizácia aktívnej sekcie podľa scrollu
     useEffect(() => {
         const handleScroll = () => {
             let current = 'home';
