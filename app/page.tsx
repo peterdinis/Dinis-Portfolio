@@ -2,34 +2,34 @@
 
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
-import Navigation from './components/shared/Navigation';
-import Footer from './components/shared/Footer';
-import MinecraftLoading from './components/minecraft/MinecraftLoading';
+import Navigation from '../components/shared/Navigation';
+import Footer from '../components/shared/Footer';
+import MinecraftLoading from '../components/minecraft/MinecraftLoading';
 
 const SimpleLoading = () => (
     <div className='h-50 animate-pulse bg-gray-800/50 rounded-lg' />
 );
 
-const Hero = dynamic(() => import('./components/home/Hero'), {
+const Hero = dynamic(() => import('../components/home/Hero'), {
     ssr: false,
     loading: () => <SimpleLoading />,
 });
 
-const Achivments = dynamic(() => import('./components/home/Achivments'), {
+const Achivments = dynamic(() => import('../components/home/Achivments'), {
     ssr: false,
     loading: () => (
         <div className='h-25 animate-pulse bg-gray-800/50 rounded' />
     ),
 });
 
-const About = dynamic(() => import('./components/home/About'), {
+const About = dynamic(() => import('../components/home/About'), {
     ssr: false,
     loading: () => (
         <div className='h-75 animate-pulse bg-gray-800/50 rounded' />
     ),
 });
 
-const Skills = dynamic(() => import('./components/skills/Skills'), {
+const Skills = dynamic(() => import('../components/skills/Skills'), {
     ssr: false,
     loading: () => (
         <div className='h-100 animate-pulse bg-gray-800/50 rounded-lg' />
@@ -37,7 +37,7 @@ const Skills = dynamic(() => import('./components/skills/Skills'), {
 });
 
 const ProjectsSection = dynamic(
-    () => import('./components/projects/ProjectsSection'),
+    () => import('../components/projects/ProjectsSection'),
     {
         ssr: false,
         loading: () => (
@@ -48,7 +48,7 @@ const ProjectsSection = dynamic(
 
 const TimelineWrapper = dynamic(
     () =>
-        import('./components/timeline/TimelineWrapper').then((mod) => ({
+        import('../components/timeline/TimelineWrapper').then((mod) => ({
             default: mod.TimelineWrapper,
         })),
     {
@@ -59,7 +59,7 @@ const TimelineWrapper = dynamic(
     },
 );
 
-const Contact = dynamic(() => import('./components/contacts/Contact'), {
+const Contact = dynamic(() => import('../components/contacts/Contact'), {
     ssr: false,
     loading: () => (
         <div className='h-50 animate-pulse bg-gray-800/50 rounded-lg' />
