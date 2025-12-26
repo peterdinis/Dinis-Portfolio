@@ -1,127 +1,12 @@
 'use client';
 
-import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
 import { FC } from 'react';
 import { motion } from 'framer-motion';
 import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 import Link from 'next/link';
 import { Github } from 'lucide-react';
-
-const projects = [
-    {
-        title: 'PDF-Tools',
-        description: 'Simple app with lot of tools for working with PDFS',
-        tech: [
-            'Nextjs',
-            'Server Actions',
-            'Typescript',
-            'QPDF',
-            'Shadcn UI',
-            'Tailwindcss',
-        ],
-        color: 'var(--mc-grass)',
-        demo: 'https://pdf-tools-pvi9.vercel.app/',
-        github: 'https://github.com/peterdinis/PDF-Tools',
-    },
-    {
-        title: 'Code editor',
-        description:
-            'Simple code editor, for html, css, javascript written in React and Typescript',
-        tech: ['React', 'Vite', 'Typescript', 'Material UI'],
-        color: 'var(--mc-diamond)',
-        demo: 'https://react-code-editor-flame.vercel.app/',
-        github: 'https://github.com/peterdinis/React-Code-Editor',
-    },
-    {
-        title: 'CV-Vision',
-        description: 'Application for analyzing CVs',
-        tech: [
-            'Nextjs',
-            'Typescript',
-            'TailwindCss',
-            'ShadcnUI',
-            'OpenAI API',
-            'Server Actions',
-        ],
-        color: 'var(--mc-emerald)',
-        demo: 'https://cv-vision-gzur.vercel.app/',
-        github: 'https://github.com/peterdinis/CV-Vision',
-    },
-    {
-        title: 'Box-Drop',
-        description:
-            'Application for uploading photos and other files, with option for sharing files with connected users',
-        tech: [
-            'Nextjs',
-            'Typescript',
-            'Shadcn UI',
-            'Clerkjs',
-            'Tailwindcss',
-            'Drizzle ORM',
-        ],
-        color: 'var(--mc-lava)',
-        demo: 'https://box-drop-etkd.vercel.app/',
-        github: 'https://github.com/peterdinis/Box-Drop',
-    },
-    {
-        title: 'PDF Crafter',
-        description: 'Application for building PDFs',
-        tech: ['Nextjs', 'Typescript', 'TailwindCss', 'ShadcnUI'],
-        color: 'var(--mc-water)',
-        demo: 'https://pdf-crafter.vercel.app/',
-        github: 'https://github.com/peterdinis/PDF-Crafter',
-    },
-    {
-        title: 'Req Jet',
-        description: 'Simple Post-man clone',
-        tech: ['Nextjs', 'Typescript', 'Tailwindcss', 'ShadcnUI', 'Supabase'],
-        color: 'var(--mc-wood)',
-        demo: 'https://req-jet.vercel.app/',
-        github: 'https://github.com/peterdinis/Req-Jet',
-    },
-    {
-        title: 'Lexicon',
-        description: 'Application for taking notes',
-        tech: [
-            'Nextjs',
-            'Typescript',
-            'Tailwindcss',
-            'Server Actions',
-            'Shadcn UI',
-        ],
-        color: 'var(--mc-sky)',
-        demo: 'https://lexicon-steel.vercel.app/',
-        github: 'https://github.com/peterdinis/Lexicon',
-    },
-    {
-        title: 'Video-Translator',
-        description: 'Application for translating videos to another languages',
-        tech: [
-            'Nextjs',
-            'Typescript',
-            'Tailwindcss',
-            'Gemini Google',
-            'Shadcn UI',
-        ],
-        color: 'var(--mc-purpur)',
-        demo: '#',
-        github: 'https://github.com/peterdinis/Video-Translator',
-    },
-    {
-        title: 'AI-Cooking-Assistant',
-        description: 'Application for learning how to cook',
-        tech: [
-            'Tanstack Start',
-            'Typescript',
-            'Tailwindcss',
-            'OpeanAI',
-            'Shadcn UI',
-        ],
-        color: 'var(--mc-lava)',
-        demo: '#',
-        github: 'https://github.com/peterdinis/Ai-Cooking-Assistant',
-    },
-];
+import { projects } from './projectsData';
+import { useMinecraftSound } from '@/hooks/useMinecraftSound';
 
 const ProjectsSection: FC = () => {
     const { playSound } = useMinecraftSound();

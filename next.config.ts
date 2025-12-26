@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
     experimental: {
         esmExternals: true,
         optimizeCss: true,
-        webpackMemoryOptimizations: true,
     },
     images: {
         formats: ['image/webp'],

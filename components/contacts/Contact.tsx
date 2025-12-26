@@ -1,9 +1,9 @@
 'use client';
 
 import { FC } from 'react';
-import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
 import { motion } from 'framer-motion';
 import { AnimatedBlock } from '../minecraft/AnimatedBlock';
+import { useMinecraftSound } from '@/hooks/useMinecraftSound';
 
 type ContactLink = {
     label: string;

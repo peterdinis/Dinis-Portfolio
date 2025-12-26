@@ -1,12 +1,12 @@
 'use client';
 
-import { useMinecraftSound } from '@/app/hooks/useMinecraftSound';
 import { FC, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { motion } from 'framer-motion';
 import { AnimatedBlock, FloatingBlock } from '../minecraft/AnimatedBlock';
 import MinecraftScene from '../minecraft/MinecraftScene';
+import { useMinecraftSound } from '@/hooks/useMinecraftSound';
 
 const Hero: FC = () => {
     const { playSound } = useMinecraftSound();
