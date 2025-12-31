@@ -23,6 +23,7 @@ const SequentialLoading = () => (
             <MinecraftLoading />
             <MinecraftLoading />
             <MinecraftLoading />
+            <MinecraftLoading />
         </div>
     </div>
 );

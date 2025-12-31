@@ -13,7 +13,7 @@ const Footer: FC = () => {
             style={{ backgroundColor: 'var(--mc-wood)' }}
         >
             <p className='text-xl' style={{ color: 'var(--mc-light)' }}>
-                © 2025 PETER DINIS 🎮
+                © 2026 PETER DINIS 🎮
             </p>
         </motion.footer>
     );
