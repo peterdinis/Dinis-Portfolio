@@ -1,4 +1,4 @@
-# Personal Portfolio (Next.js + TypeScript + TailwindCss + ShadcnUi)
+# Personal Portfolio (Next.js + TypeScript + TailwindCss + ShadcnUI)
 
 Welcome to my personal portfolio project!  
 This is my portfolio website built using **Next.js** and **TypeScript**. The goal is to showcase my skills, projects, and professional background in a clean and responsive interface.
@@ -12,6 +12,7 @@ This is my portfolio website built using **Next.js** and **TypeScript**. The goa
 - **Tailwind CSS** – Utility-first CSS framework for rapid UI development
 - **Framer Motion** – Animation library for smooth transitions and UI effects
 - **Three.js** – 3D graphics and interactive experiences in the browser
+- **Shadcn/UI** – Re-usable component library built with Radix UI and Tailwind CSS
 
 ---
 
