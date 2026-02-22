@@ -6,7 +6,7 @@ import { AnimatedBlock } from '../minecraft/AnimatedBlock';
 
 const achievements = [
     { label: 'BLOCKS PLACED', value: '10K+', color: 'var(--mc-grass)' },
-    { label: 'PROJECTS BUILT', value: '80', color: 'var(--mc-diamond)' },
+    { label: 'PROJECTS BUILT', value: '81', color: 'var(--mc-diamond)' },
     { label: 'LINES OF CODE', value: '100K+', color: 'var(--mc-gold)' },
 ];
 
