@@ -5,7 +5,7 @@ export const TimelineWrapper = () => {
         {
             company: 'IBA.CZ',
             position: 'UI/UX Designer & React Developer',
-            period: 'August 2024 - Present',
+            period: 'November 2025 - Present',
             description:
                 'Creating comprehensive design systems and developing React applications for various RŠD projects. Responsibilities include user interface design, user experience optimization, and frontend development using modern web technologies.',
             technologies: [
@@ -174,11 +174,10 @@ export const TimelineWrapper = () => {
                             {experiences.map((exp, index) => (
                                 <div
                                     key={index}
-                                    className={`flex flex-col md:flex-row items-start gap-4 md:gap-8 ${
-                                        index % 2 === 0
+                                    className={`flex flex-col md:flex-row items-start gap-4 md:gap-8 ${index % 2 === 0
                                             ? 'md:flex-row-reverse'
                                             : ''
-                                    }`}
+                                        }`}
                                 >
                                     {/* Timeline dot - Minecraft block */}
                                     <div className='shrink-0 relative z-20'>
@@ -194,11 +193,10 @@ export const TimelineWrapper = () => {
 
                                     {/* Content card - Minecraft style */}
                                     <div
-                                        className={`flex-1 minecraft-block bg-mc-dark border-2 border-mc-border p-6 transform hover:-translate-y-1 transition-all duration-300 ${
-                                            index % 2 === 0
+                                        className={`flex-1 minecraft-block bg-mc-dark border-2 border-mc-border p-6 transform hover:-translate-y-1 transition-all duration-300 ${index % 2 === 0
                                                 ? 'md:text-right'
                                                 : ''
-                                        }`}
+                                            }`}
                                     >
                                         {/* Block header with Minecraft-style title */}
                                         <div
@@ -244,14 +242,13 @@ export const TimelineWrapper = () => {
                                                 (tech, techIndex) => (
                                                     <span
                                                         key={techIndex}
-                                                        className={`px-4 py-2 minecraft-block border-2 border-mc-border text-white font-minecraft text-sm font-bold hover:opacity-80 transition-colors ${
-                                                            tech.includes(
-                                                                'Design',
-                                                            ) ||
-                                                            tech === 'Figma'
+                                                        className={`px-4 py-2 minecraft-block border-2 border-mc-border text-white font-minecraft text-sm font-bold hover:opacity-80 transition-colors ${tech.includes(
+                                                            'Design',
+                                                        ) ||
+                                                                tech === 'Figma'
                                                                 ? 'bg-purple-600'
                                                                 : 'bg-mc-stone'
-                                                        }`}
+                                                            }`}
                                                     >
                                                         {tech}
                                                     </span>
