@@ -58,11 +58,17 @@ const Hero: FC = () => {
                 <AnimatedBlock delay={0.2}>
                     <FloatingBlock>
                         <div
-                            className='minecraft-block p-6 md:p-8 inline-block'
+                            className='minecraft-panel p-6 md:p-8 inline-block max-w-[min(100%,36rem)]'
                             style={{ backgroundColor: 'var(--mc-grass)' }}
                         >
+                            <p
+                                className='mb-2 text-[10px] md:text-xs uppercase tracking-widest opacity-80'
+                                style={{ color: 'var(--mc-dark)' }}
+                            >
+                                Portfolio spawn point
+                            </p>
                             <h1
-                                className='pixel-text text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4'
+                                className='pixel-text text-2xl sm:text-3xl md:text-5xl lg:text-6xl'
                                 style={{ color: 'var(--mc-dark)' }}
                             >
                                 PETER DINIS
@@ -73,28 +79,26 @@ const Hero: FC = () => {
 
                 <AnimatedBlock delay={0.4}>
                     <div
-                        className='minecraft-block p-4 md:p-6'
+                        className='minecraft-block p-4 md:p-6 mx-auto max-w-2xl'
                         style={{ backgroundColor: 'var(--mc-dirt)' }}
                     >
                         <p
-                            className='pixel-text text-lg md:text-xl lg:text-2xl'
+                            className='text-base md:text-lg lg:text-xl font-bold tracking-wide'
                             style={{ color: 'var(--mc-light)' }}
                         >
-                            🎮 DEVELOPER & CREATOR 🎮
+                            🎮 Full stack developer & creator 🎮
                         </p>
                     </div>
                 </AnimatedBlock>
 
                 <AnimatedBlock delay={0.6}>
                     <div
-                        className='minecraft-block p-3 md:p-4'
+                        className='minecraft-block p-3 md:p-5 mx-auto max-w-xl'
                         style={{ backgroundColor: 'var(--mc-stone)' }}
                     >
-                        <p
-                            className='text-xs md:text-sm lg:text-base'
-                            style={{ color: 'var(--mc-light)' }}
-                        >
-                            BUILDING BLOCKS OF CODE, ONE PIXEL AT A TIME
+                        <p className='mc-body text-center text-xs md:text-sm lg:text-base'>
+                            Building blocks of code — React, Next.js, and
+                            polished UI, one release at a time.
                         </p>
                     </div>
                 </AnimatedBlock>
@@ -108,9 +112,9 @@ const Hero: FC = () => {
                                     .getElementById('projects')
                                     ?.scrollIntoView({ behavior: 'smooth' });
                             }}
-                            whileHover={{ scale: 1.1, y: -5 }}
-                            whileTap={{ scale: 0.95 }}
-                            className='minecraft-button px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-bold'
+                            whileHover={{ scale: 1.04, y: -3 }}
+                            whileTap={{ scale: 0.97 }}
+                            className='minecraft-button px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold'
                             style={{
                                 backgroundColor: 'var(--mc-diamond)',
                                 color: 'var(--mc-dark)',
@@ -125,9 +129,9 @@ const Hero: FC = () => {
                                     .getElementById('contact')
                                     ?.scrollIntoView({ behavior: 'smooth' });
                             }}
-                            whileHover={{ scale: 1.1, y: -5 }}
-                            whileTap={{ scale: 0.95 }}
-                            className='minecraft-button px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-bold'
+                            whileHover={{ scale: 1.04, y: -3 }}
+                            whileTap={{ scale: 0.97 }}
+                            className='minecraft-button px-4 md:px-6 py-2.5 md:py-3 text-xs md:text-sm font-bold'
                             style={{
                                 backgroundColor: 'var(--mc-gold)',
                                 color: 'var(--mc-dark)',

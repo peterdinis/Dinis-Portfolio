@@ -39,14 +39,10 @@ export default function ScrollToTop() {
                     whileHover={{ scale: 1.15, y: -8 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={scrollToTop}
-                    className='fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 minecraft-button flex items-center justify-center text-2xl md:text-3xl'
+                    className='fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 minecraft-button flex size-14 md:size-[3.75rem] items-center justify-center text-2xl md:text-3xl'
                     style={{
                         backgroundColor: 'var(--mc-gold)',
                         color: 'var(--mc-dark)',
-                        width: '56px',
-                        height: '56px',
-                        borderRadius: '0',
-                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.6)',
                     }}
                     aria-label='Scroll to top'
                     title='Scroll to top'

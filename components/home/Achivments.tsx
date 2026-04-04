@@ -13,16 +13,16 @@ const achievements = [
 const Achivments: FC = () => {
     return (
         <section
-            className='py-8 md:py-16'
+            className='py-10 md:py-16'
             style={{ backgroundColor: 'var(--mc-dark)' }}
         >
             <div className='max-w-6xl mx-auto px-4 md:px-8'>
-                <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5'>
                     {achievements.map((achievement, index) => (
                         <AnimatedBlock key={index} delay={index * 0.1}>
                             <motion.div
-                                whileHover={{ scale: 1.1, y: -5 }}
-                                className='minecraft-block p-4 md:p-6 text-center'
+                                whileHover={{ scale: 1.03, y: -4 }}
+                                className='minecraft-panel p-4 md:p-6 text-center min-h-[120px] flex flex-col justify-center'
                                 style={{ backgroundColor: achievement.color }}
                             >
                                 <p
@@ -32,7 +32,7 @@ const Achivments: FC = () => {
                                     {achievement.value}
                                 </p>
                                 <p
-                                    className='text-xs md:text-sm'
+                                    className='text-[10px] md:text-xs font-bold uppercase tracking-wide opacity-90'
                                     style={{ color: 'var(--mc-dark)' }}
                                 >
                                     {achievement.label}

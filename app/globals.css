@@ -57,9 +57,15 @@
 
     /* Base Colors */
     --mc-dark: #1d1c21;
+    --mc-dark-elevated: #26242c;
     --mc-light: #f9fffe;
+    --mc-light-muted: #c8c8c8;
     --mc-border: #000000;
     --mc-shadow: rgba(0, 0, 0, 0.5);
+    /* In-game GUI-style bevel */
+    --mc-bevel-light: rgba(255, 255, 255, 0.16);
+    --mc-bevel-dark: rgba(0, 0, 0, 0.42);
+    --mc-drop-outer: 0 4px 0 rgba(0, 0, 0, 0.35);
 }
 
 @theme inline {
@@ -119,7 +125,9 @@
 
     /* Base */
     --color-mc-dark: var(--mc-dark);
+    --color-mc-dark-elevated: var(--mc-dark-elevated);
     --color-mc-light: var(--mc-light);
+    --color-mc-light-muted: var(--mc-light-muted);
     --color-mc-border: var(--mc-border);
     --color-mc-shadow: var(--mc-shadow);
 
@@ -134,46 +142,94 @@ body {
     background: var(--mc-dark);
     color: var(--mc-light);
     font-family: var(--font-minecraft), monospace;
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
+    line-height: 1.65;
 }
 
-/* Minecraft-style blocky elements */
+::selection {
+    background: var(--mc-grass);
+    color: var(--mc-dark);
+}
+
+/* Minecraft-style blocky elements (inventory / GUI panel bevel) */
 .minecraft-block {
     border: 3px solid var(--mc-border);
     box-shadow:
-        inset -3px -3px 0 rgba(0, 0, 0, 0.3),
-        inset 3px 3px 0 rgba(255, 255, 255, 0.1);
+        inset 2px 2px 0 var(--mc-bevel-light),
+        inset -3px -3px 0 var(--mc-bevel-dark);
+}
+
+.minecraft-panel {
+    border: 3px solid var(--mc-border);
+    box-shadow:
+        inset 2px 2px 0 var(--mc-bevel-light),
+        inset -3px -3px 0 var(--mc-bevel-dark),
+        var(--mc-drop-outer);
 }
 
 .minecraft-button {
     border: 3px solid var(--mc-border);
     box-shadow:
-        inset -2px -2px 0 rgba(0, 0, 0, 0.3),
-        inset 2px 2px 0 rgba(255, 255, 255, 0.1);
-    transition: all 0.1s;
+        inset 2px 2px 0 var(--mc-bevel-light),
+        inset -2px -2px 0 var(--mc-bevel-dark);
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease,
+        filter 0.12s ease;
+    cursor: pointer;
 }
 
 .minecraft-button:hover {
     transform: translateY(-2px);
+    filter: brightness(1.06);
     box-shadow:
-        inset -2px -2px 0 rgba(0, 0, 0, 0.3),
-        inset 2px 2px 0 rgba(255, 255, 255, 0.1),
-        0 4px 8px rgba(0, 0, 0, 0.5);
+        inset 2px 2px 0 var(--mc-bevel-light),
+        inset -2px -2px 0 var(--mc-bevel-dark),
+        0 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 .minecraft-button:active {
-    transform: translateY(0);
+    transform: translateY(1px);
+    filter: brightness(0.96);
     box-shadow:
-        inset 2px 2px 0 rgba(0, 0, 0, 0.3),
-        inset -2px -2px 0 rgba(255, 255, 255, 0.1);
+        inset -2px -2px 0 var(--mc-bevel-light),
+        inset 2px 2px 0 var(--mc-bevel-dark);
 }
 
-/* Pixelated text effect */
+.minecraft-button:focus-visible {
+    outline: 3px solid var(--mc-diamond);
+    outline-offset: 3px;
+}
+
+a.minecraft-button:focus-visible {
+    outline: 3px solid var(--mc-diamond);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .minecraft-button {
+        transition: none;
+    }
+
+    .minecraft-button:hover {
+        transform: none;
+        filter: none;
+    }
+
+    .minecraft-button:active {
+        transform: none;
+    }
+}
+
+/* Pixelated text effect — use on titles; body copy reads better without */
 .pixel-text {
     text-shadow: 2px 2px 0 var(--mc-border);
-    letter-spacing: 1px;
+    letter-spacing: 0.04em;
+}
+
+.mc-body {
+    color: var(--mc-light-muted);
+    line-height: 1.75;
+    letter-spacing: 0.02em;
 }
 
 /* Scrollbar styling */
@@ -309,9 +365,9 @@ canvas {
     background-image: 
     /* SVG pattern */
         url('/minecraft-pattern.svg'),
-        /* Grid pattern */
-        linear-gradient(var(--mc-border) 1px, transparent 1px),
-        linear-gradient(90deg, var(--mc-border) 1px, transparent 1px),
+        /* Grid pattern — softer so content stays readable */
+        linear-gradient(rgba(0, 0, 0, 0.14) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.14) 1px, transparent 1px),
         /* Block pattern overlay */
         repeating-linear-gradient(
                 0deg,
@@ -348,7 +404,12 @@ canvas {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
+    background-image:
+        radial-gradient(
+            ellipse 120% 80% at 50% 0%,
+            rgba(100, 181, 246, 0.06),
+            transparent 55%
+        ),
     /* Random block pattern - Grass */
         radial-gradient(
             circle at 20% 30%,

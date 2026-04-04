@@ -39,30 +39,19 @@ const About: FC = () => {
                         className='minecraft-block p-6 md:p-8'
                         style={{ backgroundColor: 'var(--mc-dirt)' }}
                     >
-                        <p
-                            className='text-xs md:text-sm lg:text-base leading-relaxed mb-4'
-                            style={{ color: 'var(--mc-light)' }}
-                        >
-                            🎮 WELCOME TO MY BLOCKY WORLD! I&apos;M A PASSIONATE
-                            DEVELOPER WHO LOVES CREATING UNIQUE AND ENGAGING WEB
-                            EXPERIENCES. INSPIRED BY MINECRAFT&apos;S ICONIC
-                            AESTHETIC, I BUILD APPLICATIONS THAT COMBINE
-                            FUNCTIONALITY WITH PLAYFUL DESIGN.
+                        <p className='mc-body text-xs md:text-sm lg:text-base mb-4'>
+                            Welcome to my blocky corner of the web. I&apos;m a
+                            developer who enjoys sharp UX and solid engineering —
+                            inspired by Minecraft&apos;s playful look, without
+                            sacrificing clarity or performance.
                         </p>
-                        <p
-                            className='text-xs md:text-sm lg:text-base leading-relaxed mb-4'
-                            style={{ color: 'var(--mc-light)' }}
-                        >
-                            ⚡ WHEN I&apos;M NOT CRAFTING CODE, YOU&apos;LL FIND
-                            ME EXPLORING NEW TECHNOLOGIES, BUILDING CREATIVE
-                            PROJECTS, AND TURNING IDEAS INTO REALITY, ONE BLOCK
-                            AT A TIME.
+                        <p className='mc-body text-xs md:text-sm lg:text-base mb-4'>
+                            When I&apos;m not shipping features, I&apos;m
+                            exploring new tools, side projects, and ways to make
+                            interfaces feel intentional.
                         </p>
-                        <p
-                            className='text-xs md:text-sm lg:text-base leading-relaxed'
-                            style={{ color: 'var(--mc-light)' }}
-                        >
-                            🚀 LET&apos;S BUILD SOMETHING AMAZING TOGETHER!
+                        <p className='mc-body text-xs md:text-sm lg:text-base'>
+                            Let&apos;s build something worth spawning in.
                         </p>
                     </div>
                 </AnimatedBlock>
@@ -79,7 +68,7 @@ const About: FC = () => {
                         >
                             🧱 MINECRAFT FACTS
                         </h3>
-                        <div className='space-y-2'>
+                        <div className='space-y-2.5'>
                             {minecraftFacts.map((fact, index) => (
                                 <motion.p
                                     key={index}
@@ -87,10 +76,9 @@ const About: FC = () => {
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 }}
-                                    className='text-[10px] md:text-xs lg:text-sm'
-                                    style={{ color: 'var(--mc-light)' }}
+                                    className='mc-body pl-3 text-[10px] md:text-xs lg:text-sm border-l-2 border-mc-grass/70'
                                 >
-                                    • {fact}
+                                    {fact}
                                 </motion.p>
                             ))}
                         </div>

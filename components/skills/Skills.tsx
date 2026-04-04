@@ -59,19 +59,22 @@ const Skills: FC = () => {
                     {skills.map((skill, index) => (
                         <AnimatedBlock key={index} delay={index * 0.1}>
                             <motion.div
-                                whileHover={{ scale: 1.1, rotate: 5, y: -5 }}
-                                className='minecraft-block p-4 md:p-6 text-center cursor-pointer'
+                                whileHover={{ scale: 1.03, y: -4 }}
+                                className='minecraft-panel flex h-full flex-col p-4 md:p-6 text-center cursor-default'
                                 style={{ backgroundColor: skill.color }}
                             >
-                                <p className='text-2xl md:text-3xl mb-2'>
+                                <p
+                                    className='text-2xl md:text-3xl mb-2'
+                                    aria-hidden
+                                >
                                     {skill.icon}
                                 </p>
-                                <p className='pixel-text text-sm md:text-lg lg:text-xl'>
+                                <p className='pixel-text text-sm md:text-lg lg:text-xl mb-2'>
                                     {skill.name}
                                 </p>
                                 <p
-                                    className='text-[8px] md:text-xs lg:text-sm leading-relaxed mt-1'
-                                    style={{ color: 'var(--mc-light)' }}
+                                    className='mt-auto text-left text-[8px] md:text-xs lg:text-sm leading-relaxed opacity-90'
+                                    style={{ color: 'var(--mc-dark)' }}
                                 >
                                     {skill.description}
                                 </p>

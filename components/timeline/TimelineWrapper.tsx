@@ -156,12 +156,15 @@ export const TimelineWrapper = () => {
     return (
         <section id='expirience' className='py-20 minecraft-background'>
             <div className='container mx-auto px-6'>
-                <div className='text-center mb-16'>
-                    <h2 className='text-4xl md:text-5xl font-bold text-white mb-6 pixel-text font-minecraft'>
-                        Professional Experience
-                    </h2>
-                    <p className='text-xl text-gray-300 max-w-2xl mx-auto font-minecraft'>
-                        My journey in software development and design
+                <div className='text-center mb-16 max-w-3xl mx-auto px-2'>
+                    <div className='minecraft-panel inline-block px-6 py-4 md:px-10 md:py-5 mb-6 bg-mc-diamond'>
+                        <h2 className='text-xl md:text-3xl font-bold pixel-text text-mc-dark'>
+                            Professional experience
+                        </h2>
+                    </div>
+                    <p className='mc-body text-sm md:text-base max-w-xl mx-auto'>
+                        Roles and stacks along the way — from early builds to
+                        design systems and shipping product.
                     </p>
                 </div>
 

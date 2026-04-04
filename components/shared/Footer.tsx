@@ -9,11 +9,17 @@ const Footer: FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className='minecraft-block p-4 md:p-6 text-center'
-            style={{ backgroundColor: 'var(--mc-wood)' }}
+            className='minecraft-block border-x-0 border-b-0 rounded-none p-6 md:p-8 text-center'
+            style={{ backgroundColor: 'var(--mc-deepslate)' }}
         >
-            <p className='text-2xl' style={{ color: 'var(--mc-light)' }}>
-                © 2026 PETER DINIS 🎮
+            <p
+                className='pixel-text text-sm md:text-base'
+                style={{ color: 'var(--mc-light)' }}
+            >
+                © 2026 Peter Dinis
+            </p>
+            <p className='mc-body mt-2 text-[10px] md:text-xs'>
+                Crafted with Next.js — thanks for visiting the realm.
             </p>
         </motion.footer>
     );

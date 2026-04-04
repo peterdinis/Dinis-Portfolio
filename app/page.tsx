@@ -50,7 +50,7 @@ export default function Home() {
             <Navigation />
 
             <Suspense fallback={<SequentialLoading />}>
-                <div className='space-y-8'>
+                <div className='space-y-12 md:space-y-20'>
                     <Suspense fallback={<MinecraftLoading />}>
                         <Hero />
                     </Suspense>

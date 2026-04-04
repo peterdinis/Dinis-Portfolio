@@ -83,11 +83,9 @@ const Contact: FC = () => {
                         className='minecraft-block p-6 md:p-8 space-y-4 md:space-y-6'
                         style={{ backgroundColor: 'var(--mc-dirt)' }}
                     >
-                        <p
-                            className='text-xs md:text-sm lg:text-base text-center'
-                            style={{ color: 'var(--mc-light)' }}
-                        >
-                            🎮 READY TO START A NEW PROJECT? LET&apos;S CONNECT!
+                        <p className='mc-body text-center text-xs md:text-sm lg:text-base'>
+                            Ready to start a new build? Pick a channel below —
+                            same blocky vibe, real conversations.
                         </p>
 
                         <div className='grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-4'>
@@ -96,7 +94,7 @@ const Contact: FC = () => {
                                     <a
                                         key={index}
                                         href={contact.href}
-                                        className='minecraft-button py-3 md:py-4 text-xs md:text-sm font-bold text-center'
+                                        className='minecraft-button min-h-[48px] py-3 md:py-4 text-xs md:text-sm font-bold text-center'
                                         style={{
                                             backgroundColor: contact.color,
                                             color: 'var(--mc-dark)',
@@ -111,9 +109,9 @@ const Contact: FC = () => {
                                         onClick={() =>
                                             handleClick(contact.href)
                                         }
-                                        whileHover={{ scale: 1.1, y: -5 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        className='minecraft-button py-3 md:py-4 text-xs md:text-sm font-bold'
+                                        whileHover={{ scale: 1.03, y: -3 }}
+                                        whileTap={{ scale: 0.97 }}
+                                        className='minecraft-button min-h-[48px] py-3 md:py-4 text-xs md:text-sm font-bold'
                                         style={{
                                             backgroundColor: contact.color,
                                             color: 'var(--mc-dark)',

@@ -36,8 +36,8 @@ const ProjectsSection: FC = () => {
                     {projects.map((project, index) => (
                         <AnimatedBlock key={index} delay={index * 0.2}>
                             <motion.div
-                                whileHover={{ scale: 1.05, y: -10 }}
-                                className='minecraft-block p-4 md:p-6 space-y-3 md:space-y-4 h-full'
+                                whileHover={{ scale: 1.02, y: -6 }}
+                                className='minecraft-panel flex flex-col p-4 md:p-6 space-y-3 md:space-y-4 h-full'
                                 style={{ backgroundColor: 'var(--mc-stone)' }}
                             >
                                 {/* Header */}
@@ -63,10 +63,7 @@ const ProjectsSection: FC = () => {
                                 </div>
 
                                 {/* Description */}
-                                <p
-                                    className='text-[10px] md:text-xs lg:text-sm leading-relaxed'
-                                    style={{ color: 'var(--mc-light)' }}
-                                >
+                                <p className='mc-body text-[10px] md:text-xs lg:text-sm flex-1'>
                                     {project.description}
                                 </p>
 
