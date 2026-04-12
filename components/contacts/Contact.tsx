@@ -42,6 +42,13 @@ const contacts: ContactLink[] = [
         color: 'var(--mc-gold)',
         href: encodeURL('https://www.facebook.com/peto.dinis/'),
     },
+
+    {
+        label: "My Company",
+        icon: '🏢',
+        color: 'var(--mc-redstone)',
+        href: encodeURL('https://peterdinissolutions.pages.dev/'),
+    }
 ];
 
 const Contact: FC = () => {
