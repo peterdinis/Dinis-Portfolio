@@ -12,23 +12,23 @@
     },
     "dependencies": {
         "@react-three/drei": "^10.7.7",
-        "@react-three/fiber": "^9.5.0",
+        "@react-three/fiber": "^9.6.0",
         "framer-motion": "^12.38.0",
         "lucide-react": "^0.553.0",
-        "next": "^16.2.1",
-        "react": "^19.2.4",
-        "react-dom": "^19.2.4",
+        "next": "^16.2.4",
+        "react": "^19.2.5",
+        "react-dom": "^19.2.5",
         "three": "^0.181.2"
     },
     "devDependencies": {
         "@tailwindcss/postcss": "^4.2.2",
-        "@types/node": "^20.19.37",
+        "@types/node": "^20.19.39",
         "@types/react": "^19.2.14",
         "@types/react-dom": "^19.2.3",
-        "baseline-browser-mapping": "^2.10.12",
+        "baseline-browser-mapping": "^2.10.20",
         "eslint": "^9.39.4",
         "eslint-config-next": "16.0.1",
-        "prettier": "^3.8.1",
+        "prettier": "^3.8.3",
         "tailwindcss": "^4.2.2",
         "typescript": "^5.9.3"
     }

@@ -52,7 +52,7 @@ const Navigation: FC = () => {
                         }}
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.97 }}
-                        className={`minecraft-button min-h-[44px] px-3 md:px-4 py-2 text-[10px] md:text-xs font-bold transition-colors duration-200
+                        className={`minecraft-button min-h-11 px-3 md:px-4 py-2 text-[10px] md:text-xs font-bold transition-colors duration-200
               ${
                   activeSection === section.id
                       ? 'bg-mc-grass text-black ring-2 ring-inset ring-black/25 shadow-[inset_0_-3px_0_rgba(0,0,0,0.2)]'

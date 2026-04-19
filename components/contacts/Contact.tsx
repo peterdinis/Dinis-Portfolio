@@ -101,7 +101,7 @@ const Contact: FC = () => {
                                     <a
                                         key={index}
                                         href={contact.href}
-                                        className='minecraft-button min-h-[48px] py-3 md:py-4 text-xs md:text-sm font-bold text-center'
+                                        className='minecraft-button min-h-12 py-3 md:py-4 text-xs md:text-sm font-bold text-center'
                                         style={{
                                             backgroundColor: contact.color,
                                             color: 'var(--mc-dark)',
@@ -118,7 +118,7 @@ const Contact: FC = () => {
                                         }
                                         whileHover={{ scale: 1.03, y: -3 }}
                                         whileTap={{ scale: 0.97 }}
-                                        className='minecraft-button min-h-[48px] py-3 md:py-4 text-xs md:text-sm font-bold'
+                                        className='minecraft-button min-h-12 py-3 md:py-4 text-xs md:text-sm font-bold'
                                         style={{
                                             backgroundColor: contact.color,
                                             color: 'var(--mc-dark)',

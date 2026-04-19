@@ -39,7 +39,7 @@ export default function ScrollToTop() {
                     whileHover={{ scale: 1.15, y: -8 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={scrollToTop}
-                    className='fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 minecraft-button flex size-14 md:size-[3.75rem] items-center justify-center text-2xl md:text-3xl'
+                    className='fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 minecraft-button flex size-14 md:size-15 items-center justify-center text-2xl md:text-3xl'
                     style={{
                         backgroundColor: 'var(--mc-gold)',
                         color: 'var(--mc-dark)',

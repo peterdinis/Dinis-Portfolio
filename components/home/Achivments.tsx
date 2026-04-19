@@ -22,7 +22,7 @@ const Achivments: FC = () => {
                         <AnimatedBlock key={index} delay={index * 0.1}>
                             <motion.div
                                 whileHover={{ scale: 1.03, y: -4 }}
-                                className='minecraft-panel p-4 md:p-6 text-center min-h-[120px] flex flex-col justify-center'
+                                className='minecraft-panel p-4 md:p-6 text-center min-h-30 flex flex-col justify-center'
                                 style={{ backgroundColor: achievement.color }}
                             >
                                 <p
