@@ -18,9 +18,6 @@ const Footer: FC = () => {
             >
                 © 2026 Peter Dinis
             </p>
-            <p className='mc-body mt-2 text-[10px] md:text-xs'>
-                Crafted with Next.js — thanks for visiting the realm.
-            </p>
         </motion.footer>
     );
 };
